@@ -7,7 +7,9 @@
       <modulePath path="$PROJECT_DIR$/languages/org.kf2.statemachine/org.kf2.statemachine.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.kf2.sugar/org.kf2.sugar.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.kf2.test/org.kf2.test.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/kf2.demo.interpreter/kf2.demo.interpreter.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/kf2.demo/kf2.demo.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.kf2.tools.interpreter/org.kf2.tools.interpreter.msd" folder="" />
     </projectModules>
   </component>
 </project>
