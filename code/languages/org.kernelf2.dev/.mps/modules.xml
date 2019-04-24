@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/org.kf2.core/org.kf2.core.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/org.kf2.state/org.kf2.state.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/org.kf2.statemachine/org.kf2.statemachine.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/org.kf2.sugar/org.kf2.sugar.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/org.kf2.test/org.kf2.test.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/kf2.demo/kf2.demo.msd" folder="" />
+    </projectModules>
+  </component>
+</project>
