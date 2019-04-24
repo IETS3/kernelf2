@@ -2,10 +2,10 @@
 
 Repository for the new, shadow-model based evolution of KernelF:
 
-* Minimal, Expressive Core
+* Minimal, expressive core: constants, functions, pattern matching
 * Functional, Reactive
-* Sugar on top
-* Interpter, Generator and Verifier below
-* Realtime-Trafo with Shadow Models
+* Syntactic sugar stacked on top of the core
+* Interpreter, generator and verifier as backends
+* Connected by realtime transformations based on shadow models.
 
 ![Architecture](https://github.com/IETS3/kernelf2/blob/master/architecture.png?raw=true)
