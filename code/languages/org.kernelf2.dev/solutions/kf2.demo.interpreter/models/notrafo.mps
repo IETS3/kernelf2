@@ -9,6 +9,10 @@
   <imports />
   <registry>
     <language id="1ab7bfac-29d6-4772-a483-50110408ac43" name="org.kf2.core">
+      <concept id="8403212614955795569" name="org.kf2.core.structure.UnaryExpr" flags="ng" index="2i6V4C">
+        <child id="8403212614955795822" name="expr" index="2i6V0R" />
+      </concept>
+      <concept id="8403212614955798176" name="org.kf2.core.structure.LogicalNotExpr" flags="ng" index="2i6VJT" />
       <concept id="3994264775390232727" name="org.kf2.core.structure.LogicalAndExpr" flags="ng" index="2$$ZCL" />
       <concept id="5182877833504324605" name="org.kf2.core.structure.EmptyDeclaration" flags="ng" index="2NE3Kg" />
       <concept id="4320583889640215422" name="org.kf2.core.structure.Module" flags="ng" index="37GxXp">
@@ -36,12 +40,21 @@
     <property role="TrG5h" value="Tests" />
     <node concept="2NE3Kg" id="2HYLUBOlt7b" role="37GxYA" />
     <node concept="3vaVmc" id="5emZq8GOwXy" role="37GxYA">
-      <node concept="1H2aKy" id="6l1JiPPuOtm" role="3vaVmf" />
+      <node concept="2$$ZCL" id="63TEQr90YyT" role="3vaVmf">
+        <node concept="1H2aUO" id="63TEQr90Yp0" role="1H5NIF" />
+        <node concept="1H2aUO" id="63TEQr90YyB" role="1H5NID" />
+      </node>
+    </node>
+    <node concept="2NE3Kg" id="7br$_3JVK6j" role="37GxYA" />
+    <node concept="3vaVmc" id="7br$_3JVK7b" role="37GxYA">
+      <node concept="2i6VJT" id="7br$_3JVK7O" role="3vaVmf">
+        <node concept="1H2aKy" id="7br$_3JVK85" role="2i6V0R" />
+      </node>
     </node>
     <node concept="2NE3Kg" id="5emZq8GPdlw" role="37GxYA" />
     <node concept="3vaVmc" id="5emZq8GPdiT" role="37GxYA">
       <node concept="2$$ZCL" id="6l1JiPPuQbL" role="3vaVmf">
-        <node concept="1H2aUO" id="6l1JiPPwAHV" role="1H5NID" />
+        <node concept="1H2aKy" id="63TEQr8VSBM" role="1H5NID" />
         <node concept="1H2aUO" id="6l1JiPPuQbx" role="1H5NIF" />
       </node>
     </node>
