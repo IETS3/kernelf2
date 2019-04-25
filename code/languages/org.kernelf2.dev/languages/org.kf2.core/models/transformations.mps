@@ -139,9 +139,6 @@
       <concept id="2969665195339091237" name="de.q60.mps.shadowmodels.transformation.structure.TransformationInclude" flags="ng" index="3RclfB">
         <reference id="2969665195339091327" name="transformation" index="3RcleX" />
       </concept>
-      <concept id="2573073122887437731" name="de.q60.mps.shadowmodels.transformation.structure.Duplicate" flags="ng" index="1XuIBW">
-        <child id="2573073122887437734" name="sourceQuery" index="1XuIBT" />
-      </concept>
       <concept id="8710565405836969859" name="de.q60.mps.shadowmodels.transformation.structure.Transform" flags="ng" index="1Zmyal">
         <child id="8710565405836969869" name="input" index="1Zmyar" />
       </concept>
@@ -615,12 +612,12 @@
         </node>
       </node>
       <node concept="026TG" id="4JbHIKAifUL" role="026TK">
-        <node concept="1XuIBW" id="4JbHIKAilry" role="026TJ">
-          <node concept="2OqwBi" id="4JbHIKAioha" role="1XuIBT">
-            <node concept="2155sH" id="4JbHIKAin44" role="2Oq$k0">
+        <node concept="1Zmyal" id="6l1JiPPvaHU" role="026TJ">
+          <node concept="2OqwBi" id="6l1JiPPvdFD" role="1Zmyar">
+            <node concept="2155sH" id="6l1JiPPvcrk" role="2Oq$k0">
               <ref role="2155sG" node="4JbHIKAifUJ" />
             </node>
-            <node concept="3TrEf2" id="4JbHIKAiq8T" role="2OqNvi">
+            <node concept="3TrEf2" id="6l1JiPPvfCg" role="2OqNvi">
               <ref role="3Tt5mk" to="nup6:1s_GFdUcC$o" resolve="left" />
             </node>
           </node>
@@ -652,12 +649,12 @@
         </node>
       </node>
       <node concept="026TG" id="4JbHIKAhzAJ" role="026TK">
-        <node concept="1XuIBW" id="4JbHIKAhCGS" role="026TJ">
-          <node concept="2OqwBi" id="4JbHIKAhFxU" role="1XuIBT">
-            <node concept="2155sH" id="4JbHIKAhEl5" role="2Oq$k0">
+        <node concept="1Zmyal" id="6l1JiPPuTuC" role="026TJ">
+          <node concept="2OqwBi" id="6l1JiPPuX35" role="1Zmyar">
+            <node concept="2155sH" id="6l1JiPPuVbP" role="2Oq$k0">
               <ref role="2155sG" node="4JbHIKAhzAH" />
             </node>
-            <node concept="3TrEf2" id="4JbHIKAhHpk" role="2OqNvi">
+            <node concept="3TrEf2" id="6l1JiPPuYZv" role="2OqNvi">
               <ref role="3Tt5mk" to="nup6:1s_GFdUcC$o" resolve="left" />
             </node>
           </node>
@@ -688,12 +685,12 @@
         </node>
       </node>
       <node concept="026TG" id="4JbHIKAhRYO" role="026TK">
-        <node concept="1XuIBW" id="4JbHIKAhRYP" role="026TJ">
-          <node concept="2OqwBi" id="4JbHIKAhRYQ" role="1XuIBT">
-            <node concept="2155sH" id="4JbHIKAhRYR" role="2Oq$k0">
+        <node concept="1Zmyal" id="6l1JiPPvBaR" role="026TJ">
+          <node concept="2OqwBi" id="6l1JiPPvE8I" role="1Zmyar">
+            <node concept="2155sH" id="6l1JiPPvCSl" role="2Oq$k0">
               <ref role="2155sG" node="4JbHIKAhRYM" />
             </node>
-            <node concept="3TrEf2" id="4JbHIKAhT3A" role="2OqNvi">
+            <node concept="3TrEf2" id="6l1JiPPvG5p" role="2OqNvi">
               <ref role="3Tt5mk" to="nup6:1s_GFdUcC$q" resolve="right" />
             </node>
           </node>
@@ -1092,12 +1089,12 @@
         </node>
       </node>
       <node concept="026TG" id="3qfy$Tio$Ws" role="026TK">
-        <node concept="1XuIBW" id="3qfy$Tio$Wt" role="026TJ">
-          <node concept="2OqwBi" id="3qfy$Tio$Wu" role="1XuIBT">
-            <node concept="2155sH" id="3qfy$Tio$Wv" role="2Oq$k0">
+        <node concept="1Zmyal" id="6l1JiPPw70h" role="026TJ">
+          <node concept="2OqwBi" id="6l1JiPPw9Xl" role="1Zmyar">
+            <node concept="2155sH" id="6l1JiPPw8HH" role="2Oq$k0">
               <ref role="2155sG" node="3qfy$Tio$Wq" />
             </node>
-            <node concept="3TrEf2" id="3qfy$Tio$Ww" role="2OqNvi">
+            <node concept="3TrEf2" id="6l1JiPPwbRT" role="2OqNvi">
               <ref role="3Tt5mk" to="nup6:2frx7BFaCKx" resolve="thenPart" />
             </node>
           </node>
@@ -1128,8 +1125,8 @@
         </node>
       </node>
       <node concept="026TG" id="3qfy$Tio$WF" role="026TK">
-        <node concept="1XuIBW" id="3qfy$Tio$WG" role="026TJ">
-          <node concept="2OqwBi" id="3qfy$Tio$WH" role="1XuIBT">
+        <node concept="1Zmyal" id="6l1JiPPwfgC" role="026TJ">
+          <node concept="2OqwBi" id="3qfy$Tio$WH" role="1Zmyar">
             <node concept="2OqwBi" id="3qfy$Tio$WI" role="2Oq$k0">
               <node concept="2155sH" id="3qfy$Tio$WJ" role="2Oq$k0">
                 <ref role="2155sG" node="3qfy$Tio$WD" />
