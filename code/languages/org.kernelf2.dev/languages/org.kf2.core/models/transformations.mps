@@ -113,6 +113,10 @@
         <reference id="4453020072188806440" name="decl" index="2xGWG1" />
         <child id="4453020072188806447" name="parameterValues" index="2xGWG6" />
       </concept>
+      <concept id="3050775421482275177" name="de.q60.mps.shadowmodels.transformation.structure.TransformationPriority" flags="ng" index="GDL_W">
+        <reference id="3050775421482276648" name="low" index="GDLWX" />
+        <reference id="3050775421482276650" name="high" index="GDLWZ" />
+      </concept>
       <concept id="5373338300159315830" name="de.q60.mps.shadowmodels.transformation.structure.EmptyLine" flags="ng" index="2OrE70" />
       <concept id="5373338300165862249" name="de.q60.mps.shadowmodels.transformation.structure.MapMacro" flags="ng" index="2PWHRv">
         <child id="5373338300165862254" name="call" index="2PWHRo" />
@@ -713,6 +717,11 @@
       </node>
     </node>
     <node concept="2OrE70" id="3tIuEqk1bMF" role="02uzr" />
+    <node concept="GDL_W" id="63TEQr8V9yQ" role="02uzr">
+      <ref role="GDLWZ" node="4JbHIKAhzAG" />
+      <ref role="GDLWX" node="4JbHIKAhRYL" />
+    </node>
+    <node concept="2OrE70" id="63TEQr8V9cg" role="02uzr" />
     <node concept="02vpq" id="3tIuEqk1a9Q" role="02uzr">
       <ref role="1YyVLo" node="3qfy$Tio$Vt" resolve="simplify" />
       <node concept="02i3K" id="3tIuEqk1a9R" role="02i3f">
@@ -759,6 +768,15 @@
       </node>
     </node>
     <node concept="2OrE70" id="3qfy$Tip8Wu" role="02uzr" />
+    <node concept="GDL_W" id="63TEQr8V$dT" role="02uzr">
+      <ref role="GDLWZ" node="3tIuEqk1a9Q" />
+      <ref role="GDLWX" node="4JbHIKAhzAG" />
+    </node>
+    <node concept="GDL_W" id="63TEQr8V$Sa" role="02uzr">
+      <ref role="GDLWZ" node="3tIuEqk1a9Q" />
+      <ref role="GDLWX" node="4JbHIKAhRYL" />
+    </node>
+    <node concept="2OrE70" id="63TEQr8VzRf" role="02uzr" />
     <node concept="02vpq" id="3qfy$Tio_Js" role="02uzr">
       <ref role="1YyVLo" node="3qfy$Tio$Vt" resolve="simplify" />
       <node concept="02i3K" id="3qfy$Tio_Jt" role="02i3f">
