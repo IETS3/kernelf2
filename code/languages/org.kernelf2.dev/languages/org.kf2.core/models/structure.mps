@@ -181,6 +181,12 @@
     <property role="19KtqR" value="true" />
     <property role="3GE5qa" value="prog" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6l1JiPPIsBe" role="1TKVEi">
+      <property role="IQ2ns" value="7296320874263202254" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="interpreted" />
+      <ref role="20lvS9" node="6l1JiPPIrrL" resolve="InterpretedFlag" />
+    </node>
     <node concept="1TJgyj" id="3JPN2vWhXe1" role="1TKVEi">
       <property role="IQ2ns" value="4320583889640215425" />
       <property role="20lmBu" value="aggregation" />
@@ -349,9 +355,6 @@
       <property role="20kJfa" value="const" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="3JPN2vWhXg0" resolve="Constant" />
-    </node>
-    <node concept="PrWs8" id="2HYLUBOmq6J" role="PzmwI">
-      <ref role="PrY4T" node="3tIuEqk0nG0" resolve="IStaticallyEquallably" />
     </node>
   </node>
   <node concept="1TIwiD" id="1_cQhkfL2Mk">
@@ -1265,6 +1268,16 @@
   <node concept="PlHQZ" id="5qkNGtsVKVH">
     <property role="EcuMT" value="6238838739467964141" />
     <property role="TrG5h" value="IParameterizedType" />
+  </node>
+  <node concept="1TIwiD" id="6l1JiPPIrrL">
+    <property role="EcuMT" value="7296320874263197425" />
+    <property role="TrG5h" value="InterpretedFlag" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="6l1JiPPIrrM" role="1TKVEl">
+      <property role="IQ2nx" value="7296320874263197426" />
+      <property role="TrG5h" value="tracked" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
 </model>
 
