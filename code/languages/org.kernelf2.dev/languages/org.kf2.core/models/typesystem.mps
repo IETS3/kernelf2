@@ -5621,5 +5621,35 @@
       <ref role="1YaFvo" to="nup6:1s_GFdUbUed" resolve="BlockExpr" />
     </node>
   </node>
+  <node concept="1YbPZF" id="5mij9ehm$MD">
+    <property role="TrG5h" value="typeof_ParensExpr" />
+    <node concept="3clFbS" id="5mij9ehm$ME" role="18ibNy">
+      <node concept="1Z5TYs" id="5mij9ehm_jP" role="3cqZAp">
+        <node concept="mw_s8" id="5mij9ehm_km" role="1ZfhKB">
+          <node concept="1Z2H0r" id="5mij9ehm_ki" role="mwGJk">
+            <node concept="2OqwBi" id="5mij9ehm_tF" role="1Z2MuG">
+              <node concept="1YBJjd" id="5mij9ehm_kK" role="2Oq$k0">
+                <ref role="1YBMHb" node="5mij9ehm$MG" resolve="pe" />
+              </node>
+              <node concept="3TrEf2" id="5mij9ehm_Dv" role="2OqNvi">
+                <ref role="3Tt5mk" to="nup6:5mij9ehm$M6" resolve="expr" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="5mij9ehm_jS" role="1ZfhK$">
+          <node concept="1Z2H0r" id="5mij9ehm$VO" role="mwGJk">
+            <node concept="1YBJjd" id="5mij9ehm$Wa" role="1Z2MuG">
+              <ref role="1YBMHb" node="5mij9ehm$MG" resolve="pe" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5mij9ehm$MG" role="1YuTPh">
+      <property role="TrG5h" value="pe" />
+      <ref role="1YaFvo" to="nup6:5mij9ehkvA_" resolve="ParensExpr" />
+    </node>
+  </node>
 </model>
 
