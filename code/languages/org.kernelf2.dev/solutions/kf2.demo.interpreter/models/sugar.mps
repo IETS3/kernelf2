@@ -24,7 +24,6 @@
         <child id="7296320874263202254" name="interpreted" index="gY7jz" />
         <child id="4320583889640215425" name="declarations" index="37GxYA" />
       </concept>
-      <concept id="3931513068711981664" name="org.kf2.core.structure.MinusExpr" flags="ng" index="1$VrwI" />
       <concept id="1667935720929304239" name="org.kf2.core.structure.NumLit" flags="ng" index="1H2aKs">
         <property id="1667935720929304240" name="value" index="1H2aK3" />
       </concept>
@@ -75,16 +74,11 @@
     <node concept="gY0Js" id="3PyeT_Czzy_" role="gY7jz" />
     <node concept="37GxwB" id="3PyeT_CzzyE" role="37GxYA">
       <property role="TrG5h" value="x" />
-      <node concept="1$VrwI" id="3PyeT_Czzzn" role="37Gxwy">
-        <node concept="1H7JQn" id="3PyeT_CzzzT" role="1H5NIF">
-          <node concept="1H2aKs" id="3PyeT_Czz$I" role="1H5NIF">
-            <property role="1H2aK3" value="9" />
-          </node>
-          <node concept="1H2aKs" id="3PyeT_Czz$J" role="1H5NID">
-            <property role="1H2aK3" value="1" />
-          </node>
+      <node concept="1H7JQn" id="3PyeT_CzzzT" role="37Gxwy">
+        <node concept="1H2aKs" id="3PyeT_Czz$I" role="1H5NIF">
+          <property role="1H2aK3" value="9" />
         </node>
-        <node concept="1H2aKs" id="3PyeT_Cz$tt" role="1H5NID">
+        <node concept="1H2aKs" id="3PyeT_Czz$J" role="1H5NID">
           <property role="1H2aK3" value="1" />
         </node>
       </node>
