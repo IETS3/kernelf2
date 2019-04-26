@@ -37,6 +37,7 @@
     <import index="2wxy" ref="r:a64bf504-1b65-47d6-8d8c-e9aef4535e3a(de.q60.mps.incremental.runtime)" />
     <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
     <import index="nup6" ref="r:1539980b-b231-4c7d-8cde-acae8ba318f2(org.kf2.core.structure)" />
+    <import index="hl7i" ref="r:b2beda93-a8ee-4942-b644-e4da58fbc195(org.kf2.tools.interpreter.virtualinterfaces)" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -2406,6 +2407,10 @@
                               <node concept="37vLTw" id="1KLm$DhNsci" role="3g7hyw">
                                 <ref role="3cqZAo" node="m_yL2N0zBQ" resolve="node" />
                               </node>
+                              <node concept="2YIFZM" id="3PyeT_CzNQj" role="3g7hyw">
+                                <ref role="37wK5l" to="hl7i:3PyeT_CwymD" resolve="newEnv" />
+                                <ref role="1Pybhc" to="hl7i:3PyeT_CwyhZ" resolve="Environment" />
+                              </node>
                             </node>
                           </node>
                         </node>
@@ -2667,6 +2672,10 @@
                                 </node>
                                 <node concept="37vLTw" id="2$PstQMpwbg" role="3g7hyw">
                                   <ref role="3cqZAo" node="2$PstQMoXj_" resolve="node" />
+                                </node>
+                                <node concept="2YIFZM" id="3PyeT_CE0kp" role="3g7hyw">
+                                  <ref role="37wK5l" to="hl7i:3PyeT_CwymD" resolve="newEnv" />
+                                  <ref role="1Pybhc" to="hl7i:3PyeT_CwyhZ" resolve="Environment" />
                                 </node>
                               </node>
                             </node>
