@@ -38,6 +38,7 @@
     <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
     <import index="nup6" ref="r:1539980b-b231-4c7d-8cde-acae8ba318f2(org.kf2.core.structure)" />
     <import index="hl7i" ref="r:b2beda93-a8ee-4942-b644-e4da58fbc195(org.kf2.tools.interpreter.virtualinterfaces)" />
+    <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -1509,12 +1510,6 @@
     </node>
     <node concept="3clFb_" id="m_yL2MYHk3" role="jymVt">
       <property role="TrG5h" value="updateValues" />
-      <node concept="37vLTG" id="m_yL2MYLaw" role="3clF46">
-        <property role="TrG5h" value="editorComponent" />
-        <node concept="3uibUv" id="m_yL2MYLax" role="1tU5fm">
-          <ref role="3uigEE" to="exr9:~EditorComponent" resolve="EditorComponent" />
-        </node>
-      </node>
       <node concept="3cqZAl" id="m_yL2MYHk5" role="3clF45" />
       <node concept="3Tm1VV" id="m_yL2MYHk6" role="1B3o_S" />
       <node concept="3clFbS" id="m_yL2MYHk7" role="3clF47">
@@ -1900,6 +1895,12 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="m_yL2MYLaw" role="3clF46">
+        <property role="TrG5h" value="editorComponent" />
+        <node concept="3uibUv" id="m_yL2MYLax" role="1tU5fm">
+          <ref role="3uigEE" to="exr9:~EditorComponent" resolve="EditorComponent" />
         </node>
       </node>
     </node>
@@ -2407,9 +2408,9 @@
                               <node concept="37vLTw" id="1KLm$DhNsci" role="3g7hyw">
                                 <ref role="3cqZAo" node="m_yL2N0zBQ" resolve="node" />
                               </node>
-                              <node concept="2YIFZM" id="3PyeT_CzNQj" role="3g7hyw">
-                                <ref role="37wK5l" to="hl7i:3PyeT_CwymD" resolve="newEnv" />
-                                <ref role="1Pybhc" to="hl7i:3PyeT_CwyhZ" resolve="Environment" />
+                              <node concept="10M0yZ" id="D$OtjtC0J1" role="3g7hyw">
+                                <ref role="3cqZAo" to="hl7i:D$OtjtBOtm" resolve="EMPTY" />
+                                <ref role="1PxDUh" to="hl7i:3PyeT_CwyhZ" resolve="Environment" />
                               </node>
                             </node>
                           </node>
@@ -2673,9 +2674,9 @@
                                 <node concept="37vLTw" id="2$PstQMpwbg" role="3g7hyw">
                                   <ref role="3cqZAo" node="2$PstQMoXj_" resolve="node" />
                                 </node>
-                                <node concept="2YIFZM" id="3PyeT_CE0kp" role="3g7hyw">
-                                  <ref role="37wK5l" to="hl7i:3PyeT_CwymD" resolve="newEnv" />
-                                  <ref role="1Pybhc" to="hl7i:3PyeT_CwyhZ" resolve="Environment" />
+                                <node concept="10M0yZ" id="D$OtjtCa20" role="3g7hyw">
+                                  <ref role="3cqZAo" to="hl7i:D$OtjtBOtm" resolve="EMPTY" />
+                                  <ref role="1PxDUh" to="hl7i:3PyeT_CwyhZ" resolve="Environment" />
                                 </node>
                               </node>
                             </node>
