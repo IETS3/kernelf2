@@ -153,6 +153,7 @@
         <child id="1165602531693" name="superclass" index="1zkMxy" />
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
+        <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
       <concept id="1092119917967" name="jetbrains.mps.baseLanguage.structure.MulExpression" flags="nn" index="17qRlL" />
@@ -575,6 +576,58 @@
   </node>
   <node concept="312cEu" id="m_yL2MNtV8">
     <property role="TrG5h" value="Kf2InterpreterPainter" />
+    <node concept="Wx3nA" id="3PyeT_Ddvfk" role="jymVt">
+      <property role="3TUv4t" value="true" />
+      <property role="TrG5h" value="IF_BASE" />
+      <node concept="3Tm6S6" id="3PyeT_Ddvfh" role="1B3o_S" />
+      <node concept="17QB3L" id="3PyeT_Ddvfi" role="1tU5fm" />
+      <node concept="Xl_RD" id="3PyeT_Ddvfj" role="33vP2m">
+        <property role="Xl_RC" value="org.kf2.tools.interpreter.virtualinterfaces.Interpreter" />
+      </node>
+    </node>
+    <node concept="Wx3nA" id="3PyeT_DdPBU" role="jymVt">
+      <property role="3TUv4t" value="true" />
+      <property role="TrG5h" value="IF_INTERPRETABLE_ROOT" />
+      <node concept="3Tm6S6" id="3PyeT_DdPBP" role="1B3o_S" />
+      <node concept="17QB3L" id="3PyeT_DdPBQ" role="1tU5fm" />
+      <node concept="3cpWs3" id="3PyeT_DdPBR" role="33vP2m">
+        <node concept="37vLTw" id="3PyeT_DdPBS" role="3uHU7B">
+          <ref role="3cqZAo" node="3PyeT_Ddvfk" resolve="IF_BASE" />
+        </node>
+        <node concept="Xl_RD" id="3PyeT_DdPBT" role="3uHU7w">
+          <property role="Xl_RC" value=".IInterpretableRoot" />
+        </node>
+      </node>
+    </node>
+    <node concept="Wx3nA" id="3PyeT_De2WP" role="jymVt">
+      <property role="3TUv4t" value="true" />
+      <property role="TrG5h" value="IF_IINTERPRETABLE" />
+      <node concept="3Tm6S6" id="3PyeT_De2WK" role="1B3o_S" />
+      <node concept="17QB3L" id="3PyeT_De2WL" role="1tU5fm" />
+      <node concept="3cpWs3" id="3PyeT_De2WM" role="33vP2m">
+        <node concept="37vLTw" id="3PyeT_De2WN" role="3uHU7B">
+          <ref role="3cqZAo" node="3PyeT_Ddvfk" resolve="IF_BASE" />
+        </node>
+        <node concept="Xl_RD" id="3PyeT_De2WO" role="3uHU7w">
+          <property role="Xl_RC" value=".IInterpretable" />
+        </node>
+      </node>
+    </node>
+    <node concept="Wx3nA" id="3PyeT_DeiZn" role="jymVt">
+      <property role="3TUv4t" value="true" />
+      <property role="TrG5h" value="IF_HASBACKGROUNDCOLOR" />
+      <node concept="3Tm6S6" id="3PyeT_DeiZi" role="1B3o_S" />
+      <node concept="17QB3L" id="3PyeT_DeiZj" role="1tU5fm" />
+      <node concept="3cpWs3" id="3PyeT_DeiZk" role="33vP2m">
+        <node concept="37vLTw" id="3PyeT_DeiZl" role="3uHU7B">
+          <ref role="3cqZAo" node="3PyeT_Ddvfk" resolve="IF_BASE" />
+        </node>
+        <node concept="Xl_RD" id="3PyeT_DeiZm" role="3uHU7w">
+          <property role="Xl_RC" value=".IHasBackgroundColor" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="3PyeT_DdT2N" role="jymVt" />
     <node concept="312cEg" id="1KLm$Di04q9" role="jymVt">
       <property role="TrG5h" value="transformationEngine" />
       <node concept="3Tm6S6" id="1KLm$Di04qa" role="1B3o_S" />
@@ -919,6 +972,25 @@
                 </node>
               </node>
             </node>
+            <node concept="3cpWs8" id="3PyeT_Da1gU" role="3cqZAp">
+              <node concept="3cpWsn" id="3PyeT_Da1gV" role="3cpWs9">
+                <property role="TrG5h" value="sss" />
+                <node concept="10OMs4" id="3PyeT_Da1gP" role="1tU5fm" />
+                <node concept="17qRlL" id="3PyeT_Da1gW" role="33vP2m">
+                  <node concept="2$xPTn" id="3PyeT_Da1gX" role="3uHU7B">
+                    <property role="2$xPTl" value="0.5f" />
+                  </node>
+                  <node concept="2OqwBi" id="3PyeT_Da1gY" role="3uHU7w">
+                    <node concept="37vLTw" id="3PyeT_Da1gZ" role="2Oq$k0">
+                      <ref role="3cqZAo" node="m_yL2N4ZJ4" resolve="font" />
+                    </node>
+                    <node concept="liA8E" id="3PyeT_Da1h0" role="2OqNvi">
+                      <ref role="37wK5l" to="z60i:~Font.getSize():int" resolve="getSize" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3clFbF" id="m_yL2N23TF" role="3cqZAp">
               <node concept="2OqwBi" id="m_yL2N246Y" role="3clFbG">
                 <node concept="37vLTw" id="m_yL2N23TD" role="2Oq$k0">
@@ -941,18 +1013,8 @@
                     </node>
                     <node concept="liA8E" id="m_yL2N4Z_m" role="2OqNvi">
                       <ref role="37wK5l" to="z60i:~Font.deriveFont(float):java.awt.Font" resolve="deriveFont" />
-                      <node concept="17qRlL" id="m_yL2N52tF" role="37wK5m">
-                        <node concept="2$xPTn" id="m_yL2N54gq" role="3uHU7B">
-                          <property role="2$xPTl" value="0.5f" />
-                        </node>
-                        <node concept="2OqwBi" id="m_yL2N50N4" role="3uHU7w">
-                          <node concept="37vLTw" id="m_yL2N50t7" role="2Oq$k0">
-                            <ref role="3cqZAo" node="m_yL2N4ZJ4" resolve="font" />
-                          </node>
-                          <node concept="liA8E" id="m_yL2N52eK" role="2OqNvi">
-                            <ref role="37wK5l" to="z60i:~Font.getSize():int" resolve="getSize" />
-                          </node>
-                        </node>
+                      <node concept="37vLTw" id="3PyeT_Da1h1" role="37wK5m">
+                        <ref role="3cqZAo" node="3PyeT_Da1gV" resolve="sss" />
                       </node>
                     </node>
                   </node>
@@ -978,6 +1040,38 @@
                         <ref role="2Gs0qQ" node="m_yL2N1kPK" resolve="entry" />
                       </node>
                       <node concept="3AY5_j" id="m_yL2N1tlQ" role="2OqNvi" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3cpWs8" id="3PyeT_DaTUJ" role="3cqZAp">
+                  <node concept="3cpWsn" id="3PyeT_DaTUK" role="3cpWs9">
+                    <property role="TrG5h" value="n" />
+                    <node concept="3Tqbb2" id="3PyeT_DaTTx" role="1tU5fm" />
+                    <node concept="10QFUN" id="3PyeT_DaTUL" role="33vP2m">
+                      <node concept="2OqwBi" id="3PyeT_DaTUM" role="10QFUP">
+                        <node concept="37vLTw" id="3PyeT_DaTUN" role="2Oq$k0">
+                          <ref role="3cqZAo" node="m_yL2N1tlN" resolve="cell" />
+                        </node>
+                        <node concept="liA8E" id="3PyeT_DaTUO" role="2OqNvi">
+                          <ref role="37wK5l" to="f4zo:~EditorCell.getSNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSNode" />
+                        </node>
+                      </node>
+                      <node concept="3Tqbb2" id="3PyeT_DaTUP" role="10QFUM" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbJ" id="3PyeT_DaXum" role="3cqZAp">
+                  <node concept="3clFbS" id="3PyeT_DaXuo" role="3clFbx">
+                    <node concept="3N13vt" id="3PyeT_DcKrX" role="3cqZAp" />
+                  </node>
+                  <node concept="2OqwBi" id="3PyeT_DaYrQ" role="3clFbw">
+                    <node concept="37vLTw" id="3PyeT_DaYju" role="2Oq$k0">
+                      <ref role="3cqZAo" node="3PyeT_DaTUK" resolve="n" />
+                    </node>
+                    <node concept="1mIQ4w" id="3PyeT_DcJZQ" role="2OqNvi">
+                      <node concept="chp4Y" id="3PyeT_DcK5f" role="cj9EA">
+                        <ref role="cht4Q" to="nup6:3PyeT_DaVKB" resolve="ILiteral" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -1026,11 +1120,21 @@
                   <node concept="3cpWsn" id="m_yL2Nc3Xr" role="3cpWs9">
                     <property role="TrG5h" value="depth" />
                     <node concept="10Oyi0" id="m_yL2Nc3Wa" role="1tU5fm" />
-                    <node concept="1rXfSq" id="m_yL2Nc3Xs" role="33vP2m">
-                      <ref role="37wK5l" node="m_yL2NbFPz" resolve="getDepth" />
-                      <node concept="37vLTw" id="m_yL2Nc3Xt" role="37wK5m">
-                        <ref role="3cqZAo" node="m_yL2N1tlN" resolve="cell" />
+                    <node concept="10QFUN" id="3PyeT_Da8ck" role="33vP2m">
+                      <node concept="1eOMI4" id="3PyeT_Da8cl" role="10QFUP">
+                        <node concept="17qRlL" id="3PyeT_Da8cg" role="1eOMHV">
+                          <node concept="37vLTw" id="3PyeT_Da8ch" role="3uHU7w">
+                            <ref role="3cqZAo" node="3PyeT_Da1gV" resolve="sss" />
+                          </node>
+                          <node concept="1rXfSq" id="3PyeT_Da8ci" role="3uHU7B">
+                            <ref role="37wK5l" node="m_yL2NbFPz" resolve="getDepth" />
+                            <node concept="37vLTw" id="3PyeT_Da8cj" role="37wK5m">
+                              <ref role="3cqZAo" node="m_yL2N1tlN" resolve="cell" />
+                            </node>
+                          </node>
+                        </node>
                       </node>
+                      <node concept="10Oyi0" id="3PyeT_Da8cf" role="10QFUM" />
                     </node>
                   </node>
                 </node>
@@ -2479,8 +2583,13 @@
                   </node>
                   <node concept="liA8E" id="1KLm$Di1UCr" role="2OqNvi">
                     <ref role="37wK5l" to="od2j:3jJoUQ71IUe" resolve="callFunction" />
-                    <node concept="Xl_RD" id="1KLm$Di1UCs" role="37wK5m">
-                      <property role="Xl_RC" value="org.kf2.tools.interpreter.virtualinterfaces.Interpreter.IInterpretableRoot_getTransformationForInterpreter" />
+                    <node concept="3cpWs3" id="3PyeT_DdJeZ" role="37wK5m">
+                      <node concept="37vLTw" id="3PyeT_DdPCd" role="3uHU7B">
+                        <ref role="3cqZAo" node="3PyeT_DdPBU" resolve="IF_INTERPRETABLE_ROOT" />
+                      </node>
+                      <node concept="Xl_RD" id="3PyeT_DdJf7" role="3uHU7w">
+                        <property role="Xl_RC" value="_getTransformationForInterpreter" />
+                      </node>
                     </node>
                     <node concept="2ShNRf" id="1KLm$Di1UCt" role="37wK5m">
                       <node concept="1pGfFk" id="1KLm$Di1UCu" role="2ShVmc">
@@ -2563,8 +2672,13 @@
                     </node>
                     <node concept="liA8E" id="1KLm$DhNsc4" role="2OqNvi">
                       <ref role="37wK5l" to="od2j:3jJoUQ71IUe" resolve="callFunction" />
-                      <node concept="Xl_RD" id="1KLm$DhVjlx" role="37wK5m">
-                        <property role="Xl_RC" value="org.kf2.tools.interpreter.virtualinterfaces.Interpreter.IInterpretable_interpret" />
+                      <node concept="3cpWs3" id="3PyeT_DdWpy" role="37wK5m">
+                        <node concept="37vLTw" id="3PyeT_De2X8" role="3uHU7B">
+                          <ref role="3cqZAo" node="3PyeT_De2WP" resolve="IF_IINTERPRETABLE" />
+                        </node>
+                        <node concept="Xl_RD" id="3PyeT_DdWpE" role="3uHU7w">
+                          <property role="Xl_RC" value="_interpret" />
+                        </node>
                       </node>
                       <node concept="2ShNRf" id="1KLm$DhNscd" role="37wK5m">
                         <node concept="1pGfFk" id="1KLm$DhNsce" role="2ShVmc">
@@ -2601,8 +2715,13 @@
                       </node>
                       <node concept="liA8E" id="1KLm$DhOtJb" role="2OqNvi">
                         <ref role="37wK5l" to="od2j:3jJoUQ71IUe" resolve="callFunction" />
-                        <node concept="Xl_RD" id="1KLm$DhVwhi" role="37wK5m">
-                          <property role="Xl_RC" value="org.kf2.tools.interpreter.virtualinterfaces.Interpreter.IInterpretable_toString" />
+                        <node concept="3cpWs3" id="3PyeT_DdiEd" role="37wK5m">
+                          <node concept="37vLTw" id="3PyeT_De9$j" role="3uHU7B">
+                            <ref role="3cqZAo" node="3PyeT_De2WP" resolve="IF_IINTERPRETABLE" />
+                          </node>
+                          <node concept="Xl_RD" id="3PyeT_DdiEl" role="3uHU7w">
+                            <property role="Xl_RC" value="_toString" />
+                          </node>
                         </node>
                         <node concept="2ShNRf" id="1KLm$DhOtJk" role="37wK5m">
                           <node concept="1pGfFk" id="1KLm$DhOtJl" role="2ShVmc">
@@ -2731,8 +2850,13 @@
                       </node>
                       <node concept="liA8E" id="2$PstQMoXkn" role="2OqNvi">
                         <ref role="37wK5l" to="od2j:3jJoUQ71IUe" resolve="callFunction" />
-                        <node concept="Xl_RD" id="2$PstQMoXko" role="37wK5m">
-                          <property role="Xl_RC" value="org.kf2.tools.interpreter.virtualinterfaces.Interpreter.IHasBackgroundColor_getBackgroundColor" />
+                        <node concept="3cpWs3" id="3PyeT_DecGo" role="37wK5m">
+                          <node concept="37vLTw" id="3PyeT_DeiZE" role="3uHU7B">
+                            <ref role="3cqZAo" node="3PyeT_DeiZn" resolve="IF_HASBACKGROUNDCOLOR" />
+                          </node>
+                          <node concept="Xl_RD" id="3PyeT_DecGw" role="3uHU7w">
+                            <property role="Xl_RC" value="_getBackgroundColor" />
+                          </node>
                         </node>
                         <node concept="2ShNRf" id="2$PstQMoXkp" role="37wK5m">
                           <node concept="1pGfFk" id="2$PstQMoXkq" role="2ShVmc">
