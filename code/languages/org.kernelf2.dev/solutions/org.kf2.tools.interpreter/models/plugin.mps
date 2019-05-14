@@ -391,6 +391,19 @@
         </node>
       </node>
       <node concept="3clFbS" id="m_yL2MNw1g" role="3clF47">
+        <node concept="3clFbJ" id="4PBdiigtrXT" role="3cqZAp">
+          <node concept="3clFbS" id="4PBdiigtrXV" role="3clFbx">
+            <node concept="3cpWs6" id="4PBdiigu3Oy" role="3cqZAp" />
+          </node>
+          <node concept="3fqX7Q" id="4PBdiigtsP1" role="3clFbw">
+            <node concept="1rXfSq" id="4PBdiigtsP3" role="3fr31v">
+              <ref role="37wK5l" node="m_yL2MNw1i" resolve="isApplicable" />
+              <node concept="37vLTw" id="4PBdiigtsP4" role="37wK5m">
+                <ref role="3cqZAo" node="m_yL2MNw1d" resolve="component" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="m_yL2MNR9x" role="3cqZAp">
           <node concept="3cpWsn" id="m_yL2MNR9y" role="3cpWs9">
             <property role="TrG5h" value="painter" />
@@ -791,6 +804,24 @@
                   <node concept="37vLTw" id="D$Otju0VL1" role="37wK5m">
                     <ref role="3cqZAo" node="1KLm$Di2kt9" resolve="repository" />
                   </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4PBdiigsX0i" role="3cqZAp">
+          <node concept="2OqwBi" id="4PBdiigsXsJ" role="3clFbG">
+            <node concept="37vLTw" id="4PBdiigsX0g" role="2Oq$k0">
+              <ref role="3cqZAo" node="D$Otju0ny1" resolve="synchronizerThread" />
+            </node>
+            <node concept="liA8E" id="4PBdiigsYWa" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~Thread.setName(java.lang.String):void" resolve="setName" />
+              <node concept="3cpWs3" id="4PBdiigt0fb" role="37wK5m">
+                <node concept="37vLTw" id="4PBdiigt0sr" role="3uHU7w">
+                  <ref role="3cqZAo" node="D$OtjtUcov" resolve="editorComponent" />
+                </node>
+                <node concept="Xl_RD" id="4PBdiigsZec" role="3uHU7B">
+                  <property role="Xl_RC" value="Interpreter for " />
                 </node>
               </node>
             </node>
