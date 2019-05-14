@@ -30,7 +30,6 @@
     <import index="mmb3" ref="ecfb9949-7433-4db5-85de-0f84d172e4ce/java:io.vavr(de.q60.mps.libs/)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="pooj" ref="r:70e02a2e-ae8f-4ef2-bcd1-2d85e8689f6a(org.kf2.core.behavior)" implicit="true" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -68,9 +67,6 @@
       </concept>
       <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA" />
       <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
-      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
-        <property id="1070475926801" name="value" index="Xl_RC" />
-      </concept>
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
@@ -2259,25 +2255,6 @@
               </node>
             </node>
           </node>
-          <node concept="3clFbF" id="3PyeT_CVPhe" role="3cqZAp">
-            <node concept="2OqwBi" id="3PyeT_CVPhb" role="3clFbG">
-              <node concept="10M0yZ" id="3PyeT_CVPhc" role="2Oq$k0">
-                <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-              </node>
-              <node concept="liA8E" id="3PyeT_CVPhd" role="2OqNvi">
-                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                <node concept="3cpWs3" id="3PyeT_CVQhl" role="37wK5m">
-                  <node concept="37vLTw" id="3PyeT_CVQho" role="3uHU7w">
-                    <ref role="3cqZAo" node="3PyeT_CVMVR" resolve="s" />
-                  </node>
-                  <node concept="Xl_RD" id="3PyeT_CVPyc" role="3uHU7B">
-                    <property role="Xl_RC" value="s: " />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
           <node concept="3cpWs6" id="3PyeT_CVWEH" role="3cqZAp">
             <node concept="37vLTw" id="3PyeT_CVWEJ" role="3cqZAk">
               <ref role="3cqZAo" node="3PyeT_CVMVR" resolve="s" />
@@ -2383,75 +2360,6 @@
               <node concept="1mIQ4w" id="7br$_3K8rKh" role="2OqNvi">
                 <node concept="chp4Y" id="7br$_3K8rMc" role="cj9EA">
                   <ref role="cht4Q" to="nup6:1s_GFdUbhUh" resolve="FalseLit" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbJ" id="5mij9ehf9kV" role="3cqZAp">
-            <node concept="3clFbS" id="5mij9ehf9kX" role="3clFbx">
-              <node concept="3clFbF" id="5mij9ehfeFp" role="3cqZAp">
-                <node concept="2OqwBi" id="5mij9ehfeFq" role="3clFbG">
-                  <node concept="10M0yZ" id="5mij9ehfeFr" role="2Oq$k0">
-                    <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                    <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-                  </node>
-                  <node concept="liA8E" id="5mij9ehfeFs" role="2OqNvi">
-                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                    <node concept="3cpWs3" id="5mij9ehfeFt" role="37wK5m">
-                      <node concept="2OqwBi" id="5mij9ehfh9V" role="3uHU7w">
-                        <node concept="1PxgMI" id="5mij9ehfgVg" role="2Oq$k0">
-                          <node concept="chp4Y" id="5mij9ehfgYq" role="3oSUPX">
-                            <ref role="cht4Q" to="nup6:2frx7BFaCHD" resolve="Expr" />
-                          </node>
-                          <node concept="37vLTw" id="5mij9ehfeFv" role="1m5AlR">
-                            <ref role="3cqZAo" node="2$PstQMpXGO" resolve="value" />
-                          </node>
-                        </node>
-                        <node concept="2qgKlT" id="5mij9ehfjR3" role="2OqNvi">
-                          <ref role="37wK5l" to="pooj:7iudlBAyNyM" resolve="renderReadable" />
-                        </node>
-                      </node>
-                      <node concept="Xl_RD" id="5mij9ehfeFx" role="3uHU7B">
-                        <property role="Xl_RC" value="AssertTrue gets " />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="2OqwBi" id="5mij9ehfafV" role="3clFbw">
-              <node concept="37vLTw" id="5mij9ehfa95" role="2Oq$k0">
-                <ref role="3cqZAo" node="2$PstQMpXGO" resolve="value" />
-              </node>
-              <node concept="1mIQ4w" id="5mij9ehfezF" role="2OqNvi">
-                <node concept="chp4Y" id="5mij9ehfe_A" role="cj9EA">
-                  <ref role="cht4Q" to="nup6:2frx7BFaCHD" resolve="Expr" />
-                </node>
-              </node>
-            </node>
-            <node concept="9aQIb" id="5mij9ehfka7" role="9aQIa">
-              <node concept="3clFbS" id="5mij9ehfka8" role="9aQI4">
-                <node concept="3clFbF" id="5mij9ehf6Za" role="3cqZAp">
-                  <node concept="2OqwBi" id="5mij9ehf6Z7" role="3clFbG">
-                    <node concept="10M0yZ" id="5mij9ehf6Z8" role="2Oq$k0">
-                      <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                      <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-                    </node>
-                    <node concept="liA8E" id="5mij9ehf6Z9" role="2OqNvi">
-                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                      <node concept="3cpWs3" id="5mij9ehf8Gj" role="37wK5m">
-                        <node concept="2OqwBi" id="5mij9ehf98Z" role="3uHU7w">
-                          <node concept="37vLTw" id="5mij9ehf8J6" role="2Oq$k0">
-                            <ref role="3cqZAo" node="2$PstQMpXGO" resolve="value" />
-                          </node>
-                          <node concept="2yIwOk" id="5mij9ehfnU7" role="2OqNvi" />
-                        </node>
-                        <node concept="Xl_RD" id="5mij9ehf7RJ" role="3uHU7B">
-                          <property role="Xl_RC" value="AssertTrue gets " />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
                 </node>
               </node>
             </node>
