@@ -1009,7 +1009,7 @@
                       <ref role="1$imI6" to="jwvb:5lWcBwLan$L" resolve="text" />
                     </node>
                     <node concept="liA8E" id="3tIuEqjZcIK" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                      <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
                       <node concept="Xl_RD" id="3tIuEqjZcJi" role="37wK5m">
                         <property role="Xl_RC" value="NaN" />
                       </node>

@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
-    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="0" />
+    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="1" />
     <use id="1ab7bfac-29d6-4772-a483-50110408ac43" name="org.kf2.core" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
@@ -360,7 +360,7 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
       <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7">
-        <property id="2423417345669755629" name="whichError" index="1eyWvh" />
+        <property id="2423417345669755629" name="filter" index="1eyWvh" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -1662,11 +1662,11 @@
                 <node concept="2OqwBi" id="7iudlBARxao" role="2Oq$k0">
                   <node concept="2QUAEa" id="7iudlBARxap" role="2Oq$k0" />
                   <node concept="liA8E" id="7iudlBARxaq" role="2OqNvi">
-                    <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager():jetbrains.mps.typesystem.inference.SubtypingManager" resolve="getSubtypingManager" />
+                    <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager()" resolve="getSubtypingManager" />
                   </node>
                 </node>
                 <node concept="liA8E" id="7iudlBARxar" role="2OqNvi">
-                  <ref role="37wK5l" to="u78q:~SubtypingManager.collectImmediateSupertypes(org.jetbrains.mps.openapi.model.SNode):jetbrains.mps.typesystem.inference.util.StructuralNodeSet" resolve="collectImmediateSupertypes" />
+                  <ref role="37wK5l" to="u78q:~SubtypingManager.collectImmediateSupertypes(org.jetbrains.mps.openapi.model.SNode)" resolve="collectImmediateSupertypes" />
                   <node concept="2OqwBi" id="7iudlBARxas" role="37wK5m">
                     <node concept="2OqwBi" id="7iudlBARxat" role="2Oq$k0">
                       <node concept="1YBJjd" id="7iudlBARxau" role="2Oq$k0">
@@ -2212,11 +2212,11 @@
                         <node concept="2OqwBi" id="Ura7poBSoD" role="2Oq$k0">
                           <node concept="2QUAEa" id="Ura7poBSoE" role="2Oq$k0" />
                           <node concept="liA8E" id="Ura7poBSoF" role="2OqNvi">
-                            <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager():jetbrains.mps.typesystem.inference.SubtypingManager" resolve="getSubtypingManager" />
+                            <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager()" resolve="getSubtypingManager" />
                           </node>
                         </node>
                         <node concept="liA8E" id="Ura7poBSoG" role="2OqNvi">
-                          <ref role="37wK5l" to="u78q:~SubtypingManager.leastCommonSupertypes(java.util.Set,boolean):java.util.Set" resolve="leastCommonSupertypes" />
+                          <ref role="37wK5l" to="u78q:~SubtypingManager.leastCommonSupertypes(java.util.Set,boolean)" resolve="leastCommonSupertypes" />
                           <node concept="37vLTw" id="Ura7poBSoH" role="37wK5m">
                             <ref role="3cqZAo" node="Ura7poBSog" resolve="typesForT" />
                           </node>
@@ -3295,11 +3295,11 @@
                 <node concept="2OqwBi" id="Ura7pooSKS" role="2Oq$k0">
                   <node concept="2QUAEa" id="Ura7pooSKT" role="2Oq$k0" />
                   <node concept="liA8E" id="Ura7pooSKU" role="2OqNvi">
-                    <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager():jetbrains.mps.typesystem.inference.SubtypingManager" resolve="getSubtypingManager" />
+                    <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager()" resolve="getSubtypingManager" />
                   </node>
                 </node>
                 <node concept="liA8E" id="Ura7pooSKV" role="2OqNvi">
-                  <ref role="37wK5l" to="u78q:~SubtypingManager.leastCommonSupertypes(java.util.Set,boolean):java.util.Set" resolve="leastCommonSupertypes" />
+                  <ref role="37wK5l" to="u78q:~SubtypingManager.leastCommonSupertypes(java.util.Set,boolean)" resolve="leastCommonSupertypes" />
                   <node concept="37vLTw" id="Ura7pooSKW" role="37wK5m">
                     <ref role="3cqZAo" node="Ura7pooE7U" resolve="typesForT" />
                   </node>
@@ -3330,11 +3330,11 @@
                                 <ref role="3cqZAo" node="Ura7pooSKQ" resolve="superTypes" />
                               </node>
                               <node concept="liA8E" id="7bBy93lghgb" role="2OqNvi">
-                                <ref role="37wK5l" to="33ny:~Set.iterator():java.util.Iterator" resolve="iterator" />
+                                <ref role="37wK5l" to="33ny:~Set.iterator()" resolve="iterator" />
                               </node>
                             </node>
                             <node concept="liA8E" id="7bBy93lghgc" role="2OqNvi">
-                              <ref role="37wK5l" to="33ny:~Iterator.next():java.lang.Object" resolve="next" />
+                              <ref role="37wK5l" to="33ny:~Iterator.next()" resolve="next" />
                             </node>
                           </node>
                           <node concept="3Tqbb2" id="7bBy93lghzH" role="10QFUM" />
@@ -3352,7 +3352,7 @@
                   <ref role="3cqZAo" node="Ura7pooSKQ" resolve="superTypes" />
                 </node>
                 <node concept="liA8E" id="Y68irgY96u" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~Set.isEmpty():boolean" resolve="isEmpty" />
+                  <ref role="37wK5l" to="33ny:~Set.isEmpty()" resolve="isEmpty" />
                 </node>
               </node>
             </node>
@@ -4965,7 +4965,7 @@
               </node>
             </node>
             <node concept="liA8E" id="Y68irgXOGf" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~Map.get(java.lang.Object):java.lang.Object" resolve="get" />
+              <ref role="37wK5l" to="33ny:~Map.get(java.lang.Object)" resolve="get" />
               <node concept="37vLTw" id="Y68irgXP73" role="37wK5m">
                 <ref role="3cqZAo" node="Y68irgXtaP" resolve="input" />
               </node>
@@ -5040,7 +5040,7 @@
                   <ref role="3cqZAo" node="Y68irgXS76" resolve="subs" />
                 </node>
                 <node concept="liA8E" id="Y68irgZw$B" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
+                  <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object)" resolve="put" />
                   <node concept="2GrUjf" id="Y68irgZwHd" role="37wK5m">
                     <ref role="2Gs0qQ" node="Y68irgZj5I" resolve="typeVar" />
                   </node>
@@ -5058,7 +5058,7 @@
                       <ref role="3cqZAo" node="Y68irgXS76" resolve="subs" />
                     </node>
                     <node concept="liA8E" id="Y68irgZHYo" role="2OqNvi">
-                      <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
+                      <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object)" resolve="put" />
                       <node concept="2GrUjf" id="Y68irgZI8$" role="37wK5m">
                         <ref role="2Gs0qQ" node="Y68irgZj5I" resolve="typeVar" />
                       </node>
@@ -5088,7 +5088,7 @@
               </node>
             </node>
             <node concept="liA8E" id="Y68irgZQ24" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
+              <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object)" resolve="put" />
               <node concept="37vLTw" id="Y68irgZQi0" role="37wK5m">
                 <ref role="3cqZAo" node="Y68irgXtb2" resolve="input" />
               </node>
