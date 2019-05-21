@@ -781,7 +781,7 @@
                 <node concept="1Y3b0j" id="D$Otju0wAC" role="YeSDq">
                   <property role="2bfB8j" value="true" />
                   <ref role="1Y3XeK" to="dglc:D$OtjtV9pR" resolve="SynchronizerThread" />
-                  <ref role="37wK5l" to="dglc:70DEt$60Rio" resolve="SynchronizerThread" />
+                  <ref role="37wK5l" to="dglc:D$OtjtWrOr" resolve="SynchronizerThread" />
                   <node concept="3Tm1VV" id="D$Otju0wAD" role="1B3o_S" />
                   <node concept="3clFb_" id="D$Otju0wAF" role="jymVt">
                     <property role="TrG5h" value="runAnalysis" />
