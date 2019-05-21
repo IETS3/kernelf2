@@ -2160,13 +2160,23 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="D$OtjtKSuM" role="3cqZAp">
-          <node concept="2OqwBi" id="D$OtjtKUsB" role="3clFbG">
-            <node concept="37vLTw" id="D$OtjtKSuK" role="2Oq$k0">
-              <ref role="3cqZAo" node="7br$_3KgrQx" resolve="editorComponent" />
-            </node>
-            <node concept="liA8E" id="D$OtjtLjl0" role="2OqNvi">
-              <ref role="37wK5l" to="z60i:~Container.invalidate()" resolve="invalidate" />
+        <node concept="3clFbF" id="61gRJt58HXJ" role="3cqZAp">
+          <node concept="2YIFZM" id="61gRJt58OpJ" role="3clFbG">
+            <ref role="37wK5l" to="dxuu:~SwingUtilities.invokeLater(java.lang.Runnable)" resolve="invokeLater" />
+            <ref role="1Pybhc" to="dxuu:~SwingUtilities" resolve="SwingUtilities" />
+            <node concept="1bVj0M" id="61gRJt58V3c" role="37wK5m">
+              <node concept="3clFbS" id="61gRJt58V3d" role="1bW5cS">
+                <node concept="3clFbF" id="D$OtjtKSuM" role="3cqZAp">
+                  <node concept="2OqwBi" id="D$OtjtKUsB" role="3clFbG">
+                    <node concept="37vLTw" id="D$OtjtKSuK" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7br$_3KgrQx" resolve="editorComponent" />
+                    </node>
+                    <node concept="liA8E" id="61gRJt57rHE" role="2OqNvi">
+                      <ref role="37wK5l" to="z60i:~Component.repaint()" resolve="repaint" />
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
