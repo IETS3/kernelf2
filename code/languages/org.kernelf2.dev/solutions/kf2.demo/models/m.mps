@@ -6,6 +6,7 @@
     <use id="752448bb-7c63-426e-9e72-23f7606eb6f4" name="org.kf2.state" version="0" />
     <use id="d3b01dcd-2240-445f-90f7-2552a830adac" name="org.kf2.statemachine" version="0" />
     <use id="a05cab6b-522f-4255-b2ed-8d6bfca9b584" name="org.kf2.test" version="0" />
+    <use id="4441485a-f7fc-4cfb-8044-d8997096c5d6" name="org.kf2.sugar" version="0" />
   </languages>
   <imports />
   <registry>

@@ -61,6 +61,9 @@
       <concept id="2583804470398611321" name="org.kf2.core.structure.ArgRef" flags="ng" index="38XQG0">
         <reference id="2583804470398611349" name="arg" index="38XQJG" />
       </concept>
+      <concept id="1052479426680602841" name="org.kf2.core.structure.StringLit" flags="ng" index="1mbQyJ">
+        <property id="1052479426680602842" name="value" index="1mbQyG" />
+      </concept>
       <concept id="3931513068711981664" name="org.kf2.core.structure.MinusExpr" flags="ng" index="1$VrwI" />
       <concept id="3931513068711982944" name="org.kf2.core.structure.DivExpr" flags="ng" index="1$VrOI" />
       <concept id="3931513068711982298" name="org.kf2.core.structure.MulExpr" flags="ng" index="1$VrUk" />
@@ -1363,6 +1366,67 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="37GxXp" id="6TB6R9RJ1iQ">
+    <property role="TrG5h" value="F_StringStuff" />
+    <node concept="gY0Js" id="6TB6R9RJ1iR" role="gY7jz" />
+    <node concept="2NE3Kg" id="6TB6R9RJ1iS" role="37GxYA" />
+    <node concept="37GxwB" id="6TB6R9RJ1iT" role="37GxYA">
+      <property role="TrG5h" value="x" />
+      <node concept="1mbQyJ" id="6TB6R9RJTdz" role="37Gxwy">
+        <property role="1mbQyG" value="Hello" />
+      </node>
+    </node>
+    <node concept="37GxwB" id="6TB6R9RJTe4" role="37GxYA">
+      <property role="TrG5h" value="x2" />
+      <node concept="1mbQyJ" id="6TB6R9RJTe5" role="37Gxwy">
+        <property role="1mbQyG" value="Hello" />
+      </node>
+    </node>
+    <node concept="37GxwB" id="6TB6R9RJ1iV" role="37GxYA">
+      <property role="TrG5h" value="y" />
+      <node concept="1mbQyJ" id="6TB6R9RJ1CT" role="37Gxwy">
+        <property role="1mbQyG" value="World" />
+      </node>
+    </node>
+    <node concept="2NE3Kg" id="6TB6R9RJ1iX" role="37GxYA" />
+    <node concept="3vaVmc" id="6TB6R9RJ1JZ" role="37GxYA">
+      <node concept="2$$KCD" id="6TB6R9RJ1Kv" role="3vaVmf">
+        <node concept="mWALo" id="6TB6R9RJ_Ie" role="1H5NIF">
+          <ref role="mWALr" node="6TB6R9RJ1iT" resolve="x" />
+        </node>
+        <node concept="mWALo" id="6TB6R9RJ_Ir" role="1H5NID">
+          <ref role="mWALr" node="6TB6R9RJ1iT" resolve="x" />
+        </node>
+      </node>
+    </node>
+    <node concept="3vaVmc" id="6TB6R9RJTex" role="37GxYA">
+      <node concept="2$$KCD" id="6TB6R9RJTey" role="3vaVmf">
+        <node concept="mWALo" id="6TB6R9RJTez" role="1H5NIF">
+          <ref role="mWALr" node="6TB6R9RJ1iT" resolve="x" />
+        </node>
+        <node concept="mWALo" id="6TB6R9RJTfa" role="1H5NID">
+          <ref role="mWALr" node="6TB6R9RJTe4" resolve="x2" />
+        </node>
+      </node>
+    </node>
+    <node concept="2NE3Kg" id="6TB6R9RJ1L2" role="37GxYA" />
+    <node concept="3vaVmc" id="6TB6R9RKq$9" role="37GxYA">
+      <node concept="2$$KCD" id="6TB6R9RKq_y" role="3vaVmf">
+        <node concept="1H7JQn" id="6TB6R9RKq_z" role="1H5NIF">
+          <node concept="mWALo" id="6TB6R9RKq$G" role="1H5NIF">
+            <ref role="mWALr" node="6TB6R9RJ1iT" resolve="x" />
+          </node>
+          <node concept="mWALo" id="6TB6R9RKq$Z" role="1H5NID">
+            <ref role="mWALr" node="6TB6R9RJ1iV" resolve="y" />
+          </node>
+        </node>
+        <node concept="1mbQyJ" id="6TB6R9RKqAj" role="1H5NID">
+          <property role="1mbQyG" value="HelloWorld" />
+        </node>
+      </node>
+    </node>
+    <node concept="2NE3Kg" id="6TB6R9RJ1Lf" role="37GxYA" />
   </node>
 </model>
 
