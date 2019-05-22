@@ -1149,6 +1149,38 @@
                     </node>
                   </node>
                 </node>
+                <node concept="3clFbJ" id="61gRJt5aKNA" role="3cqZAp">
+                  <node concept="3clFbS" id="61gRJt5aKNB" role="3clFbx">
+                    <node concept="3N13vt" id="61gRJt5aKNC" role="3cqZAp" />
+                  </node>
+                  <node concept="1Wc70l" id="61gRJt5aKND" role="3clFbw">
+                    <node concept="2ZW3vV" id="61gRJt5aKNE" role="3uHU7B">
+                      <node concept="3uibUv" id="61gRJt5aKNF" role="2ZW6by">
+                        <ref role="3uigEE" to="g51k:~EditorCell_Basic" resolve="EditorCell_Basic" />
+                      </node>
+                      <node concept="37vLTw" id="61gRJt5aKNG" role="2ZW6bz">
+                        <ref role="3cqZAo" node="m_yL2N1tlN" resolve="cell" />
+                      </node>
+                    </node>
+                    <node concept="3fqX7Q" id="61gRJt5aKNH" role="3uHU7w">
+                      <node concept="2OqwBi" id="61gRJt5aKNI" role="3fr31v">
+                        <node concept="1eOMI4" id="61gRJt5aKNJ" role="2Oq$k0">
+                          <node concept="10QFUN" id="61gRJt5aKNK" role="1eOMHV">
+                            <node concept="37vLTw" id="61gRJt5aKNL" role="10QFUP">
+                              <ref role="3cqZAo" node="m_yL2N1tlN" resolve="cell" />
+                            </node>
+                            <node concept="3uibUv" id="61gRJt5aKNM" role="10QFUM">
+                              <ref role="3uigEE" to="g51k:~EditorCell_Basic" resolve="EditorCell_Basic" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="61gRJt5aKNN" role="2OqNvi">
+                          <ref role="37wK5l" to="g51k:~EditorCell_Basic.isInTree()" resolve="isInTree" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
                 <node concept="3cpWs8" id="3PyeT_DaTUJ" role="3cqZAp">
                   <node concept="3cpWsn" id="3PyeT_DaTUK" role="3cpWs9">
                     <property role="TrG5h" value="n" />
@@ -1492,6 +1524,38 @@
                         <ref role="2Gs0qQ" node="2$PstQMmyfP" resolve="entry" />
                       </node>
                       <node concept="3AY5_j" id="2$PstQMmyfX" role="2OqNvi" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbJ" id="61gRJt59Dbp" role="3cqZAp">
+                  <node concept="3clFbS" id="61gRJt59Dbr" role="3clFbx">
+                    <node concept="3N13vt" id="61gRJt5aKKN" role="3cqZAp" />
+                  </node>
+                  <node concept="1Wc70l" id="61gRJt5aJLh" role="3clFbw">
+                    <node concept="2ZW3vV" id="61gRJt5aKd0" role="3uHU7B">
+                      <node concept="3uibUv" id="61gRJt5aKtT" role="2ZW6by">
+                        <ref role="3uigEE" to="g51k:~EditorCell_Basic" resolve="EditorCell_Basic" />
+                      </node>
+                      <node concept="37vLTw" id="61gRJt5aJUU" role="2ZW6bz">
+                        <ref role="3cqZAo" node="2$PstQMmyfT" resolve="cell" />
+                      </node>
+                    </node>
+                    <node concept="3fqX7Q" id="61gRJt5aJGr" role="3uHU7w">
+                      <node concept="2OqwBi" id="61gRJt5aJGt" role="3fr31v">
+                        <node concept="1eOMI4" id="61gRJt5aJGu" role="2Oq$k0">
+                          <node concept="10QFUN" id="61gRJt5aJGv" role="1eOMHV">
+                            <node concept="37vLTw" id="61gRJt5aJGw" role="10QFUP">
+                              <ref role="3cqZAo" node="2$PstQMmyfT" resolve="cell" />
+                            </node>
+                            <node concept="3uibUv" id="61gRJt5aJGx" role="10QFUM">
+                              <ref role="3uigEE" to="g51k:~EditorCell_Basic" resolve="EditorCell_Basic" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="61gRJt5aJGy" role="2OqNvi">
+                          <ref role="37wK5l" to="g51k:~EditorCell_Basic.isInTree()" resolve="isInTree" />
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -2150,6 +2214,38 @@
               </node>
             </node>
             <node concept="3clFbS" id="1KLm$Di3TxS" role="TDEfX">
+              <node concept="3clFbF" id="61gRJt5aM9P" role="3cqZAp">
+                <node concept="37vLTI" id="61gRJt5aNbQ" role="3clFbG">
+                  <node concept="2ShNRf" id="61gRJt5aO3o" role="37vLTx">
+                    <node concept="3rGOSV" id="61gRJt5aNig" role="2ShVmc">
+                      <node concept="3uibUv" id="61gRJt5aNih" role="3rHrn6">
+                        <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+                      </node>
+                      <node concept="17QB3L" id="61gRJt5aNii" role="3rHtpV" />
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="61gRJt5aM9N" role="37vLTJ">
+                    <ref role="3cqZAo" node="m_yL2MZN_$" resolve="values" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="61gRJt5aPtY" role="3cqZAp">
+                <node concept="37vLTI" id="61gRJt5aQtM" role="3clFbG">
+                  <node concept="2ShNRf" id="61gRJt5aRhE" role="37vLTx">
+                    <node concept="3rGOSV" id="61gRJt5aQ$c" role="2ShVmc">
+                      <node concept="3uibUv" id="61gRJt5aQ$d" role="3rHrn6">
+                        <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+                      </node>
+                      <node concept="3uibUv" id="61gRJt5aQ$e" role="3rHtpV">
+                        <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="61gRJt5aPtW" role="37vLTJ">
+                    <ref role="3cqZAo" node="2$PstQMms$e" resolve="backgroundColors" />
+                  </node>
+                </node>
+              </node>
               <node concept="RRSsy" id="1KLm$Di3VZ$" role="3cqZAp">
                 <property role="RRSoG" value="error" />
                 <node concept="Xl_RD" id="1KLm$Di3VZA" role="RRSoy" />
