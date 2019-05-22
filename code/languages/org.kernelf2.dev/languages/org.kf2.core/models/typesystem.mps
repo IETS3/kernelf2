@@ -895,24 +895,6 @@
       <ref role="1YaFvo" to="nup6:3qfy$TiozJL" resolve="NaNLit" />
     </node>
   </node>
-  <node concept="18kY7G" id="3qfy$TiozMV">
-    <property role="TrG5h" value="check_NaNLit" />
-    <property role="3GE5qa" value="types" />
-    <node concept="3clFbS" id="3qfy$TiozMW" role="18ibNy">
-      <node concept="2MkqsV" id="3qfy$TiozN2" role="3cqZAp">
-        <node concept="Xl_RD" id="3qfy$TiozN8" role="2MkJ7o">
-          <property role="Xl_RC" value="NaN should not be used" />
-        </node>
-        <node concept="1YBJjd" id="3qfy$TiozNX" role="2OEOjV">
-          <ref role="1YBMHb" node="3qfy$TiozMY" resolve="naNLit" />
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="3qfy$TiozMY" role="1YuTPh">
-      <property role="TrG5h" value="naNLit" />
-      <ref role="1YaFvo" to="nup6:3qfy$TiozJL" resolve="NaNLit" />
-    </node>
-  </node>
   <node concept="1YbPZF" id="3tIuEqjZmG0">
     <property role="TrG5h" value="typeof_BinaryComparisonExpr" />
     <property role="3GE5qa" value="bin.comp" />

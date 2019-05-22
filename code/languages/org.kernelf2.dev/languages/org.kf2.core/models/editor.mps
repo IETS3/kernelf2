@@ -808,8 +808,8 @@
     <property role="3GE5qa" value="types" />
     <ref role="1XX52x" to="nup6:3qfy$TiozJL" resolve="NaNLit" />
     <node concept="3F0ifn" id="3qfy$TiozKe" role="2wV5jI">
-      <property role="3F0ifm" value="&lt;NaN&gt;" />
-      <ref role="1k5W1q" node="3tIuEqk1SFZ" resolve="kf2Err" />
+      <property role="3F0ifm" value="NaN" />
+      <ref role="1k5W1q" node="3tIuEqk1SFg" resolve="kf2Keyword" />
     </node>
   </node>
   <node concept="V5hpn" id="3tIuEqk1SFf">

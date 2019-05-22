@@ -806,6 +806,30 @@
     <node concept="3ku1Nf" id="5mij9eheZku" role="3khUj0">
       <ref role="3ku1L4" node="1KLm$DhUNS3" resolve="interpretBinaryOp" />
       <node concept="3clFbS" id="5mij9eheZkv" role="3ku1Le">
+        <node concept="3clFbJ" id="7iO8k7AY9D9" role="3cqZAp">
+          <node concept="3clFbS" id="7iO8k7AY9Db" role="3clFbx">
+            <node concept="3cpWs6" id="7iO8k7AYdOW" role="3cqZAp">
+              <node concept="2pJPEk" id="7iO8k7AYdP4" role="3cqZAk">
+                <node concept="2pJPED" id="7iO8k7AYdPf" role="2pJPEn">
+                  <ref role="2pJxaS" to="nup6:3qfy$TiozJL" resolve="NaNLit" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="7iO8k7AYd4d" role="3clFbw">
+            <node concept="3cmrfG" id="7iO8k7AYdx1" role="3uHU7w">
+              <property role="3cmrfH" value="0" />
+            </node>
+            <node concept="2OqwBi" id="7iO8k7AY9NT" role="3uHU7B">
+              <node concept="3kvyP4" id="7iO8k7AY9DG" role="2Oq$k0">
+                <ref role="3kvyN1" node="5mij9eheZkN" resolve="rightValue" />
+              </node>
+              <node concept="3TrcHB" id="7iO8k7AYadW" role="2OqNvi">
+                <ref role="3TsBF5" to="nup6:1s_GFdUbhUK" resolve="value" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="5mij9eheZkw" role="3cqZAp">
           <node concept="3cpWsn" id="5mij9eheZkx" role="3cpWs9">
             <property role="TrG5h" value="resultValue" />
