@@ -53,6 +53,7 @@
     <dependency reexport="false">2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)</dependency>
     <dependency reexport="false">fd0933e3-6066-4294-8d21-8d0d04303ade(org.domain.dsl)</dependency>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
+    <dependency reexport="false">4441485a-f7fc-4cfb-8044-d8997096c5d6(org.kf2.sugar)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:9d69e719-78c8-4286-90db-fb19c107d049:com.mbeddr.mpsutil.grammarcells" version="0" />
@@ -106,6 +107,7 @@
     <module reference="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" version="0" />
     <module reference="fd0933e3-6066-4294-8d21-8d0d04303ade(org.domain.dsl)" version="0" />
     <module reference="1ab7bfac-29d6-4772-a483-50110408ac43(org.kf2.core)" version="0" />
+    <module reference="4441485a-f7fc-4cfb-8044-d8997096c5d6(org.kf2.sugar)" version="0" />
   </dependencyVersions>
   <extendedLanguages>
     <extendedLanguage>1ab7bfac-29d6-4772-a483-50110408ac43(org.kf2.core)</extendedLanguage>
