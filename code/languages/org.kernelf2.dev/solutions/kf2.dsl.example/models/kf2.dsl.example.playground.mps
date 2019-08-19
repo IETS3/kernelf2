@@ -23,6 +23,7 @@
         <child id="7296320874263202254" name="interpreted" index="gY7jz" />
         <child id="4320583889640215425" name="declarations" index="37GxYA" />
       </concept>
+      <concept id="3931513068711982944" name="org.kf2.core.structure.DivExpr" flags="ng" index="1$VrOI" />
       <concept id="3931513068711982298" name="org.kf2.core.structure.MulExpr" flags="ng" index="1$VrUk" />
       <concept id="1667935720929304239" name="org.kf2.core.structure.NumLit" flags="ng" index="1H2aKs">
         <property id="1667935720929304240" name="value" index="1H2aK3" />
@@ -34,6 +35,16 @@
       <concept id="1667935720930234148" name="org.kf2.core.structure.PlusExpr" flags="ng" index="1H7JQn" />
     </language>
     <language id="fd0933e3-6066-4294-8d21-8d0d04303ade" name="org.domain.dsl">
+      <concept id="2876483902695131361" name="org.domain.dsl.structure.ItemRef" flags="ng" index="2xFDCZ">
+        <reference id="2876483902695131614" name="item" index="2xFDG0" />
+      </concept>
+      <concept id="2876483902693956001" name="org.domain.dsl.structure.AbstractCalcItem" flags="ng" index="2xQ8HZ">
+        <child id="2876483902693956004" name="subitems" index="2xQ8HU" />
+        <child id="2876483902693981135" name="formula" index="2xRQ$h" />
+        <child id="2876483902693981133" name="declaredType" index="2xRQ$j" />
+      </concept>
+      <concept id="2876483902693955934" name="org.domain.dsl.structure.Calculation" flags="ng" index="2xQ8I0" />
+      <concept id="2876483902693981132" name="org.domain.dsl.structure.CalcItem" flags="ng" index="2xRQ$i" />
       <concept id="2876483902692083881" name="org.domain.dsl.structure.MoneyLiteral" flags="ng" index="2xZ1DR">
         <child id="2876483902692131055" name="value" index="2xWP8L" />
       </concept>
@@ -112,6 +123,41 @@
         </node>
       </node>
     </node>
+    <node concept="2NE3Kg" id="2vFkHU6dZGP" role="37GxYA" />
+    <node concept="2NE3Kg" id="2vFkHU6dZIl" role="37GxYA" />
+    <node concept="2xQ8I0" id="2vFkHU6dZMV" role="37GxYA">
+      <property role="TrG5h" value="incomeTax" />
+      <node concept="2xRQ$i" id="2vFkHU6fTCE" role="2xQ8HU">
+        <property role="TrG5h" value="salary" />
+        <node concept="1hqfkS" id="2vFkHU6hXRZ" role="2xRQ$j" />
+        <node concept="2xZ1DR" id="2vFkHU6hXPW" role="2xRQ$h">
+          <node concept="1H2aKs" id="2vFkHU6fTPV" role="2xWP8L">
+            <property role="1H2aK3" value="10" />
+          </node>
+        </node>
+      </node>
+      <node concept="2xRQ$i" id="2vFkHU6hXmg" role="2xQ8HU">
+        <property role="TrG5h" value="percentage" />
+        <node concept="1H2aKs" id="2vFkHU6hXyx" role="2xRQ$h">
+          <property role="1H2aK3" value="5" />
+        </node>
+      </node>
+      <node concept="1$VrOI" id="2vFkHU6i$Fm" role="2xRQ$h">
+        <node concept="1$VrUk" id="2vFkHU6i$Fn" role="1H5NIF">
+          <node concept="2xFDCZ" id="2vFkHU6hXJ0" role="1H5NIF">
+            <ref role="2xFDG0" node="2vFkHU6fTCE" resolve="salary" />
+          </node>
+          <node concept="1H2aKs" id="2vFkHU6hXMo" role="1H5NID">
+            <property role="1H2aK3" value="5" />
+          </node>
+        </node>
+        <node concept="1H2aKs" id="2vFkHU6i$Ha" role="1H5NID">
+          <property role="1H2aK3" value="100" />
+        </node>
+      </node>
+    </node>
+    <node concept="2NE3Kg" id="2vFkHU6dZLo" role="37GxYA" />
+    <node concept="2NE3Kg" id="2vFkHU6i$Rv" role="37GxYA" />
     <node concept="gY0Js" id="2vFkHU66nV3" role="gY7jz" />
   </node>
 </model>
