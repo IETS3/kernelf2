@@ -150,8 +150,8 @@
           <node concept="2xFDCZ" id="2vFkHU6hXJ0" role="1H5NIF">
             <ref role="2xFDG0" node="2vFkHU6fTCE" resolve="salary" />
           </node>
-          <node concept="1H2aKs" id="2vFkHU6hXMo" role="1H5NID">
-            <property role="1H2aK3" value="5" />
+          <node concept="2xFDCZ" id="4$TEWcBG$OU" role="1H5NID">
+            <ref role="2xFDG0" node="2vFkHU6hXmg" resolve="percentage" />
           </node>
         </node>
         <node concept="1H2aKs" id="2vFkHU6i$Ha" role="1H5NID">
