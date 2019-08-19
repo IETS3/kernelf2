@@ -396,12 +396,12 @@
                               </node>
                               <node concept="027rt" id="4$TEWcBH2BV" role="02LM9">
                                 <ref role="027rv" to="nup6:1s_GFdUcC$q" resolve="right" />
-                                <node concept="027og" id="4$TEWcBH2Zi" role="027rp">
-                                  <ref role="02LMe" to="nup6:Ura7poH43p" resolve="StringLit" />
-                                  <node concept="027oh" id="4$TEWcBH2Zo" role="02LM9">
-                                    <ref role="027oj" to="nup6:Ura7poH43q" resolve="value" />
-                                    <node concept="Xl_RD" id="4$TEWcBH2Z_" role="027of">
-                                      <property role="Xl_RC" value="$$nothing$$" />
+                                <node concept="027og" id="4$TEWcBOplg" role="027rp">
+                                  <ref role="02LMe" to="nup6:1s_GFdUbhUJ" resolve="NumLit" />
+                                  <node concept="027oh" id="4$TEWcBOplh" role="02LM9">
+                                    <ref role="027oj" to="nup6:1s_GFdUbhUK" resolve="value" />
+                                    <node concept="Xl_RD" id="4$TEWcBOpli" role="027of">
+                                      <property role="Xl_RC" value="9999" />
                                     </node>
                                   </node>
                                 </node>
@@ -641,12 +641,12 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="027og" id="4$TEWcBK$Qf" role="3MbsXo">
-                      <ref role="02LMe" to="nup6:Ura7poH43p" resolve="StringLit" />
-                      <node concept="027oh" id="4$TEWcBK_pA" role="02LM9">
-                        <ref role="027oj" to="nup6:Ura7poH43q" resolve="value" />
-                        <node concept="Xl_RD" id="4$TEWcBK_M9" role="027of">
-                          <property role="Xl_RC" value="$$nothing$$" />
+                    <node concept="027og" id="4$TEWcBOnpK" role="3MbsXo">
+                      <ref role="02LMe" to="nup6:1s_GFdUbhUJ" resolve="NumLit" />
+                      <node concept="027oh" id="4$TEWcBOo0j" role="02LM9">
+                        <ref role="027oj" to="nup6:1s_GFdUbhUK" resolve="value" />
+                        <node concept="Xl_RD" id="4$TEWcBOoAV" role="027of">
+                          <property role="Xl_RC" value="9999" />
                         </node>
                       </node>
                     </node>

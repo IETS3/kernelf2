@@ -86,6 +86,7 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
+      <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
@@ -298,6 +299,31 @@
     </node>
     <node concept="13hLZK" id="4$TEWcBLf75" role="13h7CW">
       <node concept="3clFbS" id="4$TEWcBLf76" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="4$TEWcBM0ko">
+    <property role="3GE5qa" value="calc" />
+    <ref role="13h7C2" to="znfn:2vFkHU6cXAx" resolve="AbstractCalcItem" />
+    <node concept="13i0hz" id="4$TEWcBM010" role="13h7CS">
+      <property role="TrG5h" value="isPureInput" />
+      <node concept="3Tm1VV" id="4$TEWcBM011" role="1B3o_S" />
+      <node concept="10P_77" id="4$TEWcBM01W" role="3clF45" />
+      <node concept="3clFbS" id="4$TEWcBM013" role="3clF47">
+        <node concept="3clFbF" id="4$TEWcBM030" role="3cqZAp">
+          <node concept="2OqwBi" id="4$TEWcBM12$" role="3clFbG">
+            <node concept="2OqwBi" id="4$TEWcBM0iS" role="2Oq$k0">
+              <node concept="13iPFW" id="4$TEWcBM02Z" role="2Oq$k0" />
+              <node concept="3TrEf2" id="4$TEWcBM0xO" role="2OqNvi">
+                <ref role="3Tt5mk" to="znfn:2vFkHU6d3Jf" resolve="formula" />
+              </node>
+            </node>
+            <node concept="3w_OXm" id="4$TEWcBM1DZ" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="4$TEWcBM0kp" role="13h7CW">
+      <node concept="3clFbS" id="4$TEWcBM0kq" role="2VODD2" />
     </node>
   </node>
 </model>
