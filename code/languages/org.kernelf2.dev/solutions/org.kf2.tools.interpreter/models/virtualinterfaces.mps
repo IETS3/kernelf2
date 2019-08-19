@@ -386,45 +386,6 @@
       </node>
     </node>
     <node concept="24m3Ya" id="1KLm$DhTt0y" role="24m4$c" />
-    <node concept="24mLEY" id="1KLm$DhVGpN" role="24m4$c">
-      <ref role="24nbRD" node="1KLm$DhTt0D" resolve="IInterpretable" />
-      <node concept="24nq9u" id="1KLm$DhVV__" role="24n3oQ">
-        <ref role="24nq6r" node="1KLm$DhTt0L" resolve="interpret" />
-        <node concept="24nHrp" id="3PyeT_CwPWf" role="1dUhuV">
-          <property role="TrG5h" value="env" />
-          <node concept="3uibUv" id="3PyeT_CwPWg" role="24nHru">
-            <ref role="3uigEE" node="3PyeT_CwyhZ" resolve="Environment" />
-          </node>
-        </node>
-        <node concept="3clFbS" id="1KLm$DhVV_A" role="24nq6t">
-          <node concept="3cpWs6" id="1KLm$DhVVBi" role="3cqZAp">
-            <node concept="10Nm6u" id="1KLm$DhVVBo" role="3cqZAk" />
-          </node>
-        </node>
-      </node>
-      <node concept="24nq9u" id="1KLm$DhVV_M" role="24n3oQ">
-        <ref role="24nq6r" node="1KLm$DhTt3_" resolve="interpretAndCache" />
-        <node concept="24nHrp" id="3PyeT_CwPWx" role="1dUhuV">
-          <property role="TrG5h" value="env" />
-          <node concept="3uibUv" id="3PyeT_CwPWy" role="24nHru">
-            <ref role="3uigEE" node="3PyeT_CwyhZ" resolve="Environment" />
-          </node>
-        </node>
-        <node concept="3clFbS" id="1KLm$DhVV_O" role="24nq6t">
-          <node concept="3cpWs6" id="1KLm$DhVVAZ" role="3cqZAp">
-            <node concept="10Nm6u" id="1KLm$DhVVB9" role="3cqZAk" />
-          </node>
-        </node>
-      </node>
-      <node concept="24nq9u" id="1KLm$DhVVA9" role="24n3oQ">
-        <ref role="24nq6r" node="1KLm$DhTt12" resolve="toString" />
-        <node concept="3clFbS" id="1KLm$DhVVAb" role="24nq6t">
-          <node concept="3cpWs6" id="1KLm$DhVVAp" role="3cqZAp">
-            <node concept="10Nm6u" id="1KLm$DhW4Vy" role="3cqZAk" />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="24m3Ya" id="1KLm$DhVGoJ" role="24m4$c" />
     <node concept="24mLEY" id="1KLm$DhTt4e" role="24m4$c">
       <ref role="24nbRD" node="1KLm$DhTt0D" resolve="IInterpretable" />
@@ -521,6 +482,23 @@
           </node>
         </node>
         <node concept="3clFbS" id="6l1JiPPuyXi" role="24nq6t">
+          <node concept="3clFbF" id="4fZJWcuXPxO" role="3cqZAp">
+            <node concept="2OqwBi" id="4fZJWcuXPxP" role="3clFbG">
+              <node concept="10M0yZ" id="4fZJWcuXPxQ" role="2Oq$k0">
+                <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+                <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              </node>
+              <node concept="liA8E" id="4fZJWcuXPxR" role="2OqNvi">
+                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
+                <node concept="3cpWs3" id="4fZJWcuXPxS" role="37wK5m">
+                  <node concept="24pvgE" id="4fZJWcuXPxT" role="3uHU7w" />
+                  <node concept="Xl_RD" id="4fZJWcuXPxU" role="3uHU7B">
+                    <property role="Xl_RC" value="IInterpretable.interpret(): evaluating Expression to itself: " />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="3cpWs6" id="6l1JiPPuyXj" role="3cqZAp">
             <node concept="24pvgE" id="6l1JiPPuyXk" role="3cqZAk" />
           </node>
