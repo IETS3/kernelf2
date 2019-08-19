@@ -11,6 +11,9 @@
       <concept id="8403212614960817693" name="org.kf2.core.structure.IOptionallyTyped" flags="ng" index="2ij1d4">
         <child id="8403212614960817694" name="type" index="2ij1d7" />
       </concept>
+      <concept id="1823070633659905357" name="org.kf2.core.structure.ConstantRef" flags="ng" index="mWALo">
+        <reference id="1823070633659905358" name="const" index="mWALr" />
+      </concept>
       <concept id="5182877833504324605" name="org.kf2.core.structure.EmptyDeclaration" flags="ng" index="2NE3Kg" />
       <concept id="4320583889640215552" name="org.kf2.core.structure.Constant" flags="ng" index="37GxwB">
         <child id="4320583889640215557" name="value" index="37Gxwy" />
@@ -18,11 +21,19 @@
       <concept id="4320583889640215422" name="org.kf2.core.structure.Module" flags="ng" index="37GxXp">
         <child id="4320583889640215425" name="declarations" index="37GxYA" />
       </concept>
+      <concept id="3931513068711982298" name="org.kf2.core.structure.MulExpr" flags="ng" index="1$VrUk" />
       <concept id="1667935720929304239" name="org.kf2.core.structure.NumLit" flags="ng" index="1H2aKs">
         <property id="1667935720929304240" name="value" index="1H2aK3" />
       </concept>
+      <concept id="1667935720929659158" name="org.kf2.core.structure.BinaryExpr" flags="ng" index="1H5NI_">
+        <child id="1667935720929659162" name="right" index="1H5NID" />
+        <child id="1667935720929659160" name="left" index="1H5NIF" />
+      </concept>
     </language>
     <language id="fd0933e3-6066-4294-8d21-8d0d04303ade" name="org.domain.dsl">
+      <concept id="2876483902692083881" name="org.domain.dsl.structure.MoneyLiteral" flags="ng" index="2xZ1DR">
+        <child id="2876483902692131055" name="value" index="2xWP8L" />
+      </concept>
       <concept id="8714133755427956547" name="org.domain.dsl.structure.MoneyType" flags="ng" index="1hqfkS" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -34,13 +45,32 @@
   <node concept="37GxXp" id="7zIOBGDxMsr">
     <property role="TrG5h" value="HelloWorld" />
     <node concept="37GxwB" id="7zIOBGDxMst" role="37GxYA">
-      <property role="TrG5h" value="m" />
-      <node concept="1H2aKs" id="7zIOBGDxMt7" role="37Gxwy">
-        <property role="1H2aK3" value="10" />
-      </node>
+      <property role="TrG5h" value="ten" />
       <node concept="1hqfkS" id="2vFkHU65Oy6" role="2ij1d7" />
+      <node concept="2xZ1DR" id="2vFkHU66jfe" role="37Gxwy">
+        <node concept="1H2aKs" id="2vFkHU6685X" role="2xWP8L">
+          <property role="1H2aK3" value="10" />
+        </node>
+      </node>
+    </node>
+    <node concept="37GxwB" id="2vFkHU66nBG" role="37GxYA">
+      <property role="TrG5h" value="factor" />
+      <node concept="1H2aKs" id="2vFkHU66nFB" role="37Gxwy">
+        <property role="1H2aK3" value="2" />
+      </node>
     </node>
     <node concept="2NE3Kg" id="2vFkHU65Orj" role="37GxYA" />
+    <node concept="37GxwB" id="2vFkHU66nGn" role="37GxYA">
+      <property role="TrG5h" value="twiceAsMuch" />
+      <node concept="1$VrUk" id="2vFkHU66nKT" role="37Gxwy">
+        <node concept="mWALo" id="2vFkHU66nLL" role="1H5NID">
+          <ref role="mWALr" node="2vFkHU66nBG" resolve="factor" />
+        </node>
+        <node concept="mWALo" id="2vFkHU66nKs" role="1H5NIF">
+          <ref role="mWALr" node="7zIOBGDxMst" resolve="ten" />
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 
