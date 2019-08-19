@@ -147,6 +147,7 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
+      <concept id="1144146199828" name="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" flags="nn" index="1$rogu" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
@@ -202,18 +203,21 @@
       <node concept="026TG" id="3qfy$Tio$VB" role="026TK">
         <node concept="BwxZp" id="3qfy$Tio$VC" role="026TJ">
           <ref role="2xGWG1" node="3qfy$Tio$WV" resolve="copyThatShouldDie" />
-          <node concept="2OqwBi" id="3qfy$Tio$VD" role="2xGWG6">
-            <node concept="2OqwBi" id="3qfy$Tio$VE" role="2Oq$k0">
-              <node concept="2155sH" id="3qfy$Tio$VF" role="2Oq$k0">
-                <ref role="2155sG" node="3qfy$Tio$V_" />
+          <node concept="2OqwBi" id="3_4FgvVPRyC" role="2xGWG6">
+            <node concept="2OqwBi" id="3qfy$Tio$VD" role="2Oq$k0">
+              <node concept="2OqwBi" id="3qfy$Tio$VE" role="2Oq$k0">
+                <node concept="2155sH" id="3qfy$Tio$VF" role="2Oq$k0">
+                  <ref role="2155sG" node="3qfy$Tio$V_" />
+                </node>
+                <node concept="3TrEf2" id="3qfy$Tio$VG" role="2OqNvi">
+                  <ref role="3Tt5mk" to="nup6:MNhuapWfCW" resolve="fun" />
+                </node>
               </node>
-              <node concept="3TrEf2" id="3qfy$Tio$VG" role="2OqNvi">
-                <ref role="3Tt5mk" to="nup6:MNhuapWfCW" resolve="fun" />
+              <node concept="3TrEf2" id="3qfy$Tio$VH" role="2OqNvi">
+                <ref role="3Tt5mk" to="nup6:2frx7BFaCI5" resolve="body" />
               </node>
             </node>
-            <node concept="3TrEf2" id="3qfy$Tio$VH" role="2OqNvi">
-              <ref role="3Tt5mk" to="nup6:2frx7BFaCI5" resolve="body" />
-            </node>
+            <node concept="1$rogu" id="3_4FgvVPT04" role="2OqNvi" />
           </node>
           <node concept="2155sH" id="3qfy$Tio$VI" role="2xGWG6">
             <ref role="2155sG" node="3qfy$Tio$V_" />
