@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dev-kit name="dsl.devkit" uuid="0ffd1e26-5ce1-4ea3-b078-5b506873b2db">
+  <exported-language name="1ab7bfac-29d6-4772-a483-50110408ac43(org.kf2.core)" />
+  <exported-language name="fd0933e3-6066-4294-8d21-8d0d04303ade(org.domain.dsl)" />
+</dev-kit>
+

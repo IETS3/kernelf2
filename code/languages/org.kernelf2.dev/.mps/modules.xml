@@ -2,6 +2,8 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/devkits/dsl.devkit/dsl.devkit.devkit" folder="xample-dsl" />
+      <modulePath path="$PROJECT_DIR$/languages/org.domain.dsl/org.domain.dsl.mpl" folder="xample-dsl" />
       <modulePath path="$PROJECT_DIR$/languages/org.kf2.core/org.kf2.core.mpl" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/org.kf2.state/org.kf2.state.mpl" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/org.kf2.statemachine/org.kf2.statemachine.mpl" folder="lang" />
@@ -9,6 +11,7 @@
       <modulePath path="$PROJECT_DIR$/languages/org.kf2.test/org.kf2.test.mpl" folder="lang" />
       <modulePath path="$PROJECT_DIR$/solutions/kf2.demo.interpreter/kf2.demo.interpreter.msd" folder="xamples" />
       <modulePath path="$PROJECT_DIR$/solutions/kf2.demo/kf2.demo.msd" folder="xamples" />
+      <modulePath path="$PROJECT_DIR$/solutions/kf2.dsl.example/kf2.dsl.example.msd" folder="xample-dsl" />
       <modulePath path="$PROJECT_DIR$/solutions/org.kf2.tools.interpreter/org.kf2.tools.interpreter.msd" folder="lang" />
     </projectModules>
   </component>
