@@ -59,14 +59,6 @@
       </concept>
     </language>
     <language id="fd0933e3-6066-4294-8d21-8d0d04303ade" name="org.domain.dsl">
-      <concept id="2876483902695591807" name="org.domain.dsl.structure.ItemValue" flags="ng" index="2xDTQx">
-        <reference id="2876483902695591808" name="item" index="2xDTPu" />
-        <child id="2876483902695591810" name="value" index="2xDTPs" />
-      </concept>
-      <concept id="2876483902695591804" name="org.domain.dsl.structure.RunCalc" flags="ng" index="2xDTQy">
-        <reference id="2876483902695591805" name="calc" index="2xDTQz" />
-        <child id="2876483902695597854" name="values" index="2xDVn0" />
-      </concept>
       <concept id="2876483902695131361" name="org.domain.dsl.structure.ItemRef" flags="ng" index="2xFDCZ">
         <reference id="2876483902695131614" name="item" index="2xFDG0" />
       </concept>
@@ -236,42 +228,6 @@
       </node>
     </node>
     <node concept="2NE3Kg" id="66AhRzk$pXG" role="37GxYA" />
-    <node concept="3vaTz7" id="2vFkHU6jViS" role="37GxYA">
-      <node concept="2xDTQy" id="2vFkHU6jVl$" role="3vaTz6">
-        <ref role="2xDTQz" node="2vFkHU6dZMV" resolve="incomeTax" />
-        <node concept="2xDTQx" id="2vFkHU6jXv4" role="2xDVn0">
-          <ref role="2xDTPu" node="2vFkHU6fTCE" resolve="salary" />
-          <node concept="2xZ1DR" id="2vFkHU6jXBy" role="2xDTPs">
-            <node concept="1H2aKs" id="2vFkHU6jXxO" role="2xWP8L">
-              <property role="1H2aK3" value="100" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="2xZ1DR" id="2vFkHU6jXPU" role="3vaTzo">
-        <node concept="1H2aKs" id="2vFkHU6jXKf" role="2xWP8L">
-          <property role="1H2aK3" value="10" />
-        </node>
-      </node>
-    </node>
-    <node concept="3vaTz7" id="3_RZNKCNWVh" role="37GxYA">
-      <node concept="2xDTQy" id="3_RZNKCNWVi" role="3vaTz6">
-        <ref role="2xDTQz" node="2vFkHU6dZMV" resolve="incomeTax" />
-        <node concept="2xDTQx" id="3_RZNKCNWVj" role="2xDVn0">
-          <ref role="2xDTPu" node="2vFkHU6fTCE" resolve="salary" />
-          <node concept="2xZ1DR" id="3_RZNKCNWVk" role="2xDTPs">
-            <node concept="1H2aKs" id="3_RZNKCNWVl" role="2xWP8L">
-              <property role="1H2aK3" value="40" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="2xZ1DR" id="3_RZNKCNWVm" role="3vaTzo">
-        <node concept="1H2aKs" id="3_RZNKCNWVn" role="2xWP8L">
-          <property role="1H2aK3" value="0" />
-        </node>
-      </node>
-    </node>
     <node concept="2NE3Kg" id="3_RZNKCNuQM" role="37GxYA" />
     <node concept="2NE3Kg" id="1mjLFXsmBd_" role="37GxYA" />
     <node concept="gY0Js" id="2vFkHU66nV3" role="gY7jz" />

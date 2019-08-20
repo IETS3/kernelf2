@@ -132,46 +132,5 @@
     <property role="EcuMT" value="2876483902695412131" />
     <property role="TrG5h" value="IDomainType" />
   </node>
-  <node concept="1TIwiD" id="2vFkHU6jcXW">
-    <property role="EcuMT" value="2876483902695591804" />
-    <property role="TrG5h" value="RunCalc" />
-    <property role="34LRSv" value="run" />
-    <property role="3GE5qa" value="run" />
-    <ref role="1TJDcQ" to="nup6:2frx7BFaCHD" resolve="Expr" />
-    <node concept="1TJgyj" id="2vFkHU6jcXX" role="1TKVEi">
-      <property role="IQ2ns" value="2876483902695591805" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="calc" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="2vFkHU6cX_u" resolve="Calculation" />
-    </node>
-    <node concept="1TJgyj" id="2vFkHU6jesu" role="1TKVEi">
-      <property role="IQ2ns" value="2876483902695597854" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="values" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="2vFkHU6jcXZ" resolve="ItemValue" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="2vFkHU6jcXZ">
-    <property role="EcuMT" value="2876483902695591807" />
-    <property role="3GE5qa" value="run" />
-    <property role="TrG5h" value="ItemValue" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="2vFkHU6jcY2" role="1TKVEi">
-      <property role="IQ2ns" value="2876483902695591810" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="value" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="nup6:2frx7BFaCHD" resolve="Expr" />
-    </node>
-    <node concept="1TJgyj" id="2vFkHU6jcY0" role="1TKVEi">
-      <property role="IQ2ns" value="2876483902695591808" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="item" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="2vFkHU6d3Jc" resolve="CalcItem" />
-    </node>
-  </node>
 </model>
 
