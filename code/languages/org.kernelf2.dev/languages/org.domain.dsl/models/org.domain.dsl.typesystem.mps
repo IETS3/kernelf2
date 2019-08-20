@@ -316,6 +316,32 @@
         </node>
       </node>
     </node>
+    <node concept="3ciAk0" id="3_RZNKCNXeX" role="3he0YX">
+      <node concept="3gn64h" id="1mjLFXsmkhD" role="32tDTA">
+        <ref role="3gnhBz" to="nup6:3tIuEqjZmxQ" resolve="BinaryComparisonExpr" />
+      </node>
+      <node concept="3ciZUL" id="3_RZNKCNXfh" role="32tDT$">
+        <node concept="3clFbS" id="3_RZNKCNXfm" role="2VODD2">
+          <node concept="3clFbF" id="3_RZNKCNXms" role="3cqZAp">
+            <node concept="2pJPEk" id="3_RZNKCNXmq" role="3clFbG">
+              <node concept="2pJPED" id="3_RZNKCNXrM" role="2pJPEn">
+                <ref role="2pJxaS" to="nup6:3JPN2vWmI27" resolve="BoolType" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2pJPEk" id="3_RZNKCNXjY" role="3ciSkW">
+        <node concept="2pJPED" id="3_RZNKCNXjZ" role="2pJPEn">
+          <ref role="2pJxaS" to="znfn:7zIOBGDxyt3" resolve="MoneyType" />
+        </node>
+      </node>
+      <node concept="2pJPEk" id="3_RZNKCNXlc" role="3ciSnv">
+        <node concept="2pJPED" id="3_RZNKCNXld" role="2pJPEn">
+          <ref role="2pJxaS" to="znfn:7zIOBGDxyt3" resolve="MoneyType" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1YbPZF" id="2vFkHU6hlxY">
     <property role="TrG5h" value="typeof_AbstractCalcItem" />

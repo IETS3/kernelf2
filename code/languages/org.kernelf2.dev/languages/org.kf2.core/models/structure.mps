@@ -1316,5 +1316,21 @@
     <property role="EcuMT" value="4423163314111757351" />
     <property role="TrG5h" value="ILiteral" />
   </node>
+  <node concept="1TIwiD" id="3_RZNKCKXzD">
+    <property role="EcuMT" value="4141059016237504745" />
+    <property role="TrG5h" value="Log" />
+    <property role="34LRSv" value="log" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3_RZNKCKXzF" role="PzmwI">
+      <ref role="PrY4T" node="3JPN2vWhXe0" resolve="IDeclaration" />
+    </node>
+    <node concept="1TJgyj" id="3_RZNKCKXzH" role="1TKVEi">
+      <property role="IQ2ns" value="4141059016237504749" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2frx7BFaCHD" resolve="Expr" />
+    </node>
+  </node>
 </model>
 

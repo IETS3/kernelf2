@@ -25,6 +25,7 @@
       <concept id="1823070633659905357" name="org.kf2.core.structure.ConstantRef" flags="ng" index="mWALo">
         <reference id="1823070633659905358" name="const" index="mWALr" />
       </concept>
+      <concept id="3994264775390227173" name="org.kf2.core.structure.LessExpr" flags="ng" index="2$$L13" />
       <concept id="5182877833504324605" name="org.kf2.core.structure.EmptyDeclaration" flags="ng" index="2NE3Kg" />
       <concept id="4320583889640215552" name="org.kf2.core.structure.Constant" flags="ng" index="37GxwB">
         <child id="4320583889640215557" name="value" index="37Gxwy" />
@@ -102,6 +103,14 @@
       <concept id="3098281514124330618" name="org.kf2.sugar.structure.RecordDecl" flags="ng" index="dtgz_">
         <child id="3098281514124330624" name="members" index="dtgwv" />
       </concept>
+      <concept id="5182877833500586703" name="org.kf2.sugar.structure.OtherwiseLiteral" flags="ng" index="2NSjky" />
+      <concept id="2583804470398707211" name="org.kf2.sugar.structure.AltCase" flags="ng" index="38Xu9M">
+        <child id="2583804470398707242" name="val" index="38Xu9j" />
+        <child id="2583804470398707239" name="cond" index="38Xu9u" />
+      </concept>
+      <concept id="2583804470398667700" name="org.kf2.sugar.structure.AltExpr" flags="ng" index="38X$Zd">
+        <child id="2583804470398748129" name="cases" index="38X86o" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -174,6 +183,14 @@
     <node concept="2NE3Kg" id="2vFkHU6dZIl" role="37GxYA" />
     <node concept="2xQ8I0" id="2vFkHU6dZMV" role="37GxYA">
       <property role="TrG5h" value="incomeTax" />
+      <node concept="2xRQ$i" id="3_RZNKCNVOv" role="2xQ8HU">
+        <property role="TrG5h" value="min" />
+        <node concept="2xZ1DR" id="3_RZNKCNWhp" role="2xRQ$h">
+          <node concept="1H2aKs" id="3_RZNKCNW5R" role="2xWP8L">
+            <property role="1H2aK3" value="50" />
+          </node>
+        </node>
+      </node>
       <node concept="2xRQ$i" id="2vFkHU6fTCE" role="2xQ8HU">
         <property role="TrG5h" value="salary" />
         <node concept="1hqfkS" id="2vFkHU6hXRZ" role="2xRQ$j" />
@@ -184,21 +201,41 @@
           <property role="1H2aK3" value="10" />
         </node>
       </node>
-      <node concept="1$VrOI" id="2vFkHU6i$Fm" role="2xRQ$h">
-        <node concept="1$VrUk" id="2vFkHU6i$Fn" role="1H5NIF">
-          <node concept="2xFDCZ" id="2vFkHU6hXJ0" role="1H5NIF">
-            <ref role="2xFDG0" node="2vFkHU6fTCE" resolve="salary" />
+      <node concept="38X$Zd" id="3_RZNKCNWpI" role="2xRQ$h">
+        <node concept="38Xu9M" id="3_RZNKCNWs9" role="38X86o">
+          <node concept="2$$L13" id="3_RZNKCNWBF" role="38Xu9u">
+            <node concept="2xFDCZ" id="3_RZNKCNWEp" role="1H5NID">
+              <ref role="2xFDG0" node="3_RZNKCNVOv" resolve="min" />
+            </node>
+            <node concept="2xFDCZ" id="3_RZNKCNWs8" role="1H5NIF">
+              <ref role="2xFDG0" node="2vFkHU6fTCE" resolve="salary" />
+            </node>
           </node>
-          <node concept="2xFDCZ" id="4$TEWcBG$OU" role="1H5NID">
-            <ref role="2xFDG0" node="2vFkHU6hXmg" resolve="percentage" />
+          <node concept="2xZ1DR" id="3_RZNKCNWLg" role="38Xu9j">
+            <node concept="1H2aKs" id="3_RZNKCNWH4" role="2xWP8L">
+              <property role="1H2aK3" value="0" />
+            </node>
           </node>
         </node>
-        <node concept="1H2aKs" id="2vFkHU6i$Ha" role="1H5NID">
-          <property role="1H2aK3" value="100" />
+        <node concept="38Xu9M" id="3_RZNKCNWNu" role="38X86o">
+          <node concept="2NSjky" id="3_RZNKCNWQv" role="38Xu9u" />
+          <node concept="1$VrOI" id="2vFkHU6i$Fm" role="38Xu9j">
+            <node concept="1$VrUk" id="2vFkHU6i$Fn" role="1H5NIF">
+              <node concept="2xFDCZ" id="2vFkHU6hXJ0" role="1H5NIF">
+                <ref role="2xFDG0" node="2vFkHU6fTCE" resolve="salary" />
+              </node>
+              <node concept="2xFDCZ" id="4$TEWcBG$OU" role="1H5NID">
+                <ref role="2xFDG0" node="2vFkHU6hXmg" resolve="percentage" />
+              </node>
+            </node>
+            <node concept="1H2aKs" id="2vFkHU6i$Ha" role="1H5NID">
+              <property role="1H2aK3" value="100" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
-    <node concept="2NE3Kg" id="2vFkHU6dZLo" role="37GxYA" />
+    <node concept="2NE3Kg" id="66AhRzk$pXG" role="37GxYA" />
     <node concept="3vaTz7" id="2vFkHU6jViS" role="37GxYA">
       <node concept="2xDTQy" id="2vFkHU6jVl$" role="3vaTz6">
         <ref role="2xDTQz" node="2vFkHU6dZMV" resolve="incomeTax" />
@@ -206,7 +243,7 @@
           <ref role="2xDTPu" node="2vFkHU6fTCE" resolve="salary" />
           <node concept="2xZ1DR" id="2vFkHU6jXBy" role="2xDTPs">
             <node concept="1H2aKs" id="2vFkHU6jXxO" role="2xWP8L">
-              <property role="1H2aK3" value="10" />
+              <property role="1H2aK3" value="100" />
             </node>
           </node>
         </node>
@@ -217,6 +254,25 @@
         </node>
       </node>
     </node>
+    <node concept="3vaTz7" id="3_RZNKCNWVh" role="37GxYA">
+      <node concept="2xDTQy" id="3_RZNKCNWVi" role="3vaTz6">
+        <ref role="2xDTQz" node="2vFkHU6dZMV" resolve="incomeTax" />
+        <node concept="2xDTQx" id="3_RZNKCNWVj" role="2xDVn0">
+          <ref role="2xDTPu" node="2vFkHU6fTCE" resolve="salary" />
+          <node concept="2xZ1DR" id="3_RZNKCNWVk" role="2xDTPs">
+            <node concept="1H2aKs" id="3_RZNKCNWVl" role="2xWP8L">
+              <property role="1H2aK3" value="40" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2xZ1DR" id="3_RZNKCNWVm" role="3vaTzo">
+        <node concept="1H2aKs" id="3_RZNKCNWVn" role="2xWP8L">
+          <property role="1H2aK3" value="0" />
+        </node>
+      </node>
+    </node>
+    <node concept="2NE3Kg" id="3_RZNKCNuQM" role="37GxYA" />
     <node concept="gY0Js" id="2vFkHU66nV3" role="gY7jz" />
   </node>
   <node concept="37GxXp" id="4$TEWcBOjsd">
