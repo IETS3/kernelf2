@@ -81,6 +81,7 @@
       <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
         <property id="1075300953594" name="abstractClass" index="1sVAO0" />
+        <child id="1165602531693" name="superclass" index="1zkMxy" />
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -1990,7 +1991,20 @@
     <node concept="312cEu" id="P1tPURInvA" role="jymVt">
       <property role="TrG5h" value="Algebraic" />
       <property role="1sVAO0" value="true" />
-      <node concept="2tJIrI" id="P1tPURInvB" role="jymVt" />
+      <node concept="3clFb_" id="P1tPURVxOv" role="jymVt">
+        <property role="TrG5h" value="get" />
+        <node concept="3uibUv" id="P1tPURVzYo" role="3clF45">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+        </node>
+        <node concept="3Tm1VV" id="P1tPURV$VM" role="1B3o_S" />
+        <node concept="3clFbS" id="P1tPURVxOz" role="3clF47">
+          <node concept="3cpWs6" id="P1tPURVyVa" role="3cqZAp">
+            <node concept="3cmrfG" id="P1tPURVz0V" role="3cqZAk">
+              <property role="3cmrfH" value="0" />
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="312cEu" id="P1tPURInvC" role="jymVt">
         <property role="TrG5h" value="Cons" />
         <node concept="312cEg" id="P1tPURLMpV" role="jymVt">
@@ -2161,6 +2175,9 @@
             <property role="TrG5h" value="index" />
             <node concept="10Oyi0" id="P1tPURLTdj" role="1tU5fm" />
           </node>
+        </node>
+        <node concept="3uibUv" id="P1tPURVjOa" role="1zkMxy">
+          <ref role="3uigEE" node="P1tPURInvA" resolve="Module.Algebraic" />
         </node>
       </node>
       <node concept="2tJIrI" id="P1tPURInwW" role="jymVt" />
