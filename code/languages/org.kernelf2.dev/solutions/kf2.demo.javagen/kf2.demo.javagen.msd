@@ -9,6 +9,7 @@
   <languageVersions>
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="1" />
     <language slang="l:1ab7bfac-29d6-4772-a483-50110408ac43:org.kf2.core" version="0" />
+    <language slang="l:4441485a-f7fc-4cfb-8044-d8997096c5d6:org.kf2.sugar" version="0" />
   </languageVersions>
   <dependencyVersions>
     <module reference="e7e3cc73-77cf-4e11-87c3-a63e215ef8c3(kf2.demo.javagen)" version="0" />
