@@ -10,11 +10,12 @@
       <modulePath path="$PROJECT_DIR$/languages/org.kf2.sugar/org.kf2.sugar.mpl" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/org.kf2.test/org.kf2.test.mpl" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/org.kf2.tools.javagen/org.kf2.tools.javagen.mpl" folder="lang.tools" />
-      <modulePath path="$PROJECT_DIR$/solutions/kf2.demo.interpreter/kf2.demo.interpreter.msd" folder="xamples" />
-      <modulePath path="$PROJECT_DIR$/solutions/kf2.demo.javagen/kf2.demo.javagen.msd" folder="xamples" />
-      <modulePath path="$PROJECT_DIR$/solutions/kf2.demo/kf2.demo.msd" folder="xamples" />
+      <modulePath path="$PROJECT_DIR$/solutions/kf2.demo.interpreter/kf2.demo.interpreter.msd" folder="xamples-kf" />
+      <modulePath path="$PROJECT_DIR$/solutions/kf2.demo.javagen/kf2.demo.javagen.msd" folder="xamples-kf" />
+      <modulePath path="$PROJECT_DIR$/solutions/kf2.demo/kf2.demo.msd" folder="xamples-kf" />
       <modulePath path="$PROJECT_DIR$/solutions/kf2.dsl.example/kf2.dsl.example.msd" folder="xample-dsl" />
       <modulePath path="$PROJECT_DIR$/solutions/org.kf2.tools.interpreter/org.kf2.tools.interpreter.msd" folder="lang.tools" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.kf2.tools.javaexecutor/org.kf2.tools.javaexecutor.msd" folder="" />
     </projectModules>
   </component>
 </project>

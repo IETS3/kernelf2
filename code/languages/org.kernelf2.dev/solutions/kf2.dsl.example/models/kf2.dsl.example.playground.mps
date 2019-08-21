@@ -227,7 +227,25 @@
       </node>
       <node concept="2xZ1DR" id="2vFkHU6jXPU" role="3vaTzo">
         <node concept="1H2aKs" id="2vFkHU6jXKf" role="2xWP8L">
-          <property role="1H2aK3" value="10" />
+          <property role="1H2aK3" value="101" />
+        </node>
+      </node>
+    </node>
+    <node concept="3vaTz7" id="7N6g9bB19wY" role="37GxYA">
+      <node concept="2xDTQy" id="7N6g9bB19wZ" role="3vaTz6">
+        <ref role="2xDTQz" node="2vFkHU6dZMV" resolve="incomeTax" />
+        <node concept="2xDTQx" id="7N6g9bB19x0" role="2xDVn0">
+          <ref role="2xDTPu" node="2vFkHU6fTCE" resolve="salary" />
+          <node concept="2xZ1DR" id="7N6g9bB19x1" role="2xDTPs">
+            <node concept="1H2aKs" id="7N6g9bB19x2" role="2xWP8L">
+              <property role="1H2aK3" value="200" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2xZ1DR" id="7N6g9bB19x3" role="3vaTzo">
+        <node concept="1H2aKs" id="7N6g9bB19x4" role="2xWP8L">
+          <property role="1H2aK3" value="20" />
         </node>
       </node>
     </node>

@@ -1,2 +1,2 @@
-javac source_gen/kf2/dsl/example/playground/HelloWorld.java
+javac -d classes_gen source_gen/kf2/dsl/example/playground/HelloWorld.java
 java -cp source_gen kf2.dsl.example.playground.HelloWorld
