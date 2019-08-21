@@ -61,7 +61,6 @@
   <node concept="1TIwiD" id="2frx7BFaCHd">
     <property role="EcuMT" value="2583804470398454605" />
     <property role="TrG5h" value="Function" />
-    <property role="19KtqR" value="true" />
     <property role="3GE5qa" value="fun" />
     <property role="34LRSv" value="fun" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
