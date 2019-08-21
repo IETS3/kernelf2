@@ -10,9 +10,6 @@
   <registry>
     <language id="1ab7bfac-29d6-4772-a483-50110408ac43" name="org.kf2.core">
       <concept id="7296320874263197425" name="org.kf2.core.structure.InterpretedFlag" flags="ng" index="gY0Js" />
-      <concept id="4141059016237504745" name="org.kf2.core.structure.Log" flags="ng" index="hH2vl">
-        <child id="4141059016237504749" name="value" index="hH2vh" />
-      </concept>
       <concept id="8403212614960817693" name="org.kf2.core.structure.IOptionallyTyped" flags="ng" index="2ij1d4">
         <child id="8403212614960817694" name="type" index="2ij1d7" />
       </concept>
@@ -152,9 +149,22 @@
       <property role="TrG5h" value="incomeTax" />
       <node concept="2xRQ$i" id="3_RZNKCNVOv" role="2xQ8HU">
         <property role="TrG5h" value="min" />
-        <node concept="2xZ1DR" id="3_RZNKCNWhp" role="2xRQ$h">
-          <node concept="1H2aKs" id="3_RZNKCNW5R" role="2xWP8L">
-            <property role="1H2aK3" value="50" />
+        <node concept="1H7JQn" id="7N6g9bB18yK" role="2xRQ$h">
+          <node concept="2xFDCZ" id="7N6g9bB18DW" role="1H5NID">
+            <ref role="2xFDG0" node="7N6g9bB15Bb" resolve="min2" />
+          </node>
+          <node concept="2xZ1DR" id="3_RZNKCNWhp" role="1H5NIF">
+            <node concept="1H2aKs" id="3_RZNKCNW5R" role="2xWP8L">
+              <property role="1H2aK3" value="40" />
+            </node>
+          </node>
+        </node>
+        <node concept="2xRQ$i" id="7N6g9bB15Bb" role="2xQ8HU">
+          <property role="TrG5h" value="min2" />
+          <node concept="2xZ1DR" id="7N6g9bB18st" role="2xRQ$h">
+            <node concept="1H2aKs" id="7N6g9bB18gG" role="2xWP8L">
+              <property role="1H2aK3" value="10" />
+            </node>
           </node>
         </node>
       </node>
@@ -240,20 +250,6 @@
       </node>
     </node>
     <node concept="2NE3Kg" id="3_RZNKCNuQM" role="37GxYA" />
-    <node concept="hH2vl" id="7N6g9bB0$rX" role="37GxYA">
-      <property role="TrG5h" value="salary" />
-      <node concept="2xDTQy" id="7N6g9bB0$uB" role="hH2vh">
-        <ref role="2xDTQz" node="2vFkHU6dZMV" resolve="incomeTax" />
-        <node concept="2xDTQx" id="7N6g9bB0$uC" role="2xDVn0">
-          <ref role="2xDTPu" node="2vFkHU6fTCE" resolve="salary" />
-          <node concept="2xZ1DR" id="7N6g9bB0$uD" role="2xDTPs">
-            <node concept="1H2aKs" id="7N6g9bB0$uE" role="2xWP8L">
-              <property role="1H2aK3" value="100" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="gY0Js" id="7N6g9bATuAY" role="gY7jz" />
   </node>
 </model>

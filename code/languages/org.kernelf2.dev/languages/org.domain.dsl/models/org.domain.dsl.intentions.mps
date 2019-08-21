@@ -39,7 +39,9 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt" />
+      <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt">
+        <reference id="1139877738879" name="concept" index="1A0vxQ" />
+      </concept>
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
@@ -76,7 +78,9 @@
                 <ref role="3TtcxE" to="znfn:2vFkHU6cXA$" resolve="subitems" />
               </node>
             </node>
-            <node concept="WFELt" id="2vFkHU6d3h_" role="2OqNvi" />
+            <node concept="WFELt" id="2vFkHU6d3h_" role="2OqNvi">
+              <ref role="1A0vxQ" to="znfn:2vFkHU6d3Jc" resolve="CalcItem" />
+            </node>
           </node>
         </node>
       </node>
