@@ -32,7 +32,6 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
-      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
@@ -52,9 +51,6 @@
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
-      </concept>
-      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
-        <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -230,24 +226,6 @@
           </node>
         </node>
       </node>
-    </node>
-  </node>
-  <node concept="13h7C7" id="2FZjDWByR9F">
-    <property role="3GE5qa" value="record" />
-    <ref role="13h7C2" to="r8g4:2FZjDWBy$pX" resolve="Member" />
-    <node concept="13hLZK" id="2FZjDWByR9G" role="13h7CW">
-      <node concept="3clFbS" id="2FZjDWByR9H" role="2VODD2" />
-    </node>
-    <node concept="13i0hz" id="2FZjDWByR9Q" role="13h7CS">
-      <property role="TrG5h" value="typeInferenceNode" />
-      <ref role="13i0hy" to="pooj:7iudlBAOzk$" resolve="typeInferenceNode" />
-      <node concept="3Tm1VV" id="2FZjDWByR9R" role="1B3o_S" />
-      <node concept="3clFbS" id="2FZjDWByR9U" role="3clF47">
-        <node concept="3cpWs6" id="2FZjDWByRa8" role="3cqZAp">
-          <node concept="10Nm6u" id="2FZjDWByRaf" role="3cqZAk" />
-        </node>
-      </node>
-      <node concept="3Tqbb2" id="2FZjDWByR9V" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="2HYLUBOlE2T">

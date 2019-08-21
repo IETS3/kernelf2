@@ -11,11 +11,31 @@
     <language id="1ab7bfac-29d6-4772-a483-50110408ac43" name="org.kf2.core">
       <concept id="7155053225565206528" name="org.kf2.core.structure.IntType" flags="ng" index="21A6bZ" />
       <concept id="3098281514132883236" name="org.kf2.core.structure.LogicalImpliesExpr" flags="ng" index="2WSAV" />
+      <concept id="3098281514127975791" name="org.kf2.core.structure.RecordInstance" flags="ng" index="dfEJK">
+        <child id="3098281514127975863" name="args" index="dfEGC" />
+        <child id="3098281514127975792" name="record" index="dfEJJ" />
+      </concept>
+      <concept id="3098281514125150042" name="org.kf2.core.structure.MemberAccessOP" flags="ng" index="dqoB5">
+        <reference id="3098281514125150045" name="member" index="dqoB2" />
+      </concept>
+      <concept id="3098281514124971786" name="org.kf2.core.structure.RecordType" flags="ng" index="dqO6l">
+        <reference id="3098281514124971787" name="rec" index="dqO6k" />
+      </concept>
+      <concept id="3098281514124330621" name="org.kf2.core.structure.Member" flags="ng" index="dtgzy" />
+      <concept id="3098281514124330618" name="org.kf2.core.structure.RecordDecl" flags="ng" index="dtgz_">
+        <child id="3098281514124330624" name="members" index="dtgwv" />
+      </concept>
       <concept id="7296320874263197425" name="org.kf2.core.structure.InterpretedFlag" flags="ng" index="gY0Js" />
+      <concept id="8403212614956286966" name="org.kf2.core.structure.DotExpr" flags="ng" index="2i4NqJ">
+        <child id="8403212614956286971" name="op" index="2i4Nqy" />
+      </concept>
       <concept id="8403212614955795569" name="org.kf2.core.structure.UnaryExpr" flags="ng" index="2i6V4C">
         <child id="8403212614955795822" name="expr" index="2i6V0R" />
       </concept>
       <concept id="8403212614955798176" name="org.kf2.core.structure.LogicalNotExpr" flags="ng" index="2i6VJT" />
+      <concept id="8403212614960817693" name="org.kf2.core.structure.IOptionallyTyped" flags="ng" index="2ij1d4">
+        <child id="8403212614960817694" name="type" index="2ij1d7" />
+      </concept>
       <concept id="915151988833974843" name="org.kf2.core.structure.FunCall" flags="ng" index="2lgVZp">
         <reference id="915151988833974844" name="fun" index="2lgVZu" />
         <child id="915151988833974846" name="args" index="2lgVZs" />
@@ -1342,6 +1362,50 @@
       </node>
     </node>
     <node concept="2NE3Kg" id="6TB6R9RJ1Lf" role="37GxYA" />
+  </node>
+  <node concept="37GxXp" id="P1tPUSclcj">
+    <property role="TrG5h" value="G_Records" />
+    <node concept="gY0Js" id="P1tPUSclck" role="gY7jz" />
+    <node concept="dtgz_" id="P1tPUSclgE" role="37GxYA">
+      <property role="TrG5h" value="Point" />
+      <node concept="dtgzy" id="P1tPUScli4" role="dtgwv">
+        <property role="TrG5h" value="x" />
+        <node concept="21A6bZ" id="P1tPUScliy" role="2ij1d7" />
+      </node>
+      <node concept="dtgzy" id="P1tPUSclj3" role="dtgwv">
+        <property role="TrG5h" value="y" />
+        <node concept="21A6bZ" id="P1tPUScljY" role="2ij1d7" />
+      </node>
+    </node>
+    <node concept="2NE3Kg" id="P1tPUSclkv" role="37GxYA" />
+    <node concept="37GxwB" id="P1tPUSclkM" role="37GxYA">
+      <property role="TrG5h" value="zero" />
+      <node concept="dfEJK" id="P1tPUSclms" role="37Gxwy">
+        <node concept="dqO6l" id="P1tPUSclmF" role="dfEJJ">
+          <ref role="dqO6k" node="P1tPUSclgE" resolve="Point" />
+        </node>
+        <node concept="1H2aKs" id="P1tPUSclnK" role="dfEGC">
+          <property role="1H2aK3" value="0" />
+        </node>
+        <node concept="1H2aKs" id="P1tPUSclnV" role="dfEGC">
+          <property role="1H2aK3" value="0" />
+        </node>
+      </node>
+    </node>
+    <node concept="2NE3Kg" id="P1tPUSclcG" role="37GxYA" />
+    <node concept="3vaTz7" id="P1tPUSclpO" role="37GxYA">
+      <node concept="2i4NqJ" id="P1tPUSclrl" role="3vaTz6">
+        <node concept="dqoB5" id="P1tPUSclsi" role="2i4Nqy">
+          <ref role="dqoB2" node="P1tPUScli4" resolve="x" />
+        </node>
+        <node concept="mWALo" id="P1tPUSclqK" role="2i6V0R">
+          <ref role="mWALr" node="P1tPUSclkM" resolve="zero" />
+        </node>
+      </node>
+      <node concept="1H2aKs" id="P1tPUSclsq" role="3vaTzo">
+        <property role="1H2aK3" value="0" />
+      </node>
+    </node>
   </node>
 </model>
 

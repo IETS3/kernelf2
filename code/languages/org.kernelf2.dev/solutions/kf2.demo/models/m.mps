@@ -13,8 +13,29 @@
     <language id="1ab7bfac-29d6-4772-a483-50110408ac43" name="org.kf2.core">
       <concept id="7155053225565206528" name="org.kf2.core.structure.IntType" flags="ng" index="21A6bZ" />
       <concept id="3098281514132883236" name="org.kf2.core.structure.LogicalImpliesExpr" flags="ng" index="2WSAV" />
+      <concept id="3098281514132050133" name="" flags="ng" index="2ZPTa">
+        <reference id="3098281514132198334" name="" index="2ZhOx" />
+        <child id="3098281514132198336" name="" index="2ZhPv" />
+      </concept>
+      <concept id="3098281514132050130" name="" flags="ng" index="2ZPTd">
+        <child id="3098281514132050134" name="" index="2ZPT9" />
+      </concept>
       <concept id="2460310434937429604" name="org.kf2.core.structure.AlgebraicConstructorArg" flags="ng" index="5xh$E">
         <child id="2460310434937431092" name="type" index="5xidU" />
+      </concept>
+      <concept id="3098281514127975791" name="" flags="ng" index="dfEJK">
+        <child id="3098281514127975863" name="" index="dfEGC" />
+        <child id="3098281514127975792" name="" index="dfEJJ" />
+      </concept>
+      <concept id="3098281514125150042" name="" flags="ng" index="dqoB5">
+        <reference id="3098281514125150045" name="" index="dqoB2" />
+      </concept>
+      <concept id="3098281514124971786" name="" flags="ng" index="dqO6l">
+        <reference id="3098281514124971787" name="" index="dqO6k" />
+      </concept>
+      <concept id="3098281514124330621" name="" flags="ng" index="dtgzy" />
+      <concept id="3098281514124330618" name="" flags="ng" index="dtgz_">
+        <child id="3098281514124330624" name="" index="dtgwv" />
       </concept>
       <concept id="1610040818624260736" name="org.kf2.core.structure.TypeVarType" flags="ng" index="dCA$o">
         <reference id="1610040818624260737" name="typeVar" index="dCA$p" />
@@ -139,29 +160,8 @@
       </concept>
     </language>
     <language id="4441485a-f7fc-4cfb-8044-d8997096c5d6" name="org.kf2.sugar">
-      <concept id="3098281514132050133" name="org.kf2.sugar.structure.WithArg" flags="ng" index="2ZPTa">
-        <reference id="3098281514132198334" name="member" index="2ZhOx" />
-        <child id="3098281514132198336" name="value" index="2ZhPv" />
-      </concept>
-      <concept id="3098281514132050130" name="org.kf2.sugar.structure.WithOp" flags="ng" index="2ZPTd">
-        <child id="3098281514132050134" name="args" index="2ZPT9" />
-      </concept>
       <concept id="3098281514130733661" name="org.kf2.sugar.structure.EnumType" flags="ng" index="d5bj2">
         <reference id="3098281514130733662" name="enum" index="d5bj1" />
-      </concept>
-      <concept id="3098281514127975791" name="org.kf2.sugar.structure.RecordInstance" flags="ng" index="dfEJK">
-        <child id="3098281514127975863" name="args" index="dfEGC" />
-        <child id="3098281514127975792" name="record" index="dfEJJ" />
-      </concept>
-      <concept id="3098281514125150042" name="org.kf2.sugar.structure.MemberAccessOP" flags="ng" index="dqoB5">
-        <reference id="3098281514125150045" name="member" index="dqoB2" />
-      </concept>
-      <concept id="3098281514124971786" name="org.kf2.sugar.structure.RecordType" flags="ng" index="dqO6l">
-        <reference id="3098281514124971787" name="rec" index="dqO6k" />
-      </concept>
-      <concept id="3098281514124330621" name="org.kf2.sugar.structure.Member" flags="ng" index="dtgzy" />
-      <concept id="3098281514124330618" name="org.kf2.sugar.structure.RecordDecl" flags="ng" index="dtgz_">
-        <child id="3098281514124330624" name="members" index="dtgwv" />
       </concept>
       <concept id="1823070633659679014" name="org.kf2.sugar.structure.EnumLitRef" flags="ng" index="mXTwN">
         <reference id="1823070633659679015" name="lit" index="mXTwM" />
@@ -548,7 +548,7 @@
       <property role="d0AnV" value="true" />
       <node concept="dfEJK" id="2FZjDWBVxKu" role="37Gxwz">
         <node concept="dqO6l" id="2FZjDWBVxLC" role="dfEJJ">
-          <ref role="dqO6k" node="2FZjDWBUZzN" resolve="TLState" />
+          <ref role="dqO6k" node="2FZjDWBUZzN" />
         </node>
         <node concept="1H2aKy" id="2FZjDWBWO5w" role="dfEGC" />
         <node concept="mXTwN" id="2FZjDWBWOgy" role="dfEGC">
@@ -562,7 +562,7 @@
         <node concept="2$$KCD" id="2FZjDWC4d3_" role="1H5NIF">
           <node concept="2i4NqJ" id="5vAcs0XnWzy" role="1H5NIF">
             <node concept="dqoB5" id="5vAcs0XnWLR" role="2i4Nqy">
-              <ref role="dqoB2" node="2FZjDWBUZA2" resolve="light" />
+              <ref role="dqoB2" node="2FZjDWBUZA2" />
             </node>
             <node concept="d5sZn" id="2FZjDWC2Ol2" role="2i6V0R">
               <ref role="d5sZm" node="2FZjDWBTRC1" resolve="state" />
@@ -574,7 +574,7 @@
         </node>
         <node concept="2i4NqJ" id="2FZjDWC4d5I" role="1H5NID">
           <node concept="dqoB5" id="2FZjDWC4d7q" role="2i4Nqy">
-            <ref role="dqoB2" node="2FZjDWBWNED" resolve="on" />
+            <ref role="dqoB2" node="2FZjDWBWNED" />
           </node>
           <node concept="d5sZn" id="2FZjDWC4d5q" role="2i6V0R">
             <ref role="d5sZm" node="2FZjDWBTRC1" resolve="state" />
@@ -591,7 +591,7 @@
         <ref role="d5BFB" node="2FZjDWBTRC1" resolve="state" />
         <node concept="dfEJK" id="2FZjDWBVLjg" role="d5BF_">
           <node concept="dqO6l" id="2FZjDWBVLlA" role="dfEJJ">
-            <ref role="dqO6k" node="2FZjDWBUZzN" resolve="TLState" />
+            <ref role="dqO6k" node="2FZjDWBUZzN" />
           </node>
           <node concept="1H2aUO" id="2FZjDWBWOPt" role="dfEGC" />
           <node concept="mXTwN" id="2FZjDWBVLn9" role="dfEGC">
@@ -605,7 +605,7 @@
             <ref role="d5sZm" node="2FZjDWBTRC1" resolve="state" />
           </node>
           <node concept="dqoB5" id="2FZjDWBWOt$" role="2i4Nqy">
-            <ref role="dqoB2" node="2FZjDWBWNED" resolve="on" />
+            <ref role="dqoB2" node="2FZjDWBWNED" />
           </node>
         </node>
       </node>
@@ -654,7 +654,7 @@
               </node>
               <node concept="2i4NqJ" id="2FZjDWBVLpe" role="1H5NIF">
                 <node concept="dqoB5" id="2FZjDWBVLrN" role="2i4Nqy">
-                  <ref role="dqoB2" node="2FZjDWBUZA2" resolve="light" />
+                  <ref role="dqoB2" node="2FZjDWBUZA2" />
                 </node>
                 <node concept="d5sZn" id="2FZjDWBUUS5" role="2i6V0R">
                   <ref role="d5sZm" node="2FZjDWBTRC1" resolve="state" />
@@ -664,7 +664,7 @@
             <node concept="2i4NqJ" id="4mp3zYk6EdD" role="38Xu9j">
               <node concept="2ZPTd" id="4mp3zYk6E_y" role="2i4Nqy">
                 <node concept="2ZPTa" id="4mp3zYk6EGt" role="2ZPT9">
-                  <ref role="2ZhOx" node="2FZjDWBUZA2" resolve="light" />
+                  <ref role="2ZhOx" node="2FZjDWBUZA2" />
                   <node concept="mXTwN" id="4mp3zYk6EOK" role="2ZhPv">
                     <ref role="mXTwM" node="2FZjDWBTRD6" resolve="green" />
                   </node>
@@ -679,7 +679,7 @@
             <node concept="2NSjky" id="2FZjDWBUUXV" role="38Xu9u" />
             <node concept="dfEJK" id="4mp3zYk7dNA" role="38Xu9j">
               <node concept="dqO6l" id="4mp3zYk7dWt" role="dfEJJ">
-                <ref role="dqO6k" node="2FZjDWBUZzN" resolve="TLState" />
+                <ref role="dqO6k" node="2FZjDWBUZzN" />
               </node>
             </node>
           </node>
@@ -687,7 +687,7 @@
       </node>
       <node concept="2i4NqJ" id="2FZjDWBWPcz" role="d63gH">
         <node concept="dqoB5" id="2FZjDWBWPyb" role="2i4Nqy">
-          <ref role="dqoB2" node="2FZjDWBWNED" resolve="on" />
+          <ref role="dqoB2" node="2FZjDWBWNED" />
         </node>
         <node concept="d5sZn" id="2FZjDWBWPcp" role="2i6V0R">
           <ref role="d5sZm" node="2FZjDWBTRC1" resolve="state" />
@@ -1180,11 +1180,11 @@
     <node concept="37GxwB" id="2FZjDWBMN7W" role="37GxYA">
       <property role="TrG5h" value="p" />
       <node concept="dqO6l" id="2FZjDWBMN7X" role="2ij1d7">
-        <ref role="dqO6k" node="2FZjDWBMN7Q" resolve="Point" />
+        <ref role="dqO6k" node="2FZjDWBMN7Q" />
       </node>
       <node concept="dfEJK" id="2FZjDWBMN7Y" role="37Gxwy">
         <node concept="dqO6l" id="2FZjDWBMN7Z" role="dfEJJ">
-          <ref role="dqO6k" node="2FZjDWBMN7Q" resolve="Point" />
+          <ref role="dqO6k" node="2FZjDWBMN7Q" />
         </node>
         <node concept="1H2aKs" id="2FZjDWBMN80" role="dfEGC">
           <property role="1H2aK3" value="1" />
@@ -1198,7 +1198,7 @@
       <property role="TrG5h" value="px1" />
       <node concept="2i4NqJ" id="2FZjDWBMN83" role="37Gxwy">
         <node concept="dqoB5" id="2FZjDWBMN84" role="2i4Nqy">
-          <ref role="dqoB2" node="2FZjDWBMN7R" resolve="x" />
+          <ref role="dqoB2" node="2FZjDWBMN7R" />
         </node>
         <node concept="mWALo" id="2FZjDWBMN85" role="2i6V0R">
           <ref role="mWALr" node="2FZjDWBMN7W" resolve="p" />
@@ -1209,7 +1209,7 @@
       <property role="TrG5h" value="px2" />
       <node concept="2i4NqJ" id="2FZjDWBN5OH" role="37Gxwy">
         <node concept="dqoB5" id="2FZjDWBN5OI" role="2i4Nqy">
-          <ref role="dqoB2" node="2FZjDWBMN7R" resolve="x" />
+          <ref role="dqoB2" node="2FZjDWBMN7R" />
         </node>
         <node concept="mWALo" id="2FZjDWBN5OJ" role="2i6V0R">
           <ref role="mWALr" node="2FZjDWBMN7W" resolve="p" />

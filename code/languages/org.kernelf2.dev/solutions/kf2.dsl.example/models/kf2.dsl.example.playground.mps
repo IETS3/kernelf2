@@ -9,16 +9,9 @@
   <imports />
   <registry>
     <language id="1ab7bfac-29d6-4772-a483-50110408ac43" name="org.kf2.core">
-      <concept id="7155053225565206528" name="org.kf2.core.structure.IntType" flags="ng" index="21A6bZ" />
-      <concept id="2460310434937429604" name="org.kf2.core.structure.AlgebraicConstructorArg" flags="ng" index="5xh$E">
-        <child id="2460310434937431092" name="type" index="5xidU" />
-      </concept>
       <concept id="7296320874263197425" name="org.kf2.core.structure.InterpretedFlag" flags="ng" index="gY0Js" />
-      <concept id="8403212614956286966" name="org.kf2.core.structure.DotExpr" flags="ng" index="2i4NqJ">
-        <child id="8403212614956286971" name="op" index="2i4Nqy" />
-      </concept>
-      <concept id="8403212614955795569" name="org.kf2.core.structure.UnaryExpr" flags="ng" index="2i6V4C">
-        <child id="8403212614955795822" name="expr" index="2i6V0R" />
+      <concept id="4141059016237504745" name="org.kf2.core.structure.Log" flags="ng" index="hH2vl">
+        <child id="4141059016237504749" name="value" index="hH2vh" />
       </concept>
       <concept id="8403212614960817693" name="org.kf2.core.structure.IOptionallyTyped" flags="ng" index="2ij1d4">
         <child id="8403212614960817694" name="type" index="2ij1d7" />
@@ -45,19 +38,6 @@
         <child id="1667935720929659160" name="left" index="1H5NIF" />
       </concept>
       <concept id="1667935720930234148" name="org.kf2.core.structure.PlusExpr" flags="ng" index="1H7JQn" />
-      <concept id="5955298286239339288" name="org.kf2.core.structure.AlgebraicDeclaration" flags="ng" index="1KraG_">
-        <child id="5955298286239340413" name="constructors" index="1KraX0" />
-      </concept>
-      <concept id="5955298286239340412" name="org.kf2.core.structure.AlgebraicConstructor" flags="ng" index="1KraX1">
-        <child id="2460310434937431133" name="args" index="5xicj" />
-      </concept>
-      <concept id="5955298286239452388" name="org.kf2.core.structure.AlgebraicTerm" flags="ng" index="1KrJjp">
-        <reference id="1610040818624991068" name="cons" index="anoN4" />
-        <child id="5955298286239452394" name="args" index="1KrJjn" />
-      </concept>
-      <concept id="5955298286240284081" name="org.kf2.core.structure.AlgebraicArgAccess" flags="ng" index="1Kvkmc">
-        <child id="3098281514126885708" name="index" index="djwRj" />
-      </concept>
     </language>
     <language id="fd0933e3-6066-4294-8d21-8d0d04303ade" name="org.domain.dsl">
       <concept id="2876483902695591807" name="org.domain.dsl.structure.ItemValue" flags="ng" index="2xDTQx">
@@ -90,20 +70,6 @@
       </concept>
     </language>
     <language id="4441485a-f7fc-4cfb-8044-d8997096c5d6" name="org.kf2.sugar">
-      <concept id="3098281514127975791" name="org.kf2.sugar.structure.RecordInstance" flags="ng" index="dfEJK">
-        <child id="3098281514127975863" name="args" index="dfEGC" />
-        <child id="3098281514127975792" name="record" index="dfEJJ" />
-      </concept>
-      <concept id="3098281514125150042" name="org.kf2.sugar.structure.MemberAccessOP" flags="ng" index="dqoB5">
-        <reference id="3098281514125150045" name="member" index="dqoB2" />
-      </concept>
-      <concept id="3098281514124971786" name="org.kf2.sugar.structure.RecordType" flags="ng" index="dqO6l">
-        <reference id="3098281514124971787" name="rec" index="dqO6k" />
-      </concept>
-      <concept id="3098281514124330621" name="org.kf2.sugar.structure.Member" flags="ng" index="dtgzy" />
-      <concept id="3098281514124330618" name="org.kf2.sugar.structure.RecordDecl" flags="ng" index="dtgz_">
-        <child id="3098281514124330624" name="members" index="dtgwv" />
-      </concept>
       <concept id="5182877833500586703" name="org.kf2.sugar.structure.OtherwiseLiteral" flags="ng" index="2NSjky" />
       <concept id="2583804470398707211" name="org.kf2.sugar.structure.AltCase" flags="ng" index="38Xu9M">
         <child id="2583804470398707242" name="val" index="38Xu9j" />
@@ -274,205 +240,21 @@
       </node>
     </node>
     <node concept="2NE3Kg" id="3_RZNKCNuQM" role="37GxYA" />
-    <node concept="gY0Js" id="2vFkHU66nV3" role="gY7jz" />
-  </node>
-  <node concept="37GxXp" id="4$TEWcBOjsd">
-    <property role="TrG5h" value="HelloWorldAlge" />
-    <node concept="37GxwB" id="4$TEWcBN5NS" role="37GxYA">
-      <property role="TrG5h" value="incomeTax_Env_incomeTax" />
-      <node concept="1H2aKs" id="4$TEWcBN5NT" role="37Gxwy">
-        <property role="1H2aK3" value="0" />
-      </node>
-    </node>
-    <node concept="37GxwB" id="4$TEWcBN5NU" role="37GxYA">
-      <property role="TrG5h" value="incomeTax_Env_salary" />
-      <node concept="1H2aKs" id="4$TEWcBN5NV" role="37Gxwy">
-        <property role="1H2aK3" value="1" />
-      </node>
-    </node>
-    <node concept="37GxwB" id="4$TEWcBN5NN" role="37GxYA">
-      <property role="TrG5h" value="incomeTax_Env_percentage" />
-      <node concept="1H2aKs" id="4$TEWcBN5NO" role="37Gxwy">
-        <property role="1H2aK3" value="2" />
-      </node>
-    </node>
-    <node concept="2NE3Kg" id="4$TEWcBOj_J" role="37GxYA" />
-    <node concept="1KraG_" id="4$TEWcBN5NP" role="37GxYA">
-      <property role="TrG5h" value="incomeTax_Env" />
-      <node concept="1KraX1" id="4$TEWcBN5NR" role="1KraX0">
-        <property role="TrG5h" value="incomeTax_Env" />
-        <node concept="5xh$E" id="4$TEWcBN5Ow" role="5xicj">
-          <node concept="21A6bZ" id="4$TEWcBN5Ox" role="5xidU" />
-        </node>
-        <node concept="5xh$E" id="4$TEWcBN5Oy" role="5xicj">
-          <node concept="21A6bZ" id="4$TEWcBN5Oz" role="5xidU" />
-        </node>
-        <node concept="5xh$E" id="4$TEWcBN5Os" role="5xicj">
-          <node concept="21A6bZ" id="4$TEWcBN5Ot" role="5xidU" />
+    <node concept="hH2vl" id="7N6g9bB0$rX" role="37GxYA">
+      <property role="TrG5h" value="salary" />
+      <node concept="2xDTQy" id="7N6g9bB0$uB" role="hH2vh">
+        <ref role="2xDTQz" node="2vFkHU6dZMV" resolve="incomeTax" />
+        <node concept="2xDTQx" id="7N6g9bB0$uC" role="2xDVn0">
+          <ref role="2xDTPu" node="2vFkHU6fTCE" resolve="salary" />
+          <node concept="2xZ1DR" id="7N6g9bB0$uD" role="2xDTPs">
+            <node concept="1H2aKs" id="7N6g9bB0$uE" role="2xWP8L">
+              <property role="1H2aK3" value="100" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
-    <node concept="2NE3Kg" id="4$TEWcBOjA0" role="37GxYA" />
-    <node concept="3vaTz7" id="4$TEWcBOjA_" role="37GxYA">
-      <node concept="1Kvkmc" id="4$TEWcBOjD0" role="3vaTz6">
-        <node concept="mWALo" id="4$TEWcBOm6a" role="djwRj">
-          <ref role="mWALr" node="4$TEWcBN5NS" resolve="incomeTax_Env_incomeTax" />
-        </node>
-        <node concept="1KrJjp" id="4$TEWcBOjBI" role="2i6V0R">
-          <ref role="anoN4" node="4$TEWcBN5NR" resolve="incomeTax_Env" />
-          <node concept="1H2aKs" id="4$TEWcBOjCf" role="1KrJjn">
-            <property role="1H2aK3" value="0" />
-          </node>
-          <node concept="1H2aKs" id="4$TEWcBOjCq" role="1KrJjn">
-            <property role="1H2aK3" value="1" />
-          </node>
-          <node concept="1H2aKs" id="4$TEWcBOjCB" role="1KrJjn">
-            <property role="1H2aK3" value="2" />
-          </node>
-        </node>
-      </node>
-      <node concept="1H2aKs" id="4$TEWcBOjEf" role="3vaTzo">
-        <property role="1H2aK3" value="0" />
-      </node>
-    </node>
-    <node concept="3vaTz7" id="4$TEWcBOjFH" role="37GxYA">
-      <node concept="1Kvkmc" id="4$TEWcBOjFI" role="3vaTz6">
-        <node concept="mWALo" id="4$TEWcBOm6D" role="djwRj">
-          <ref role="mWALr" node="4$TEWcBN5NU" resolve="incomeTax_Env_salary" />
-        </node>
-        <node concept="1KrJjp" id="4$TEWcBOjFK" role="2i6V0R">
-          <ref role="anoN4" node="4$TEWcBN5NR" resolve="incomeTax_Env" />
-          <node concept="1H2aKs" id="4$TEWcBOjFL" role="1KrJjn">
-            <property role="1H2aK3" value="0" />
-          </node>
-          <node concept="1H2aKs" id="4$TEWcBOjFM" role="1KrJjn">
-            <property role="1H2aK3" value="1" />
-          </node>
-          <node concept="1H2aKs" id="4$TEWcBOjFN" role="1KrJjn">
-            <property role="1H2aK3" value="2" />
-          </node>
-        </node>
-      </node>
-      <node concept="1H2aKs" id="4$TEWcBOjJp" role="3vaTzo">
-        <property role="1H2aK3" value="1" />
-      </node>
-    </node>
-    <node concept="3vaTz7" id="4$TEWcBOjGw" role="37GxYA">
-      <node concept="1Kvkmc" id="4$TEWcBOjGx" role="3vaTz6">
-        <node concept="1KrJjp" id="4$TEWcBOjGz" role="2i6V0R">
-          <ref role="anoN4" node="4$TEWcBN5NR" resolve="incomeTax_Env" />
-          <node concept="1H2aKs" id="4$TEWcBOjG$" role="1KrJjn">
-            <property role="1H2aK3" value="0" />
-          </node>
-          <node concept="1H2aKs" id="4$TEWcBOjG_" role="1KrJjn">
-            <property role="1H2aK3" value="1" />
-          </node>
-          <node concept="1H2aKs" id="4$TEWcBOjGA" role="1KrJjn">
-            <property role="1H2aK3" value="2" />
-          </node>
-        </node>
-        <node concept="mWALo" id="4$TEWcBOm78" role="djwRj">
-          <ref role="mWALr" node="4$TEWcBN5NN" resolve="incomeTax_Env_percentage" />
-        </node>
-      </node>
-      <node concept="1H2aKs" id="4$TEWcBOjJ6" role="3vaTzo">
-        <property role="1H2aK3" value="2" />
-      </node>
-    </node>
-    <node concept="gY0Js" id="4$TEWcBOjsU" role="gY7jz" />
-  </node>
-  <node concept="37GxXp" id="4$TEWcBOmhm">
-    <property role="TrG5h" value="HelloWorldRec" />
-    <node concept="dtgz_" id="4$TEWcBOmlT" role="37GxYA">
-      <property role="TrG5h" value="TaxStuff" />
-      <node concept="dtgzy" id="4$TEWcBOmmJ" role="dtgwv">
-        <property role="TrG5h" value="incomeTax" />
-        <node concept="21A6bZ" id="4$TEWcBOmmR" role="2ij1d7" />
-      </node>
-      <node concept="dtgzy" id="4$TEWcBOmn0" role="dtgwv">
-        <property role="TrG5h" value="salary" />
-        <node concept="21A6bZ" id="4$TEWcBOmn1" role="2ij1d7" />
-      </node>
-      <node concept="dtgzy" id="4$TEWcBOmng" role="dtgwv">
-        <property role="TrG5h" value="percentage" />
-        <node concept="21A6bZ" id="4$TEWcBOmns" role="2ij1d7" />
-      </node>
-    </node>
-    <node concept="2NE3Kg" id="4$TEWcBOmla" role="37GxYA" />
-    <node concept="2NE3Kg" id="4$TEWcBOmhA" role="37GxYA" />
-    <node concept="3vaTz7" id="4$TEWcBOmhB" role="37GxYA">
-      <node concept="2i4NqJ" id="4$TEWcBOmr5" role="3vaTz6">
-        <node concept="dqoB5" id="4$TEWcBOmrN" role="2i4Nqy">
-          <ref role="dqoB2" node="4$TEWcBOmmJ" resolve="incomeTax" />
-        </node>
-        <node concept="dfEJK" id="4$TEWcBOmpv" role="2i6V0R">
-          <node concept="dqO6l" id="4$TEWcBOmpR" role="dfEJJ">
-            <ref role="dqO6k" node="4$TEWcBOmlT" resolve="TaxStuff" />
-          </node>
-          <node concept="1H2aKs" id="4$TEWcBOmq6" role="dfEGC">
-            <property role="1H2aK3" value="0" />
-          </node>
-          <node concept="1H2aKs" id="4$TEWcBOmql" role="dfEGC">
-            <property role="1H2aK3" value="1" />
-          </node>
-          <node concept="1H2aKs" id="4$TEWcBOmqz" role="dfEGC">
-            <property role="1H2aK3" value="2" />
-          </node>
-        </node>
-      </node>
-      <node concept="1H2aKs" id="4$TEWcBOmhI" role="3vaTzo">
-        <property role="1H2aK3" value="0" />
-      </node>
-    </node>
-    <node concept="3vaTz7" id="4$TEWcBOmsR" role="37GxYA">
-      <node concept="2i4NqJ" id="4$TEWcBOmsS" role="3vaTz6">
-        <node concept="dqoB5" id="4$TEWcBOmva" role="2i4Nqy">
-          <ref role="dqoB2" node="4$TEWcBOmn0" resolve="salary" />
-        </node>
-        <node concept="dfEJK" id="4$TEWcBOmsU" role="2i6V0R">
-          <node concept="dqO6l" id="4$TEWcBOmsV" role="dfEJJ">
-            <ref role="dqO6k" node="4$TEWcBOmlT" resolve="TaxStuff" />
-          </node>
-          <node concept="1H2aKs" id="4$TEWcBOmsW" role="dfEGC">
-            <property role="1H2aK3" value="0" />
-          </node>
-          <node concept="1H2aKs" id="4$TEWcBOmsX" role="dfEGC">
-            <property role="1H2aK3" value="1" />
-          </node>
-          <node concept="1H2aKs" id="4$TEWcBOmsY" role="dfEGC">
-            <property role="1H2aK3" value="2" />
-          </node>
-        </node>
-      </node>
-      <node concept="1H2aKs" id="4$TEWcBOmsZ" role="3vaTzo">
-        <property role="1H2aK3" value="1" />
-      </node>
-    </node>
-    <node concept="3vaTz7" id="4$TEWcBOmt$" role="37GxYA">
-      <node concept="2i4NqJ" id="4$TEWcBOmt_" role="3vaTz6">
-        <node concept="dqoB5" id="4$TEWcBOmvn" role="2i4Nqy">
-          <ref role="dqoB2" node="4$TEWcBOmng" resolve="percentage" />
-        </node>
-        <node concept="dfEJK" id="4$TEWcBOmtB" role="2i6V0R">
-          <node concept="dqO6l" id="4$TEWcBOmtC" role="dfEJJ">
-            <ref role="dqO6k" node="4$TEWcBOmlT" resolve="TaxStuff" />
-          </node>
-          <node concept="1H2aKs" id="4$TEWcBOmtD" role="dfEGC">
-            <property role="1H2aK3" value="0" />
-          </node>
-          <node concept="1H2aKs" id="4$TEWcBOmtE" role="dfEGC">
-            <property role="1H2aK3" value="1" />
-          </node>
-          <node concept="1H2aKs" id="4$TEWcBOmtF" role="dfEGC">
-            <property role="1H2aK3" value="2" />
-          </node>
-        </node>
-      </node>
-      <node concept="1H2aKs" id="4$TEWcBOmtG" role="3vaTzo">
-        <property role="1H2aK3" value="2" />
-      </node>
-    </node>
-    <node concept="gY0Js" id="4$TEWcBOmhZ" role="gY7jz" />
+    <node concept="gY0Js" id="7N6g9bATuAY" role="gY7jz" />
   </node>
 </model>
 
