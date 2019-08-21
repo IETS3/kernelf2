@@ -22,6 +22,7 @@
         <dependency reexport="false">18463265-6d45-4514-82f1-cf7eb1222492(de.q60.mps.polymorphicfunctions.runtime)</dependency>
         <dependency reexport="false">e52a4835-844d-46a1-99f8-c06129db796f(de.q60.mps.shadowmodels.runtime)</dependency>
         <dependency reexport="false">0bf7bc3b-b11d-42e4-b160-93d72af96397(de.q60.mps.shadowmodels.runtimelang)</dependency>
+        <dependency reexport="false">a05cab6b-522f-4255-b2ed-8d6bfca9b584(org.kf2.test)</dependency>
       </dependencies>
       <languageVersions>
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="8" />
@@ -62,6 +63,7 @@
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
         <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
         <module reference="1ab7bfac-29d6-4772-a483-50110408ac43(org.kf2.core)" version="0" />
+        <module reference="a05cab6b-522f-4255-b2ed-8d6bfca9b584(org.kf2.test)" version="0" />
         <module reference="5b7e3913-621b-4503-8ad3-236b8a6a5d41(org.kf2.tools.javagen)" version="0" />
         <module reference="d0b5ba08-35a0-4252-b889-75a1648230fe(org.kf2.tools.javagen#01)" version="0" />
       </dependencyVersions>
@@ -71,6 +73,7 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="false">1ab7bfac-29d6-4772-a483-50110408ac43(org.kf2.core)</dependency>
+    <dependency reexport="false">a05cab6b-522f-4255-b2ed-8d6bfca9b584(org.kf2.test)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="8" />
@@ -104,6 +107,7 @@
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" version="0" />
     <module reference="1ab7bfac-29d6-4772-a483-50110408ac43(org.kf2.core)" version="0" />
+    <module reference="a05cab6b-522f-4255-b2ed-8d6bfca9b584(org.kf2.test)" version="0" />
     <module reference="5b7e3913-621b-4503-8ad3-236b8a6a5d41(org.kf2.tools.javagen)" version="0" />
   </dependencyVersions>
   <extendedLanguages />
