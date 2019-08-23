@@ -1173,9 +1173,6 @@
       <node concept="3RclfB" id="3JPN2vWiAvS" role="NiI83">
         <ref role="3RcleX" node="5o5qH$CQKdO" resolve="desugar" />
       </node>
-      <node concept="3RclfB" id="3tIuEqjOxHO" role="NiI83">
-        <ref role="3RcleX" node="3qfy$Tio$Vt" resolve="simplify" />
-      </node>
       <node concept="2xCcYw" id="3JPN2vWiD_t" role="2xEDBM">
         <node concept="02i3D" id="5bqHObTjROf" role="2xCcKX">
           <ref role="02i3$" to="nup6:3JPN2vWhXdY" resolve="Module" />

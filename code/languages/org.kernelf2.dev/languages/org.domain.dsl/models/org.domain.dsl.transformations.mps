@@ -208,8 +208,8 @@
           <node concept="2155sH" id="4$TEWcBLgrr" role="2Oq$k0">
             <ref role="2155sG" node="2vFkHU6l$u7" resolve="c" />
           </node>
-          <node concept="2qgKlT" id="4$TEWcBLiii" role="2OqNvi">
-            <ref role="37wK5l" to="599g:4$TEWcBLf7g" resolve="allItems" />
+          <node concept="2qgKlT" id="242XA0tEkad" role="2OqNvi">
+            <ref role="37wK5l" to="599g:242XA0tEb14" resolve="allNonContainerItems" />
           </node>
         </node>
       </node>
@@ -635,8 +635,8 @@
                         <ref role="3Tt5mk" to="znfn:2vFkHU6jcXX" resolve="calc" />
                       </node>
                     </node>
-                    <node concept="2qgKlT" id="4$TEWcBLkWN" role="2OqNvi">
-                      <ref role="37wK5l" to="599g:4$TEWcBLf7g" resolve="allItems" />
+                    <node concept="2qgKlT" id="242XA0tFc8K" role="2OqNvi">
+                      <ref role="37wK5l" to="599g:242XA0tEb14" resolve="allNonContainerItems" />
                     </node>
                   </node>
                   <node concept="3MbsX0" id="4$TEWcBK9iq" role="2PWHRo">
