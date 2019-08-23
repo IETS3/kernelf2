@@ -74,6 +74,19 @@
       <node concept="026TG" id="2HYLUBOlBn8" role="026TK">
         <node concept="027og" id="2HYLUBOlBrp" role="026TJ">
           <ref role="02LMe" to="j20k:2HYLUBOln8_" resolve="AssertTrue" />
+          <node concept="027rt" id="242XA0tJwC0" role="02LM9">
+            <ref role="027rv" to="j20k:242XA0tJwrB" resolve="log" />
+            <node concept="1Zmyal" id="242XA0tJwIn" role="027rp">
+              <node concept="2OqwBi" id="242XA0tJwIo" role="1Zmyar">
+                <node concept="2155sH" id="242XA0tJwIp" role="2Oq$k0">
+                  <ref role="2155sG" node="2HYLUBOlBn6" resolve="ae" />
+                </node>
+                <node concept="3TrEf2" id="242XA0tJwIq" role="2OqNvi">
+                  <ref role="3Tt5mk" to="j20k:2HYLUBOllXJ" resolve="actual" />
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="027rt" id="2HYLUBOlBw2" role="02LM9">
             <ref role="027rv" to="j20k:2HYLUBOln8A" resolve="expr" />
             <node concept="027og" id="2HYLUBOlByp" role="027rp">

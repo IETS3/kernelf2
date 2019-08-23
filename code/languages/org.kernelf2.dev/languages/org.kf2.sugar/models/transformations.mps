@@ -117,6 +117,7 @@
       <concept id="683004656442891684" name="de.q60.mps.shadowmodels.transformation.structure.FoldElementVariable" flags="ng" index="3ejtyT" />
       <concept id="7316581361273087769" name="de.q60.mps.shadowmodels.transformation.structure.ForkDeclaration" flags="ng" index="3lp93y">
         <child id="4453020072187189211" name="parameters" index="2xEDBM" />
+        <child id="3399411678333878506" name="autoApply" index="NiI83" />
         <child id="7316581361273089326" name="rootCall" index="3lp9Fl" />
       </concept>
       <concept id="3563231453904357666" name="de.q60.mps.shadowmodels.transformation.structure.NullNode" flags="ng" index="3n1eO2" />
@@ -144,6 +145,9 @@
         <child id="1382135219955669995" name="condition" index="3MbsX3" />
         <child id="1382135219955669997" name="then" index="3MbsX5" />
         <child id="1382135219955670000" name="else" index="3MbsXo" />
+      </concept>
+      <concept id="2969665195339091237" name="de.q60.mps.shadowmodels.transformation.structure.TransformationInclude" flags="ng" index="3RclfB">
+        <reference id="2969665195339091327" name="transformation" index="3RcleX" />
       </concept>
       <concept id="2573073122887437731" name="de.q60.mps.shadowmodels.transformation.structure.Duplicate" flags="ng" index="1XuIBW">
         <child id="2573073122887437734" name="sourceQuery" index="1XuIBT" />
@@ -478,7 +482,7 @@
         </node>
       </node>
     </node>
-    <node concept="2OrE70" id="1_cQhkfGEyu" role="02uzr" />
+    <node concept="2OrE70" id="242XA0tHMwa" role="02uzr" />
     <node concept="3lp93y" id="6TeLvA5Pr9" role="02uzr">
       <property role="TrG5h" value="copy1" />
       <node concept="2xCcYw" id="6TeLvA5Qgp" role="2xEDBM">
@@ -497,6 +501,9 @@
         <node concept="2xCdEf" id="6TeLvA5QgX" role="1Zmyar">
           <ref role="2xCdFh" node="6TeLvA5Qgp" resolve="node" />
         </node>
+      </node>
+      <node concept="3RclfB" id="242XA0tIHPQ" role="NiI83">
+        <ref role="3RcleX" to="shry:5o5qH$CQKdO" resolve="desugar" />
       </node>
     </node>
     <node concept="2OrE70" id="6TeLvA64Vn" role="02uzr" />
@@ -524,6 +531,9 @@
         <node concept="2xCdEf" id="D$OtjtO0Mt" role="1Zmyar">
           <ref role="2xCdFh" node="D$OtjtO0K4" resolve="content" />
         </node>
+      </node>
+      <node concept="3RclfB" id="242XA0tIrjA" role="NiI83">
+        <ref role="3RcleX" to="shry:5o5qH$CQKdO" resolve="desugar" />
       </node>
     </node>
     <node concept="2OrE70" id="D$OtjtRyfw" role="02uzr" />

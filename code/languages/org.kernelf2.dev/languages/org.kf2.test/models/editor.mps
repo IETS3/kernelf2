@@ -12,7 +12,9 @@
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
-      <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
+      <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
+        <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
+      </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
@@ -72,6 +74,15 @@
         <ref role="1k5W1q" to="68hx:3tIuEqk1SFg" resolve="kf2Keyword" />
       </node>
       <node concept="3F1sOY" id="2HYLUBOln9f" role="3EZMnx">
+        <ref role="1NtTu8" to="j20k:2HYLUBOln8A" resolve="expr" />
+      </node>
+    </node>
+    <node concept="3EZMnI" id="242XA0tJwrG" role="6VMZX">
+      <node concept="2iRfu4" id="242XA0tJwrH" role="2iSdaV" />
+      <node concept="3F0ifn" id="242XA0tJwrE" role="3EZMnx">
+        <property role="3F0ifm" value="log" />
+      </node>
+      <node concept="3F1sOY" id="242XA0tJwrP" role="3EZMnx">
         <ref role="1NtTu8" to="j20k:2HYLUBOln8A" resolve="expr" />
       </node>
     </node>

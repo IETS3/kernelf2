@@ -72,6 +72,13 @@
     <property role="TrG5h" value="AssertTrue" />
     <property role="34LRSv" value="assert true" />
     <ref role="1TJDcQ" node="2HYLUBOllXF" resolve="Assert" />
+    <node concept="1TJgyj" id="242XA0tJwrB" role="1TKVEi">
+      <property role="IQ2ns" value="2378734445881329383" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="log" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" to="nup6:2frx7BFaCHD" resolve="Expr" />
+    </node>
     <node concept="1TJgyj" id="2HYLUBOln8A" role="1TKVEi">
       <property role="IQ2ns" value="3134161923459084838" />
       <property role="20lmBu" value="aggregation" />
