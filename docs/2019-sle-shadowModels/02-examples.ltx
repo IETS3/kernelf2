@@ -1,0 +1,145 @@
+\vspace{-2mm}
+\section{Use Cases}
+\label{examples}
+
+
+
+\subsection{Growing Domain-Specific Languages}
+\label{growing}
+
+An important approach for developing
+languages is to grow a specialized language from a more
+general one (\cite{steele1999growing,felleisen2018programmable}. The semantics of extensions is defined through reduction to the base language.
+ 
+Because of MPS' rich support for language
+modularity, this approach is idiomatic. For example, mbeddr extends C
+with domain-specific concepts for embedded software
+development~\cite{mbeddrSM} and KernelF~\cite{voelter2018design} has
+been used as a base language for DSLs in finance and
+healthcare~\cite{voelter2018using}.
+
+In the case of mbeddr, the reduction to the base language happens on demand when
+the user invokes \ic{Make} in the IDE. However, in addition to compilation to
+Java, KernelF is also executed with an in-IDE interpreter to shorten the
+feedback cycle and reduce the need for external build and execution
+infrastructure. So for every DSL language construct, the language engineer has
+to develop both a code generator to Java \emph{and} an interpreter. This
+duplication is tedious and error-prone.
+
+\parhead{Why Realtime} KernelF2 is a minimal functional language with an
+interpreter and a code generator. When extending KernelF2, the semantics of the
+extension is defined through a \emph{single} Shadow Model-based transformation
+to KernelF2. We define the semantics \emph{once} and get a generator as well as
+an interactive interpreter. Our vision also includes various verifiers
+as backends for the language. \fig{exampleTrafo} shows an example
+transformation.
+
+
+\begin{figure}[t!]
+	\begin{center} 
+		\includegraphics[width=1\columnwidth]{figures/exampleTrafo.png}
+	\end{center}
+	\vspace{-2mm}
+    \caption{Example transformation from a multi-case \ic{switch}-style expression to nested \ic{if} expressions.}
+    \vspace{-2mm}
+	\label{exampleTrafo}   
+\end{figure} 
+
+
+
+
+\subsection{Code Weaving for Safety}
+\label{exweaving}
+
+A consequence of using separation of concerns to reduce code complexity and increase
+modularity is that for the final system, the previously separated concerns
+have to be reintegrated.
+In the context of SAFE4I~\footnote{\url{https://www.edacentrum.de/safe4i/}, BMBF
+FKZ 01|S17032} we use Shadow Models to incrementally weave safety concerns into
+C programs written in mbeddr~\cite{voelter2013mbeddr}.
+
+Separating the safety concern is feasible because most safety
+measures rely on a limited number of established patterns such as checksums or
+redundant computation with subsequent voting~\cite{hanmer2013patterns}. This way, 
+the core logic and the safety patterns can evolve
+independently and can be rewoven on demand. In addition, the same pattern can
+potentially be applied to many different target locations. It also fits well
+with a development process that distinguishes between safety engineers and
+(regular) embedded developers: each can maintain their own artifact.
+
+Safety engineers use a DSL to specify \emph{safety patterns}
+modularly. The pattern describes the constraints regarding a potential
+\emph{weaving site} (in terms of structure, type system and data flow), plus the
+modifications to the core code. The embedded software
+engineers mark the locations in their code where a particular safety pattern
+will be woven in.
+Finally, a \emph{weaver}, implemented as a Shadow Model transformation merges
+the two concerns.
+
+\parhead{Why Realtime} A drawback of SoC is that it requires reassembling
+the overall system from the separated artifacts. To minimize this drawback, it is useful
+to show the weaving result to the user. The shorter the feedback,
+and the lower the requirements on the build infrastructure the better. This is especially true because
+some of the weavings are non-trivial; it is useful to show the result and give the safety
+engineer the opportunity to fix potential problems.
+  
+
+
+
+\subsection{Incremental Staging of Feature Models}
+
+Feature modeling is well-established for
+modeling variability in product lines~\cite{kangFODA1990}: a
+\emph{feature model} specifies the set of possible products by defining
+identifiable features and the constraints between them; \emph{configurations}
+specify individual products by selecting features while respecting the
+constraints. The formalism comes with a set of predefined
+constraints (such as \ic{mandatory}, \ic{optional}, \ic{n-of-m} and \ic{1-of-m})
+but also allows custom constraints using Boolean expressions.
+
+Sometimes the product is configured in steps,
+each step making
+additional selections; only the final step defines a
+concrete product. Such \emph{staged
+configurations}~\cite{czarneckiStagedConfig2004} are typically used along a
+supply chain or to distinguish between build-time and
+runtime configuration decisions.
+
+We implemented 
+feature models in MPS as a building block for
+customer-specific modeling environments. In addition to staged
+configuration, the tool also supports attributes, modularity via instantiation, and
+cardinalities~\cite{czarnecki2005}.
+The tool uses the Z3 SMT solver~\cite{de2008z3} to check
+consistency of feature models, and interactively guide the user towards
+valid configurations.
+
+Creating a partial configuration \ic{C} of feature model \ic{M} implicitly
+defines~\cite{czarneckiStagedConfig2004} a specialized feature model \ic{M'} by removing
+all features, attributes and constraints that became redundant due to the
+user's decisions in \ic{C}; it also leads to specialization
+of constraints, for example, $F_1\Rightarrow F_2\lor F_3$ will be
+specialized to $F_1\Rightarrow F_3$, if $F_2$ has been deselected in \ic{C}. In the next stage, a more specific configuration \ic{C'} is
+derived from the specialized feature model \ic{M'}. The creation of the derived
+feature models is implemented via Shadow Models.  
+
+
+\parhead{Why Realtime} The specialized feature model becomes available right
+after each user decision. This has several benefits for the user:
+(i) for each user decision the impact on the resulting feature model is
+immediately visible; (ii) the user understands at all times which downstream
+decisions are still open; and (iii) the solver checks on the derived feature
+model provide additional insights, e.g., if the specialization leads to
+redundant constraints.
+
+
+
+%\parhead{Constraint Specialization} The specialization of feature models
+%based on partial configurations can be regarded as an application of 
+%program specialization or partial evaluation~\cite{jonesPE1993}.
+%Especially the reduction of cross-tree constraints involves the specialization
+%of boolean expressions based on statically defined feature values.
+%We realized this by evaluating constraint expressions bottom-up during
+%the incremental transformation process.\TODO{Explain, add example.}
+%\MARKUS{Too much detail. Just add this as one sentence (plus the ref) in the paragraphs above. Might want to write a separate paper?}
+

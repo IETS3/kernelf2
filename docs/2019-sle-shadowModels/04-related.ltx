@@ -1,0 +1,21 @@
+\section{Related Work}
+
+For space reasons, we compare only superficially to a few related approaches. 
+%
+The \textbf{MPS Build Pipelines}, although using model-to-model-transformations,
+is not incremental. Unsuccessful experiments with running it interactively prompted
+the development of Shadow Models. 
+%
+\textbf{Incremental} transformations are not a new idea; for example, \textbf{VIATRA2}~\cite{varro2016road} 
+supports incrementality based on the \textbf{IncQuery}~\cite{ujhelyi2015emf} incremental graph pattern
+matching engine. 
+\textbf{Dclare for MPS} is another incremental
+transformation engine that relies on contraints instead of functional transformations.
+%
+Shadow Models
+is not \textbf{bidirectional}~\cite{stevens2007landscape}; it supports unidirectional
+transformations that maintain a trace back, as well as specific APIs to propagate
+analysis results back to the source.
+Our use cases do not require true bidirectionality, and we decided to go with the
+simpler specifications that come with unidirectional transformatioms.
+
