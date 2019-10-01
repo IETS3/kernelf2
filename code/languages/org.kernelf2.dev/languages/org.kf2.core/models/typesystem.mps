@@ -3519,7 +3519,9 @@
                               <ref role="37wK5l" to="33ny:~Iterator.next()" resolve="next" />
                             </node>
                           </node>
-                          <node concept="3Tqbb2" id="7bBy93lghzH" role="10QFUM" />
+                          <node concept="3Tqbb2" id="7bBy93lghzH" role="10QFUM">
+                            <ref role="ehGHo" to="nup6:3JPN2vWmI1B" resolve="Type" />
+                          </node>
                         </node>
                       </node>
                       <node concept="1$rogu" id="7bBy93lgux$" role="2OqNvi" />
@@ -5943,6 +5945,36 @@
     <node concept="1YaCAy" id="2FZjDWC0_gJ" role="1YuTPh">
       <property role="TrG5h" value="a" />
       <ref role="1YaFvo" to="nup6:2FZjDWC013l" resolve="WithArg" />
+    </node>
+  </node>
+  <node concept="3hdX5o" id="v7SbssGwH4">
+    <property role="3GE5qa" value="bin.arith" />
+    <property role="TrG5h" value="binaryComparisomOOC" />
+    <node concept="3ciAk0" id="v7SbssGwH5" role="3he0YX">
+      <node concept="2pJPEk" id="v7SbssGwH6" role="3ciSkW">
+        <node concept="2pJPED" id="v7SbssGwH7" role="2pJPEn">
+          <ref role="2pJxaS" to="nup6:3JPN2vWmI1C" resolve="IntType" />
+        </node>
+      </node>
+      <node concept="3gn64h" id="v7SbssGwN_" role="32tDTA">
+        <ref role="3gnhBz" to="nup6:3tIuEqjZmxQ" resolve="BinaryComparisonExpr" />
+      </node>
+      <node concept="3ciZUL" id="v7SbssGwH9" role="32tDT$">
+        <node concept="3clFbS" id="v7SbssGwHa" role="2VODD2">
+          <node concept="3clFbF" id="v7SbssGwHb" role="3cqZAp">
+            <node concept="2pJPEk" id="v7SbssGwHc" role="3clFbG">
+              <node concept="2pJPED" id="v7SbssGwQy" role="2pJPEn">
+                <ref role="2pJxaS" to="nup6:3JPN2vWmI27" resolve="BoolType" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2pJPEk" id="v7SbssGwHe" role="3ciSnv">
+        <node concept="2pJPED" id="v7SbssGwHf" role="2pJPEn">
+          <ref role="2pJxaS" to="nup6:3JPN2vWmI1C" resolve="IntType" />
+        </node>
+      </node>
     </node>
   </node>
 </model>

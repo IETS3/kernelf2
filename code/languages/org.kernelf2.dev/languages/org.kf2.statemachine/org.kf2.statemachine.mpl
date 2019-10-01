@@ -48,6 +48,8 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="false">2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)</dependency>
+    <dependency reexport="false">4441485a-f7fc-4cfb-8044-d8997096c5d6(org.kf2.sugar)</dependency>
+    <dependency reexport="false">752448bb-7c63-426e-9e72-23f7606eb6f4(org.kf2.state)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:9d69e719-78c8-4286-90db-fb19c107d049:com.mbeddr.mpsutil.grammarcells" version="0" />
@@ -89,7 +91,9 @@
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" version="0" />
     <module reference="1ab7bfac-29d6-4772-a483-50110408ac43(org.kf2.core)" version="0" />
+    <module reference="752448bb-7c63-426e-9e72-23f7606eb6f4(org.kf2.state)" version="0" />
     <module reference="d3b01dcd-2240-445f-90f7-2552a830adac(org.kf2.statemachine)" version="0" />
+    <module reference="4441485a-f7fc-4cfb-8044-d8997096c5d6(org.kf2.sugar)" version="0" />
   </dependencyVersions>
   <extendedLanguages>
     <extendedLanguage>1ab7bfac-29d6-4772-a483-50110408ac43(org.kf2.core)</extendedLanguage>
