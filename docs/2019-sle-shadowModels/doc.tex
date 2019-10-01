@@ -1,0 +1,388 @@
+%
+% The first command in your LaTeX source must be the \documentclass command.
+\documentclass[sigplan,screen]{acmart}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref} 
+\usepackage{soul}  
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{inputenc} 
+\usepackage{comment}
+%\usepackage{wrapfig} 
+\usepackage{ae}  
+\usepackage{sidecap}
+\usepackage{url}
+\usepackage[T1]{fontenc} 
+\usepackage{verbatim}
+\usepackage{listings} 
+\usepackage{tikz}
+\usepackage{etoolbox}
+\usepackage{mdframed}
+\usepackage{multirow}
+\usepackage{setspace}
+\usepackage{balance}
+\usepackage{lastpage}
+
+\newenvironment{code}
+    {\noindent
+     \rule{\columnwidth}{0.6pt}
+     \vspace{-4mm}
+     \scriptsize \verbatim}
+    {\endverbatim \normalsize
+     \vspace{-4mm} 
+    \rule{\columnwidth}{0.6pt} 
+ 	}
+\usepackage{wrapfig}
+\usepackage{relsize}
+\usepackage{tabularx}
+\usepackage{microtype}
+\usepackage{multirow}
+\usepackage{semantic}
+
+\usepackage{booktabs}
+\usepackage{paralist}
+% important for nicer code font
+\usepackage[scaled]{beramono}
+
+
+\makeatletter
+    \def\balanceissued{unbalanced}%flag to indicate if \balance has been used
+    \let\oldbibitem\bibitem
+    \def\bibitem{%
+        \ifnum\thepage=\lastpage@lastpage%
+            \expandafter\ifx\expandafter\relax\balanceissued\relax\else%
+                \balance%
+                \gdef\balanceissued{\relax}\fi%
+            \else\fi%
+        \oldbibitem}
+\makeatother
+
+\definecolor{lightlightgray}{gray}{0.9}
+\definecolor{codecolor}{gray}{0.15} 
+\definecolor{javadocblue}{rgb}{0,0,0.8} % javadoc
+\definecolor{blackblack}{rgb}{0,0,0}
+  
+\definecolor{myGray1}{rgb}{0.85,0.85,.85}
+
+\newif\iflongpaper
+\longpaperfalse
+
+\lstset{
+basicstyle=\ttfamily\scriptsize\color{codecolor}, 
+keywordstyle=\color{blackblack}\bfseries,       
+% keywordstyle=\color{javadocblue},     
+commentstyle=\color{gray},              
+numbers=none,                           
+numberstyle=\tiny,                      % Line-numbers fonts
+stepnumber=1,                           % Step between two line-numbers
+numbersep=5pt,                          % How far are line-numbers from code
+%backgroundcolor=\color{lightlightgray}, % Choose background color
+tabsize=2,     
+frame=single,
+%xleftmargin=1.5mm,
+%xrightmargin=1.5mm,
+captionpos=b,   
+keepspaces=true,
+xleftmargin=1.5mm,
+xrightmargin=1.5mm,                        % Caption-position = bottom
+breaklines=true,    
+escapeinside={@}{@},
+                    % Automatic line breaking?
+breakatwhitespace=false,                % Automatic breaks only at whitespace?
+showspaces=false,                       % Dont make spaces visible
+showtabs=false,                         % Dont make tabls visible
+columns=flexible,                       % Column format
+morekeywords={}
+} 
+
+\lstdefinelanguage{kernelf}
+{keywords={val, string, real, boolean, int, true, false, if, then, else,
+option, some, none, with, fun, alt, success, try, error, list, ext, set,
+map, collection, type, bind, exec, value, it, where, any, all, record,
+check, if, otherwise, attempt, as, old, enum, qualified, check,
+assert, equals, test, case, constraint, failure, number, precision, round, up,
+cut, to, down, limit, cast, R, RM, M, box, val, update, newtx, intx, of, reduce, in, month, TT,
+calculation, depends, for, allInCurrentYear},
+%otherkeywords={->,=>,[,],!,\,},
+otherkeywords={!,\,},
+alsodigit={0,1,2,3,4,5,6,7,8,9,0},
+stringstyle=\color{OliveGreen},
+numbers=none,
+mathescape=true,
+showstringspaces=false,
+sensitive=true,
+tabsize=2,
+columns=fullflexible,
+morestring=[b]",
+comment=[l]{//},
+basicstyle=\scriptsize\ttfamily\color{darkgray},
+keywordstyle=\bf\scriptsize\ttfamily\color{black},
+}
+
+\newmdenv[
+  topline=true,
+  bottomline=true,
+  rightline=true,
+  leftline=true,
+  skipabove=0mm,
+  linewidth=1.2pt,  
+  linecolor=black,  
+  skipbelow=0mm,
+  leftmargin=0pt,
+  rightmargin=0pt,
+  innertopmargin=5pt,
+  innerleftmargin=3pt,
+  innerrightmargin=3pt,
+  innerbottommargin=3pt
+  ]
+{mvbox}
+
+%\newcommand\citeX[1]{cite{{#1}}}
+%\newcommand\itemis{itemis}
+%\newcommand\anon[2]{{#1}}
+
+
+%
+% defining the \BibTeX command - from Oren Patashnik's original BibTeX documentation.
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08emT\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+    
+%%% If you see 'ACMUNKNOWN' in the 'setcopyright' statement below,
+%%% please first submit your publishing-rights agreement with ACM (follow link on submission page).
+%%% Then please update our instructions page and copy-and-paste the NEW commands into your article.
+%%% Please contact us in case of questions; allow up to 10 min for the system to propagate the information.
+%%%
+%%% The following is specific to SLE '19 and the paper
+%%% 'Shadow Models: Incremental Transformations for MPS'
+%%% by Markus Voelter, Klaus Birken, Sascha Lisson, and Alexander Rimer.
+%%%
+\setcopyright{ACMUNKNOWN}
+\acmPrice{}
+\acmDOI{10.1145/3357766.3359528}
+\acmYear{2019}
+\copyrightyear{2019}
+\acmISBN{978-1-4503-6981-7/19/10}
+\acmConference[SLE '19]{Proceedings of the 12th ACM SIGPLAN International Conference on Software Language Engineering}{October 20--22, 2019}{Athens, Greece}
+\acmBooktitle{Proceedings of the 12th ACM SIGPLAN International Conference on Software Language Engineering (SLE '19), October 20--22, 2019, Athens, Greece}
+
+%
+% These commands are for a JOURNAL article.
+%\setcopyright{acmcopyright}
+%\acmJournal{TOG}
+%\acmYear{2018}\acmVolume{37}\acmNumber{4}\acmArticle{111}\acmMonth{8}
+%\acmDOI{10.1145/1122445.1122456}
+
+%
+% Submission ID. 
+% Use this when submitting an article to a sponsored event. You'll receive a unique submission ID from the organizers
+% of the event, and this ID should be used as the parameter to this command.
+%\acmSubmissionID{123-A56-BU3}
+
+%
+% The majority of ACM publications use numbered citations and references. If you are preparing content for an event
+% sponsored by ACM SIGGRAPH, you must use the "author year" style of citations and references. Uncommenting
+% the next command will enable that style.
+%\citestyle{acmauthoryear}
+
+%
+% end of the preamble, start of the body of the document source.
+\begin{document}
+
+%
+% The "title" command has an optional parameter, allowing the author to define a "short title" to be used in page headers.
+\title{Shadow Models: Incremental Transformations for MPS}
+
+%
+% The "author" command and its associated commands are used to define the authors and their affiliations.
+% Of note is the shared affiliation of the first two authors, and the "authornote" and "authornotemark" commands
+% used to denote shared contribution to the research.
+\author{Markus Voelter}
+\affiliation{%
+  \institution{independent/itemis}
+  \streetaddress{Oetztaler Strasse 38}
+  \city{Stuttgart}
+  \postcode{70727}
+  \country{Germany}
+}
+\email{voelter@acm.org}
+
+\author{Klaus Birken}
+\affiliation{%
+  \institution{itemis AG}
+  \streetaddress{Industriestrasse 6}
+  \city{Stuttgart}
+  \postcode{70565}
+  \country{Germany}
+}
+\email{birken@itemis.de}
+
+\author{Sascha Lisson}
+\affiliation{%
+  \institution{itemis AG}
+  \streetaddress{Industriestrasse 6}
+  \city{Stuttgart}
+  \postcode{70565}
+  \country{Germany}
+}
+\email{lisson@itemis.de}
+
+
+\author{Alexander Rimer}
+\affiliation{%
+  \institution{itemis AG}
+  \streetaddress{Industriestrasse 6}
+  \city{Stuttgart}
+  \postcode{70565}
+  \country{Germany}
+}
+\email{rimer@itemis.de}
+
+
+%\author{Klaus Birken}
+%\affiliation{%
+%  \institution{itemis AG}
+%  \streetaddress{Industriestrasse 6}
+%  \city{Stuttgart}
+%  \postcode{70565}
+%  \country{Germany}
+%}
+%\email{birken@itemis.de}
+
+%\author{Alexander Rimer}
+%\affiliation{%
+%  \institution{itemis AG}
+%  \streetaddress{Industriestrasse 6}
+%  \city{Stuttgart}
+%  \postcode{70565}
+%  \country{Germany}
+%}
+%\email{rimer@itemis.de}
+
+%\author{Tamas Szabo}
+%\affiliation{%
+%  \institution{itemis AG}
+%  \streetaddress{Industriestrasse 6}
+%  \city{Stuttgart}
+%  \postcode{70565}
+%  \country{Germany}
+%}
+%\email{szabo@itemis.de}
+
+
+
+
+
+%
+% By default, the full list of authors will be used in the page headers. Often, this list is too long, and will overlap
+% other information printed in the page headers. This command allows the author to define a more concise list
+% of authors' names for this purpose.
+\renewcommand{\shortauthors}{Voelter et al.}
+
+% The abstract is a short summary of the work to be presented in the article.
+\begin{abstract}
+Shadow Models is an incremental transformation framework for MPS. The name is motivated
+by the realization that many analyses are easier to do on an model whose structure is different from
+what the user edits. To be able to run such analyses interactively in an IDE, these ``shadows''
+of the user-facing model must be maintained in realtime, and incrementality can deliver the needed
+short response times. Shadow Models is an incremental model transformation engine for MPS. 
+In the paper we motivate the system through example use cases, 
+and outline the transformation framework.
+\end{abstract}
+
+%
+% The code below is generated by the tool at http://dl.acm.org/ccs.cfm.
+% Please copy and paste the code instead of the example below.
+%
+
+
+\begin{CCSXML}
+<ccs2012>
+<concept>
+<concept_id>10011007.10011006.10011066.10011070</concept_id>
+<concept_desc>Software and its engineering~Application specific development environments</concept_desc>
+<concept_significance>500</concept_significance>
+</concept>
+<concept>
+<concept_id>10011007.10011006.10011050.10011017</concept_id>
+<concept_desc>Software and its engineering~Domain specific languages</concept_desc>
+<concept_significance>300</concept_significance>
+</concept>
+</ccs2012>
+\end{CCSXML}
+
+\ccsdesc[500]{Software and its engineering~Application specific development environments}
+\ccsdesc[300]{Software and its engineering~Domain specific languages}
+
+%
+% Keywords. The author(s) should pick words that accurately describe the work being
+% presented. Separate the keywords with commas.
+\keywords{domain-specific languages, model transformations, incrementality, language workbenches, MPS}
+
+\newcommand\parhead[1]{\vspace{1mm}\noindent\textbf{{#1}}\ \ }  
+\newcommand\parheadX[1]{\vspace{-0.0mm}\noindent\textbf{{#1}}\ \ }  
+\newcommand{\toolurl}[1]{\footnote{\ic{#1}}}
+\newcommand{\ic}[1]{\changefont{cmtt}{m}{n}{#1}\normalfont}  % inline code
+\newcommand{\changefont}[3]{\fontfamily{#1}\fontseries{#2}\fontshape{#3}\selectfont}
+\newcommand{\fig}[1]{Fig. \ref{#1}}  % inline code
+\newcommand{\sect}[1]{Section \ref{#1}}  % inline code
+
+\newcommand\TODO[1]{\vspace{1mm}\noindent\textbf{\color{red} {{TODO: {#1}} }}}  
+\newcommand\MARKUS[1]{\vspace{1mm}\noindent\textbf{\color{blue} {{MARKUS: {#1}} }}}  
+\newcommand\SASCHA[1]{\vspace{1mm}\noindent\textbf{\color{blue} {{SASCHA: {#1}} }}}  
+\newcommand\MICHAEL[1]{\vspace{1mm}\noindent\textbf{\color{blue} {{FRAGE MICHAEL: {#1}} }}}
+\newcommand\SERGEJ[1]{\vspace{1mm}\noindent\textbf{\color{blue} {{SERGEJ: {#1}} }}}
+\newcommand\ANNA[1]{\vspace{1mm}\noindent\textbf{\color{blue} {{ANNA: {#1}} }}}
+\newcommand\KLAUS[1]{\vspace{1mm}\noindent\textbf{\color{blue} {{KLAUS: {#1}} }}}
+\newcommand\DATEV[1]{\vspace{1mm}\noindent\textbf{\color{teal} {{FRAGE DATEV: {#1}} }}}  
+
+\newcommand\mvlightbox[1]{{\setlength{\fboxsep}{2pt}\colorbox{gray}{\textcolor{white}{\textsf{\textbf{\footnotesize {#1}}}}}}}  
+\newcommand\mvdarkbox[1]{{\setlength{\fboxsep}{2pt}\colorbox{darkgray}{\textcolor{white}{\textsf{\textbf{\footnotesize {#1}}}}}}}  
+
+%\newcommand\COneAccessibility{\colorbox{gray}{\textcolor{white}{\textsf{\textbf{\footnotesize C1}}}}}  
+\newcommand\COneExtEvo{\mvlightbox{C1}}  
+\newcommand\CTwoBusAgil{\mvlightbox{C2}}  
+\newcommand\CThreeDeploy{\mvlightbox{C3}}  
+
+\newcommand\RQOneComplexity{\mvdarkbox{RQ1}}  
+\newcommand\RQTwoQuality{\mvdarkbox{RQ2}}  
+\newcommand\RQThreeTeaching{\mvdarkbox{RQ3}}  
+\newcommand\RQFourITProcess{\mvdarkbox{RQ4}}  
+
+\newcommand\OldSys[1]{\vspace{1mm} \begin{spacing}{0.9} \noindent \colorbox{myGray1}{\textcolor{black}{\textsf{\textbf{\footnotesize OLD}}}} \small {#1} $\blacksquare$ \normalsize \end{spacing} }  
+\newcommand\OldSysMeta{\colorbox{myGray1}{\textcolor{black}{\textsf{\textbf{\footnotesize OLD}}}}}  
+
+%
+% This command processes the author and affiliation and title information and builds
+% the first part of the formatted document.
+\maketitle 
+
+ 
+
+\input{01-intro.ltx}
+\input{02-examples.ltx}
+\input{03-engine.ltx}
+\input{04-related.ltx}
+\input{05-future.ltx} 
+\input{06-conclusions.ltx}
+
+
+
+
+
+
+
+
+
+
+
+
+\bibliographystyle{abbrv}
+\bibliography{doc}
+
+
+
+
+
+\end{document}

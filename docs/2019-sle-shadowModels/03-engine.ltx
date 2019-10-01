@@ -1,0 +1,165 @@
+\section{Framework}
+
+\subsection{The core transformation framework}
+
+The framework consists of five components: the transformation DSL, an engine for
+incremental computations, the transformation engine itself, an integration with
+MPS' model repository and various IDE integrations.
+
+\parhead{Transformation DSL} The language is functional: each function takes one or more source
+nodes as input and produces one or more output nodes. Functions are polymorphic in all arguments
+and support multimethod-style dispatch~\cite{millstein1999modular}. 
+%
+The DSL exploits MPS' strength regarding language extension and composition:
+queries and low-level expressions reuse MPS' Java implementation and model
+access APIs. They need not be declarative, because dependency analysis happens dynamically at
+runtime.
+%
+Reference resolution is based on (cached) re-invocation of transformation rules or 
+explicitly defined labels; we cover this in more detail in \sect{references}.
+%
+Finally, there is syntax to help with lifting analysis results from the 
+target model back to the source(s). These are functions implemented as part
+of a transformation rule that attach error messages to the input of a rule when
+particular errors are present on the output.
+
+
+\parhead{Incremental Computation Engine} The core engine is similar to
+Adapton~\cite{hammer2014adapton}: the engine caches the result of function calls and records dependencies on
+other functions and mutable data for invalidation after a change.
+Computations are lazy: a transformation is only executed if the particular
+(part of the) result is accessed. This makes it suitable for IDE services where
+only the currently edited part of the input model is relevant to the user. Essentially, Shadow Models map the domain of
+graph transformations to the general notion of incremental computations as 
+implemented by Adapton.
+
+
+
+
+\parhead{Transformation Engine} The core engine expects computations to be
+expressed as pure functions whose results can be cached. Thus,
+each transformation rule expressed with the DSL is generated into a function that returns a
+fragment of the final output graph.
+Each fragment is connected to other fragments by a specification of the
+transformation rule and the parameter values.
+% Transformation rules are executed only when they are accessed through navigation
+% on the output graph, unless the result is already in the cache of the IC system.
+
+The engine works on an internal data structure that is independent of MPS and uses a dynamically-maintained dependency graph to detect changes; a change to a dependency triggers a retransformation.
+
+
+
+
+\parhead{MPS Adapter} The model data structure in MPS requires transactions for
+read and write access.
+The projectional editor of MPS directly writes user input to the model and
+updates the UI by rendering the updated model.
+Long running transactions, such as transformations, will block the editor's
+write transaction, resulting in an unresponsive UI.
+
+To decouple the transformations from the repository (and hence the editor), the
+first step in the transformation chain mirrors the MPS model into a persistent
+copy-on-write (COW) data structure~\cite{driscoll1989making} that allows reads
+without blocking writes. 
+Because the MPS projectional editor broadcasts change events anyway, maintaining
+this copy is computationally cheap; no expensive diffs are required.
+ 
+
+The result of the transformation can either be analyzed directly on the
+\ic{INode} structure or after materializion to an MPS AST
+(through another COW). The latter is slower, but has the advantage that existing
+MPS analyses (such as type checks) can be used unchanged; it is also the basis
+for visualization in the editor.
+
+
+
+
+
+% Optionally supports fixpoints
+
+\parhead{IDE Integration} Shadow Models is fully integrated into MPS. The DSL
+comes with editor support and type checking and is available as a language
+aspect (similar to the native MPS generators or type system specifications).
+The target models can be opened in MPS editors; editing is not possible, because
+this would require some form of bidirectionality, which Shadow Models do not
+support.
+
+A new entry in the MPS project view, called the Shadow Repository, shows all the 
+incrementally maintained models. Results of analyses on the target nodes can,
+after lifting, be annotated to the source nodes (red squigglies, markers in the gutter).
+Finally, there is a debugger that shows which transformation operated on which
+input nodes, created which outputs and ran in which forks (explained next).
+
+
+
+\subsection{References, Forks and Eagerness}
+
+\label{references}
+
+MPS models are trees with cross-references (or: graphs with a single containment hierarchy).
+Those cross-references are particularly challenging: 
+a reference of some type \ic{P} 
+between input nodes \ic{A} and \ic{B} must be mapped to a reference of some type \ic{Q} 
+between the corresponding output nodes \ic{A'} and \ic{B'}. 
+To obtain \ic{B'} from \ic{B} in the transformation that transforms \ic{A}, one
+can invoke the transformation \ic{T} that maps \ic{B} to \ic{B'} again; because
+of caching, \ic{B'} is not created a second time.
+
+\parhead{Labels} However, for reasons of modularity, you might not want to know \ic{T}. To achieve
+this, the language supports transformation labels, named mappings between
+nodes. The transformation \ic{T:B->B'}
+would populate a label \ic{L}, and other transformations can find \ic{B'} knowing
+\ic{B} and \ic{L}. This way, labels are a kind of interface.   
+
+\parhead{Laziness} While this approach enables transformation modularity, it conflicts with laziness: 
+to be able to retrieve \ic{B'} from \ic{L}, the label must already be filled; lazy computation
+will not work because \ic{L} cannot know
+the transformation that fills it -- ignorance of this dependency was the reason for labels in the first place. 
+A static analysis might reveal the transformation, but
+not the (runtime) input parameters.
+
+More generally, the research roadmap by Kolovos et
+al.~\cite{kolovos2013research} identifies laziness as a core challenge in the
+context of graph transformations. The problem is that in a lazy system, less
+information is available at runtime because some parts of a transformation have
+not yet been executed; the issue with labels is an example. Another example is
+that the parent of a node in the output model might not yet be available when a
+node is accessed via a reference. Consider this graph:
+
+\begin{center} 
+\includegraphics[width=1\columnwidth]{figures/refpar.png}
+\end{center}
+
+\noindent If we follow the path \ic{A.C.D.parent}, the node \ic{B} will not yet
+be available because it is lazily computed when following the \ic{A.B}; the transformation describes the parent-child relationship only from the
+parent to the child.
+
+\parhead{Forks} Our solution is to compute results eagerly, but only in
+demarcated regions called forks.
+The transformations inside a fork are executed eagerly; labels can be used to
+look up targets, the \ic{parent} can be retrieved. From the outside, the whole
+fork is lazy and when referencing nodes inside a fork from the outside,
+the lookup has to specify the fork. Effectively, the fork becomes part of the
+identify of the nodes created inside the fork.
+
+Another consequence of the approach is that it is now possible to run a transformation
+multiple times, creating outputs with different identities, without adding an additional
+parameter to all involved transformation rules. This requirement was driven by the
+code weaving use case \sect{exweaving}, where the same pattern has to be woven into
+target locations, and references must be resolved ``locally'' at each weaving site.
+
+Finally, a fork can be marked as \ic{fixpoint}, which means that transformations are
+eagerly executed until no more rules apply; this requirement was driven by
+the KernelF2 use case (\sect{growing}), which requires that extensions are reduced
+stepwise, until only base language concepts remain, similar to a term rewriting system~\cite{baader1999term}.
+
+Summing up, we do \emph{not} solve the general problem of references
+and laziness: we revert to eager transformations. However,
+using forks, we limit the eagerness to well-defined scopes, and retaining the
+lazy nature of the overall transformation. Initial exerpience suggests that this
+compromise works in terms of performance and scalability, but further evalution
+is necessary.
+
+
+
+

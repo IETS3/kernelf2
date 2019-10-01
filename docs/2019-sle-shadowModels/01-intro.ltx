@@ -1,0 +1,43 @@
+\section{Introduction}
+
+
+
+A problem when representing information formally with models is that
+different tasks suggest different representations of the same information: one particular abstract syntax might be useful for the user when
+editing the model, a second representation might be more suitable for
+a particular analysis, and a third one might suit
+execution. It is a well-known approach in any number of tools, including
+compilers, to transform a source model into several intermediate representations
+for particular kinds of analyses, and ultimaltely, execution.
+
+To be maximally useful, the results of analysis should be
+available to the user while she edits the model. This is useful to interactively guide the editing process (through realtime analysis feedback)
+or by executing the program directly (live programming~\cite{mcdirmid2013usable}).
+This requires that the representation that suits the particular analysis
+is maintained as the user edits the program. For all but the computationally
+cheapest transformations and analyses, this requires incremental maintenance
+(and ideally, analysis) of the derived representations: the user makes an edit
+to the input model, the change is propagated to the transformation engine,
+the target model is updated incrementally, the analysis is performed, and then
+the (incrementally updated) analysis results are piped back up to the user. This
+can potentially be done in multiple steps (to form a pipeline), and one might
+also want to maintain several shadow models from a single source.
+
+\vspace{2mm}
+\begin{mvbox}
+Shadow models is an incremental model transformation language and engine, fully integrated into MPS.   
+\end{mvbox}
+\vspace{2mm}
+
+\noindent The paper gives
+an overview of the framework, prototypical use cases and for
+future evolution. 
+
+
+% \begin{figure}[h!]
+% 	\begin{center} 
+% 		\includegraphics[width=0.6\columnwidth]{figures/overview.png}
+% 	\end{center}
+%     \caption{}
+% 	\label{overview}  
+% \end{figure} 

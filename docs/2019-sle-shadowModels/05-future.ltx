@@ -1,0 +1,43 @@
+\section{Future Directions}
+\label{future}
+
+Based on experience from the projects described in \sect{examples}, we 
+have identified several areas of improvement. 
+
+\parhead{Scalability} Incremental transformations are useful especially for
+large models; for small ones, rerunning transformations from scratch
+is feasible. Although our initial experience is promising, we will have to characterize
+the scalability in terms of shadow update time and memory use more thoroughly,
+and then identify strategies for optimization of the engine. A comparison with
+Dclare and IncQuery is part of this. 
+
+\parhead{Scope of Change Tracking} Right now, all models in the MPS workspace
+that use languages with Shadow Model transformations are tracked and
+transformed, even though the user might only be interested in a subset.
+This can lead to unnecessary memory consumption. We
+will add a way to define a scope within which change tracking and transformation
+should be active.
+
+\parhead{Language Abstractions} The current language exposes several engine
+internals (such as forks) that are hard to understand for users. We will abstract them into concepts that are less technically motivated
+and easier to explain.
+
+\parhead{Improved Lifting} Currently, lifting of results to the input model
+is expressed using generic callback functions; a more concise, more
+declarative syntax will be provided. 
+
+\parhead{Extract the Tracking Engine} The incremental computation capabilities of the core engine 
+can be used for other purposes. In particular, we plan
+to implement an incremental interpreter based on the same framework. This will allow 
+clients such as KernelF2 to not just incrementally maintain the desugared shadow model,
+but then also run this model incrementally (as long as it is functional), achieving
+a fully interactive, Excel-style reactive programming environment.
+
+
+
+
+% What about decoupling the incrementality from the syntax/functions?
+% is there any idea about runtime profiling?
+
+
+
