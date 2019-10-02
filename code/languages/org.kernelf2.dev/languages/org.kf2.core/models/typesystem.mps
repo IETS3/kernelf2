@@ -409,6 +409,7 @@
       </concept>
       <concept id="1227022210526" name="jetbrains.mps.baseLanguage.collections.structure.ClearAllElementsOperation" flags="nn" index="2Kehj3" />
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
+      <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1160666733551" name="jetbrains.mps.baseLanguage.collections.structure.AddAllElementsOperation" flags="nn" index="X8dFx" />
       <concept id="1162934736510" name="jetbrains.mps.baseLanguage.collections.structure.GetElementOperation" flags="nn" index="34jXtK" />
@@ -3336,12 +3337,13 @@
       <node concept="3cpWs8" id="Ura7ponsoD" role="3cqZAp">
         <node concept="3cpWsn" id="Ura7ponsoE" role="3cpWs9">
           <property role="TrG5h" value="cons" />
+          <property role="3TUv4t" value="true" />
           <node concept="3Tqbb2" id="Ura7ponsoA" role="1tU5fm">
             <ref role="ehGHo" to="nup6:5a_u3OyMttW" resolve="AlgebraicConstructor" />
           </node>
           <node concept="2OqwBi" id="Ura7ponsoF" role="33vP2m">
             <node concept="1YBJjd" id="Ura7ponsoG" role="2Oq$k0">
-              <ref role="1YBMHb" node="5a_u3OyMAaX" resolve="algebraicConstructorType" />
+              <ref role="1YBMHb" node="5a_u3OyMAaX" resolve="input" />
             </node>
             <node concept="3TrEf2" id="Ura7ponsoH" role="2OqNvi">
               <ref role="3Tt5mk" to="nup6:5a_u3OyM_ss" resolve="constructor" />
@@ -3352,6 +3354,7 @@
       <node concept="3cpWs8" id="Ura7ponmy7" role="3cqZAp">
         <node concept="3cpWsn" id="Ura7ponmy8" role="3cpWs9">
           <property role="TrG5h" value="decl" />
+          <property role="3TUv4t" value="true" />
           <node concept="3Tqbb2" id="Ura7ponmy2" role="1tU5fm">
             <ref role="ehGHo" to="nup6:5a_u3OyMtco" resolve="AlgebraicDeclaration" />
           </node>
@@ -3365,9 +3368,48 @@
           </node>
         </node>
       </node>
+      <node concept="3clFbH" id="6N4YjqyhfNn" role="3cqZAp" />
+      <node concept="3cpWs8" id="6N4YjqyhiGc" role="3cqZAp">
+        <node concept="3cpWsn" id="6N4YjqyhiGf" role="3cpWs9">
+          <property role="TrG5h" value="result" />
+          <property role="3TUv4t" value="true" />
+          <node concept="_YKpA" id="6N4YjqyhPur" role="1tU5fm">
+            <node concept="3Tqbb2" id="6N4YjqyhQqC" role="_ZDj9" />
+          </node>
+          <node concept="2ShNRf" id="6N4YjqyhSqO" role="33vP2m">
+            <node concept="Tc6Ow" id="6N4YjqyhRCS" role="2ShVmc">
+              <node concept="3Tqbb2" id="6N4YjqyhRCT" role="HW$YZ" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbF" id="6N4YjqyidCn" role="3cqZAp">
+        <node concept="2OqwBi" id="6N4Yjqyif1U" role="3clFbG">
+          <node concept="37vLTw" id="6N4YjqyidCl" role="2Oq$k0">
+            <ref role="3cqZAo" node="6N4YjqyhiGf" resolve="result" />
+          </node>
+          <node concept="TSZUe" id="6N4YjqyiiEm" role="2OqNvi">
+            <node concept="2pJPEk" id="6N4YjqyiiHN" role="25WWJ7">
+              <node concept="2pJPED" id="6N4YjqyiiOY" role="2pJPEn">
+                <ref role="2pJxaS" to="nup6:P1tPURZxrz" resolve="AlgebraicConsType" />
+                <node concept="2pIpSj" id="6N4YjqyiiUi" role="2pJxcM">
+                  <ref role="2pIpSl" to="nup6:P1tPURZxsQ" resolve="cons" />
+                  <node concept="36biLy" id="6N4YjqyiiYc" role="2pJxcZ">
+                    <node concept="37vLTw" id="6N4YjqyiiYv" role="36biLW">
+                      <ref role="3cqZAo" node="Ura7ponsoE" resolve="cons" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="6N4YjqyicP_" role="3cqZAp" />
       <node concept="3cpWs8" id="1po0Tws6qHY" role="3cqZAp">
         <node concept="3cpWsn" id="1po0Tws6qHZ" role="3cpWs9">
           <property role="TrG5h" value="at" />
+          <property role="3TUv4t" value="true" />
           <node concept="3Tqbb2" id="1po0Tws6qHK" role="1tU5fm">
             <ref role="ehGHo" to="nup6:5a_u3OyMvaf" resolve="AlgebraicType" />
           </node>
@@ -3386,10 +3428,22 @@
           </node>
         </node>
       </node>
-      <node concept="3clFbH" id="Ura7ponnPj" role="3cqZAp" />
+      <node concept="3clFbF" id="6N4YjqyhqpQ" role="3cqZAp">
+        <node concept="2OqwBi" id="6N4YjqyhriD" role="3clFbG">
+          <node concept="37vLTw" id="6N4YjqyhqpO" role="2Oq$k0">
+            <ref role="3cqZAo" node="6N4YjqyhiGf" resolve="result" />
+          </node>
+          <node concept="TSZUe" id="6N4Yjqyhuin" role="2OqNvi">
+            <node concept="37vLTw" id="6N4YjqyhuzH" role="25WWJ7">
+              <ref role="3cqZAo" node="1po0Tws6qHZ" resolve="at" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="6N4Yjqyhfg3" role="3cqZAp" />
       <node concept="2Gpval" id="Ura7ponpyH" role="3cqZAp">
         <node concept="2GrKxI" id="Ura7ponpyJ" role="2Gsz3X">
-          <property role="TrG5h" value="t" />
+          <property role="TrG5h" value="typeVar" />
         </node>
         <node concept="2OqwBi" id="Ura7ponpWn" role="2GsD0m">
           <node concept="37vLTw" id="Ura7ponpHw" role="2Oq$k0">
@@ -3402,7 +3456,8 @@
         <node concept="3clFbS" id="Ura7ponpyN" role="2LFqv$">
           <node concept="3cpWs8" id="Ura7poovqy" role="3cqZAp">
             <node concept="3cpWsn" id="Ura7poovqz" role="3cpWs9">
-              <property role="TrG5h" value="positions" />
+              <property role="TrG5h" value="positionsOfTypeVar" />
+              <property role="3TUv4t" value="true" />
               <node concept="_YKpA" id="Ura7poovqj" role="1tU5fm">
                 <node concept="10Oyi0" id="Ura7poovqm" role="_ZDj9" />
               </node>
@@ -3413,7 +3468,7 @@
                 <node concept="2qgKlT" id="Ura7poovqA" role="2OqNvi">
                   <ref role="37wK5l" to="pooj:2HYLUBOuw3G" resolve="findArgPositions" />
                   <node concept="2GrUjf" id="Ura7poovqB" role="37wK5m">
-                    <ref role="2Gs0qQ" node="Ura7ponpyJ" resolve="t" />
+                    <ref role="2Gs0qQ" node="Ura7ponpyJ" resolve="typeVar" />
                   </node>
                 </node>
               </node>
@@ -3421,7 +3476,8 @@
           </node>
           <node concept="3cpWs8" id="Ura7pooE7R" role="3cqZAp">
             <node concept="3cpWsn" id="Ura7pooE7U" role="3cpWs9">
-              <property role="TrG5h" value="typesForT" />
+              <property role="TrG5h" value="typesForTypeVar" />
+              <property role="3TUv4t" value="true" />
               <node concept="2hMVRd" id="Ura7pooE7N" role="1tU5fm">
                 <node concept="3Tqbb2" id="Ura7pooEjF" role="2hN53Y" />
               </node>
@@ -3434,22 +3490,22 @@
           </node>
           <node concept="2Gpval" id="Ura7poox6t" role="3cqZAp">
             <node concept="2GrKxI" id="Ura7poox6v" role="2Gsz3X">
-              <property role="TrG5h" value="p" />
+              <property role="TrG5h" value="position" />
             </node>
             <node concept="37vLTw" id="Ura7pooxgk" role="2GsD0m">
-              <ref role="3cqZAo" node="Ura7poovqz" resolve="positions" />
+              <ref role="3cqZAo" node="Ura7poovqz" resolve="positionsOfTypeVar" />
             </node>
             <node concept="3clFbS" id="Ura7poox6z" role="2LFqv$">
               <node concept="3clFbF" id="Ura7pooEp8" role="3cqZAp">
                 <node concept="2OqwBi" id="Ura7pooEXZ" role="3clFbG">
                   <node concept="37vLTw" id="Ura7pooEp6" role="2Oq$k0">
-                    <ref role="3cqZAo" node="Ura7pooE7U" resolve="typesForT" />
+                    <ref role="3cqZAo" node="Ura7pooE7U" resolve="typesForTypeVar" />
                   </node>
                   <node concept="TSZUe" id="Ura7pooFnS" role="2OqNvi">
                     <node concept="2OqwBi" id="Ura7pooNiO" role="25WWJ7">
                       <node concept="2OqwBi" id="Ura7pooHbC" role="2Oq$k0">
                         <node concept="1YBJjd" id="Ura7pooGKH" role="2Oq$k0">
-                          <ref role="1YBMHb" node="5a_u3OyMAaX" resolve="algebraicConstructorType" />
+                          <ref role="1YBMHb" node="5a_u3OyMAaX" resolve="input" />
                         </node>
                         <node concept="3Tsc0h" id="Ura7pooIkQ" role="2OqNvi">
                           <ref role="3TtcxE" to="nup6:7iudlBALbkz" resolve="types" />
@@ -3457,7 +3513,7 @@
                       </node>
                       <node concept="34jXtK" id="Ura7pooQyd" role="2OqNvi">
                         <node concept="2GrUjf" id="Ura7pooR53" role="25WWJ7">
-                          <ref role="2Gs0qQ" node="Ura7poox6v" resolve="p" />
+                          <ref role="2Gs0qQ" node="Ura7poox6v" resolve="position" />
                         </node>
                       </node>
                     </node>
@@ -3469,6 +3525,7 @@
           <node concept="3cpWs8" id="Ura7pooSKP" role="3cqZAp">
             <node concept="3cpWsn" id="Ura7pooSKQ" role="3cpWs9">
               <property role="TrG5h" value="superTypes" />
+              <property role="3TUv4t" value="true" />
               <node concept="3uibUv" id="Ura7pooSKB" role="1tU5fm">
                 <ref role="3uigEE" to="33ny:~Set" resolve="Set" />
                 <node concept="3uibUv" id="Ura7pooSKE" role="11_B2D">
@@ -3485,7 +3542,7 @@
                 <node concept="liA8E" id="Ura7pooSKV" role="2OqNvi">
                   <ref role="37wK5l" to="u78q:~SubtypingManager.leastCommonSupertypes(java.util.Set,boolean)" resolve="leastCommonSupertypes" />
                   <node concept="37vLTw" id="Ura7pooSKW" role="37wK5m">
-                    <ref role="3cqZAo" node="Ura7pooE7U" resolve="typesForT" />
+                    <ref role="3cqZAo" node="Ura7pooE7U" resolve="typesForTypeVar" />
                   </node>
                   <node concept="3clFbT" id="Ura7pooSKX" role="37wK5m" />
                 </node>
@@ -3545,14 +3602,15 @@
           </node>
         </node>
       </node>
-      <node concept="3clFbF" id="1po0Tws70iA" role="3cqZAp">
-        <node concept="37vLTw" id="1po0Tws70i$" role="3clFbG">
-          <ref role="3cqZAo" node="1po0Tws6qHZ" resolve="at" />
+      <node concept="3clFbH" id="6N4Yjqyhv$M" role="3cqZAp" />
+      <node concept="3cpWs6" id="6N4YjqyhwH8" role="3cqZAp">
+        <node concept="37vLTw" id="6N4YjqyhwIZ" role="3cqZAk">
+          <ref role="3cqZAo" node="6N4YjqyhiGf" resolve="result" />
         </node>
       </node>
     </node>
     <node concept="1YaCAy" id="5a_u3OyMAaX" role="1YuTPh">
-      <property role="TrG5h" value="algebraicConstructorType" />
+      <property role="TrG5h" value="input" />
       <ref role="1YaFvo" to="nup6:5a_u3OyM_sl" resolve="AlgebraicConstructorType" />
     </node>
   </node>
