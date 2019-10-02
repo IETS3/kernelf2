@@ -365,6 +365,7 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
       <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7">
+        <property id="8575328350543493365" name="message" index="huDt6" />
         <property id="2423417345669755629" name="filter" index="1eyWvh" />
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
@@ -409,6 +410,7 @@
       <concept id="1227022210526" name="jetbrains.mps.baseLanguage.collections.structure.ClearAllElementsOperation" flags="nn" index="2Kehj3" />
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
+      <concept id="1160666733551" name="jetbrains.mps.baseLanguage.collections.structure.AddAllElementsOperation" flags="nn" index="X8dFx" />
       <concept id="1162934736510" name="jetbrains.mps.baseLanguage.collections.structure.GetElementOperation" flags="nn" index="34jXtK" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1197683403723" name="jetbrains.mps.baseLanguage.collections.structure.MapType" flags="in" index="3rvAFt">
@@ -5318,7 +5320,7 @@
       </node>
       <node concept="3SKdUt" id="5qkNGtsXEj7" role="3cqZAp">
         <node concept="3SKdUq" id="5qkNGtsXEj9" role="3SKWNk">
-          <property role="3SKdUp" value="it is ok to suppress the type system errors here" />
+          <property role="3SKdUp" value="construct type through SNode API because that one does not introduce casting, unlike light quotation" />
         </node>
       </node>
       <node concept="3SKdUt" id="5qkNGtsXF4e" role="3cqZAp">
@@ -5328,51 +5330,70 @@
       </node>
       <node concept="3SKdUt" id="5qkNGtsXFPp" role="3cqZAp">
         <node concept="3SKdUq" id="5qkNGtsXFPr" role="3SKWNk">
-          <property role="3SKdUp" value="otherwise inference could not work properly" />
+          <property role="3SKdUp" value="otherwise inference can not work properly" />
         </node>
       </node>
-      <node concept="3cpWs8" id="Y68irh4XKI" role="3cqZAp">
-        <node concept="3cpWsn" id="Y68irh4XKJ" role="3cpWs9">
+      <node concept="3cpWs8" id="3hM7AxYMuwY" role="3cqZAp">
+        <node concept="3cpWsn" id="3hM7AxYMux1" role="3cpWs9">
           <property role="TrG5h" value="type" />
           <property role="3TUv4t" value="true" />
-          <node concept="3Tqbb2" id="Y68irh4XKg" role="1tU5fm">
+          <node concept="3Tqbb2" id="3hM7AxYMuwW" role="1tU5fm">
             <ref role="ehGHo" to="nup6:5a_u3OyM_sl" resolve="AlgebraicConstructorType" />
           </node>
-          <node concept="2pJPEk" id="Y68irh4XKK" role="33vP2m">
-            <node concept="2pJPED" id="Y68irh4XKL" role="2pJPEn">
-              <ref role="2pJxaS" to="nup6:5a_u3OyM_sl" resolve="AlgebraicConstructorType" />
-              <node concept="2pIpSj" id="Y68irh4XKM" role="2pJxcM">
-                <ref role="2pIpSl" to="nup6:7iudlBALbkz" resolve="types" />
-                <node concept="36biLy" id="Y68irh4XKN" role="2pJxcZ">
-                  <node concept="37vLTw" id="Y68irh4XKO" role="36biLW">
-                    <ref role="3cqZAo" node="Y68irh4MB2" resolve="types" />
-                  </node>
-                </node>
-              </node>
-              <node concept="2pIpSj" id="Y68irh4XKP" role="2pJxcM">
-                <ref role="2pIpSl" to="nup6:5a_u3OyM_ss" resolve="constructor" />
-                <node concept="36biLy" id="Y68irh4XKQ" role="2pJxcZ">
-                  <node concept="2OqwBi" id="Y68irh4XKR" role="36biLW">
-                    <node concept="1YBJjd" id="Y68irh4XKS" role="2Oq$k0">
-                      <ref role="1YBMHb" node="Y68irh3f5W" resolve="term" />
-                    </node>
-                    <node concept="3TrEf2" id="Y68irh4XKT" role="2OqNvi">
-                      <ref role="3Tt5mk" to="nup6:1po0Tws1oXs" resolve="cons" />
-                    </node>
-                  </node>
-                </node>
+          <node concept="2ShNRf" id="3hM7AxYMuT_" role="33vP2m">
+            <node concept="3zrR0B" id="3hM7AxYMuTv" role="2ShVmc">
+              <node concept="3Tqbb2" id="3hM7AxYMuTw" role="3zrR0E">
+                <ref role="ehGHo" to="nup6:5a_u3OyM_sl" resolve="AlgebraicConstructorType" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="15s5l7" id="5qkNGtsXDU$" role="lGtFl">
+      </node>
+      <node concept="3clFbF" id="3hM7AxYMw2A" role="3cqZAp">
+        <node concept="2OqwBi" id="3hM7AxYMyZe" role="3clFbG">
+          <node concept="2OqwBi" id="3hM7AxYMwrk" role="2Oq$k0">
+            <node concept="37vLTw" id="3hM7AxYMwP$" role="2Oq$k0">
+              <ref role="3cqZAo" node="3hM7AxYMux1" resolve="type" />
+            </node>
+            <node concept="3Tsc0h" id="3hM7AxYMx4R" role="2OqNvi">
+              <ref role="3TtcxE" to="nup6:7iudlBALbkz" resolve="types" />
+            </node>
+          </node>
+          <node concept="X8dFx" id="3hM7AxYMAgl" role="2OqNvi">
+            <node concept="37vLTw" id="3hM7AxYMAXZ" role="25WWJ7">
+              <ref role="3cqZAo" node="Y68irh4MB2" resolve="types" />
+            </node>
+          </node>
+        </node>
+        <node concept="15s5l7" id="3hM7AxYMM3S" role="lGtFl">
           <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;" />
+          <property role="huDt6" value="all typesystem messages" />
+        </node>
+      </node>
+      <node concept="3clFbF" id="3hM7AxYMEz8" role="3cqZAp">
+        <node concept="37vLTI" id="3hM7AxYMHm5" role="3clFbG">
+          <node concept="2OqwBi" id="3hM7AxYMHyj" role="37vLTx">
+            <node concept="1YBJjd" id="3hM7AxYMHmw" role="2Oq$k0">
+              <ref role="1YBMHb" node="Y68irh3f5W" resolve="term" />
+            </node>
+            <node concept="3TrEf2" id="3hM7AxYMHU0" role="2OqNvi">
+              <ref role="3Tt5mk" to="nup6:1po0Tws1oXs" resolve="cons" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="3hM7AxYMG4i" role="37vLTJ">
+            <node concept="37vLTw" id="3hM7AxYMEz6" role="2Oq$k0">
+              <ref role="3cqZAo" node="3hM7AxYMux1" resolve="type" />
+            </node>
+            <node concept="3TrEf2" id="3hM7AxYMG$f" role="2OqNvi">
+              <ref role="3Tt5mk" to="nup6:5a_u3OyM_ss" resolve="constructor" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="1Z5TYs" id="Y68irh51CV" role="3cqZAp">
         <node concept="mw_s8" id="Y68irh522b" role="1ZfhKB">
-          <node concept="37vLTw" id="Y68irh5229" role="mwGJk">
-            <ref role="3cqZAo" node="Y68irh4XKJ" resolve="type" />
+          <node concept="37vLTw" id="3hM7AxYMLOA" role="mwGJk">
+            <ref role="3cqZAo" node="3hM7AxYMux1" resolve="type" />
           </node>
         </node>
         <node concept="mw_s8" id="Y68irh51CY" role="1ZfhK$">
