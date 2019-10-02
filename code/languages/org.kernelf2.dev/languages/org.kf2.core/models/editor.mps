@@ -2894,5 +2894,19 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="5OHvfQ$q5Oq">
+    <property role="3GE5qa" value="algebraic" />
+    <ref role="1XX52x" to="nup6:P1tPURZxrz" resolve="AlgebraicConsType" />
+    <node concept="1iCGBv" id="5OHvfQ$q5WP" role="2wV5jI">
+      <ref role="1NtTu8" to="nup6:P1tPURZxsQ" resolve="cons" />
+      <node concept="1sVBvm" id="5OHvfQ$q5WQ" role="1sWHZn">
+        <node concept="3F0A7n" id="5OHvfQ$q5WR" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1k5W1q" node="3tIuEqk4fYf" resolve="kf2Type" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
