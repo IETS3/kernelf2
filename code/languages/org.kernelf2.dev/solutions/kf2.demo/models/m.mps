@@ -73,7 +73,7 @@
       <concept id="3994264775390227174" name="org.kf2.core.structure.LessEqExpr" flags="ng" index="2$$L10" />
       <concept id="3994264775390226551" name="org.kf2.core.structure.GreaterExpr" flags="ng" index="2$$Lbh" />
       <concept id="5182877833504324605" name="org.kf2.core.structure.EmptyDeclaration" flags="ng" index="2NE3Kg" />
-      <concept id="955175844676769507" name="org.kf2.core.structure.AlgebraicConsType" flags="ng" index="2UJQ6X">
+      <concept id="955175844676769507" name="org.kf2.core.structure.GenericAlgebraicConsType" flags="ng" index="2UJQ6X">
         <reference id="955175844676769590" name="cons" index="2UJQ1C" />
       </concept>
       <concept id="4320583889641463943" name="org.kf2.core.structure.BoolType" flags="ng" index="37FMMw" />
@@ -2325,8 +2325,8 @@
             <ref role="38XQJG" node="795LilNeQFF" resolve="default" />
           </node>
         </node>
-        <node concept="mWALo" id="795LilNeOvl" role="1Kh3BE">
-          <ref role="mWALr" node="795LilNeJia" resolve="tree" />
+        <node concept="38XQG0" id="795LilNhb8B" role="1Kh3BE">
+          <ref role="38XQJG" node="795LilNeNXH" resolve="l" />
         </node>
       </node>
       <node concept="dCA$o" id="795LilNeTBT" role="1mc52V">
@@ -2334,7 +2334,43 @@
       </node>
     </node>
     <node concept="2NE3Kg" id="795LilNeN$J" role="37GxYA" />
-    <node concept="2NE3Kg" id="795LilNeJiV" role="37GxYA" />
+    <node concept="37GxwB" id="795LilNhbu3" role="37GxYA">
+      <property role="TrG5h" value="x" />
+      <node concept="2lgVZp" id="795LilNhbA3" role="37Gxwy">
+        <ref role="2lgVZu" node="795LilNeNEi" resolve="getLitVal" />
+        <node concept="mWALo" id="795LilNhbIp" role="2lgVZs">
+          <ref role="mWALr" node="795LilNeJia" resolve="tree" />
+        </node>
+        <node concept="1H2aKs" id="795LilNhbO8" role="2lgVZs">
+          <property role="1H2aK3" value="0" />
+        </node>
+      </node>
+    </node>
+    <node concept="2NE3Kg" id="795LilNhd5z" role="37GxYA" />
+    <node concept="37GxwB" id="795LilNhbRL" role="37GxYA">
+      <property role="TrG5h" value="okToNotWork" />
+      <node concept="2lgVZp" id="795LilNhbRM" role="37Gxwy">
+        <ref role="2lgVZu" node="795LilNeNEi" resolve="getLitVal" />
+        <node concept="mWALo" id="795LilNhdPq" role="2lgVZs">
+          <ref role="mWALr" node="795LilNeJig" resolve="tree2" />
+        </node>
+        <node concept="1mbQyJ" id="795LilNhcaa" role="2lgVZs">
+          <property role="1mbQyG" value="0" />
+        </node>
+      </node>
+    </node>
+    <node concept="37GxwB" id="795LilNhdVh" role="37GxYA">
+      <property role="TrG5h" value="thisShouldNotWork" />
+      <node concept="2lgVZp" id="795LilNhdVi" role="37Gxwy">
+        <ref role="2lgVZu" node="795LilNeNEi" resolve="getLitVal" />
+        <node concept="mWALo" id="795LilNhe1s" role="2lgVZs">
+          <ref role="mWALr" node="795LilNeJia" resolve="tree" />
+        </node>
+        <node concept="1mbQyJ" id="795LilNhdVk" role="2lgVZs">
+          <property role="1mbQyG" value="0" />
+        </node>
+      </node>
+    </node>
     <node concept="2NE3Kg" id="795LilNeJiW" role="37GxYA" />
   </node>
 </model>
