@@ -2896,7 +2896,7 @@
   </node>
   <node concept="24kQdi" id="5OHvfQ$q5Oq">
     <property role="3GE5qa" value="algebraic" />
-    <ref role="1XX52x" to="nup6:P1tPURZxrz" resolve="AlgebraicConsType" />
+    <ref role="1XX52x" to="nup6:P1tPURZxrz" resolve="GenericAlgebraicConsType" />
     <node concept="1iCGBv" id="5OHvfQ$q5WP" role="2wV5jI">
       <ref role="1NtTu8" to="nup6:P1tPURZxsQ" resolve="cons" />
       <node concept="1sVBvm" id="5OHvfQ$q5WQ" role="1sWHZn">
@@ -2907,6 +2907,10 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="3p36aQ" id="795LilNcAqP">
+    <property role="3GE5qa" value="algebraic" />
+    <ref role="aqKnT" to="nup6:5a_u3OyM_sl" resolve="AlgebraicConstructorType" />
   </node>
 </model>
 

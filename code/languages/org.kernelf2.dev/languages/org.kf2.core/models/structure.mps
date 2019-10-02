@@ -1334,7 +1334,7 @@
   <node concept="1TIwiD" id="P1tPURZxrz">
     <property role="EcuMT" value="955175844676769507" />
     <property role="3GE5qa" value="algebraic" />
-    <property role="TrG5h" value="AlgebraicConsType" />
+    <property role="TrG5h" value="GenericAlgebraicConsType" />
     <ref role="1TJDcQ" node="3JPN2vWmI1B" resolve="Type" />
     <node concept="1TJgyj" id="P1tPURZxsQ" role="1TKVEi">
       <property role="IQ2ns" value="955175844676769590" />

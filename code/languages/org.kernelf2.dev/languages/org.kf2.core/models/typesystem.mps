@@ -3391,7 +3391,7 @@
           <node concept="TSZUe" id="6N4YjqyiiEm" role="2OqNvi">
             <node concept="2pJPEk" id="6N4YjqyiiHN" role="25WWJ7">
               <node concept="2pJPED" id="6N4YjqyiiOY" role="2pJPEn">
-                <ref role="2pJxaS" to="nup6:P1tPURZxrz" resolve="AlgebraicConsType" />
+                <ref role="2pJxaS" to="nup6:P1tPURZxrz" resolve="GenericAlgebraicConsType" />
                 <node concept="2pIpSj" id="6N4YjqyiiUi" role="2pJxcM">
                   <ref role="2pIpSl" to="nup6:P1tPURZxsQ" resolve="cons" />
                   <node concept="36biLy" id="6N4YjqyiiYc" role="2pJxcZ">
